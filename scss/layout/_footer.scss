@@ -1,0 +1,64 @@
+.social-icons-list {
+    display: flex;
+}
+
+.nav-bar-icons {
+    color: #fff;
+    font-size: 2rem;
+    margin-left: .5rem;
+    opacity: .6;
+    transition: all .3s ease;
+}
+
+.nav-bar-icons:hover {
+    opacity: 1;
+}
+
+.twitter-icon:hover {
+    opacity: 1;
+    color: #00acee;
+}
+
+.facebook-icon:hover {
+    opacity: 1;
+    color: #3b5998;
+}
+
+.instagram-icon:hover {
+    opacity: 1;
+    color: rgb(225, 48, 108);
+}
+
+.github-icon:hover {
+    opacity: 1;
+}
+
+.linkedin-icon:hover {
+    opacity: 1;
+    color: #0e76a8;
+}
+
+.mail-icon:hover {
+    opacity: 1;
+    color: #B23121;
+}
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list-item {
+    margin-right: 5rem;
+    font-size: 1.6rem;
+}
+
+.nav-link {
+    color: #dfe6e9;
+    transition: all .3s ease;
+    opacity: .6;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: #00b894;
+}
