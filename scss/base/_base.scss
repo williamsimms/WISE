@@ -17,6 +17,7 @@ html {
 body {
     font-family: 'Lato', sans-serif;
     overflow-x: hidden;
+
 }
 
 ul {
@@ -56,13 +57,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 #home {
-    background: linear-gradient(rgba($colour-black,.4),rgba($colour-black,.4)),url(../../img/heroImage.jpg);
+    background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/heroImage.jpg);
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: cover;
     min-height: 100vh;
     background-attachment: fixed;
     color: #fff;
+    position: relative;
 }
 
 .hero-text {
@@ -75,12 +77,69 @@ body::-webkit-scrollbar-thumb {
     margin-top: 15rem;
     text-align: center;
 }
-.slogan{
+
+.slogan {
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.3;
     position: absolute;
     left: 50%;
     top: 110%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+}
+
+#mission {
+    min-height: 100vh;
+    background: $colour-dark-gray;
+}
+
+.mission-text {
+    position: relative;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 4rem;
+    color: $colour-light-gray;
+    margin-bottom: 16rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.scroll-container {
+    background: transparent;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.downwards {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(355deg) brightness(109%) contrast(101%);
+    height: 3rem;
+    opacity: .5;
+    animation: bounce 3s ease-in-out infinite;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        filter: invert(91%) sepia(16%) saturate(3200%) hue-rotate(332deg) brightness(104%) contrast(97%);
+        opacity: .7;
+    }
+}
+
+.scroll-down {
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 290%;
+    cursor: pointer;
+}
+#services {
+    min-height: 100vh;
+    background: linear-gradient(rgba($colour-yellow, .7), rgba($colour-yellow, .7)), url(../../img/heroConstruction.jpg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative; 
 }

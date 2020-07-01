@@ -7,15 +7,24 @@
         font-size: 1.5rem;
         color: rgba($colour-white, .8);
     }
+    & .earth {
+        height: 2rem;
+        margin-left: 1rem;
+    }
+    & div {
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+    }
 }
 
 .navigation-list {
     display: flex;
 
     & li a {
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         color: rgba($colour-white, .8);
-        margin-left: 2rem;
+        margin-left: 3rem;
         transition: all .3s ease-in-out;
 
         &:hover {

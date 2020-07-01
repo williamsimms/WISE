@@ -1,0 +1,70 @@
+.mission-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mission-photo-container {
+    flex: 0 0 43%;
+
+    &::after {
+        display: block;
+        height: 1px;
+        content: "Fort Lauderdale Florida Ferrari Dealership";
+        width: 25rem;
+        margin: 0 auto;
+        margin-top: 1rem;
+        color: $colour-light-gray;
+        font-size: 1.5rem;
+        text-align: center;
+        transition: all .4s ease-in-out;
+        opacity: 0;
+    }
+}
+
+
+// animation: moveInFromRight forwards 3s ease-in-out;
+
+.mission-photo {
+    width: 100%;
+    border-radius: 2rem;
+    position: relative;
+    outline-offset: 5px;
+    transition: all .4s ease-in-out;
+
+}
+
+.mission-statement {
+    flex: 0 0 50%;
+    // animation: moveInFromLeft forwards 3s ease-in-out;
+
+    & h3:last-of-type {
+        margin-top: 2rem;
+    }
+
+    & h3 {
+        color: $colour-light-gray;
+        font-size: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+
+        &::after {
+            display: block;
+            height: 2px;
+            background-color: $colour-yellow;
+            content: "";
+            width: 10rem;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+    }
+
+    & p {
+        color: $colour-light-gray;
+        font-size: 1.6rem;
+        padding: 2rem 0;
+        line-height: 1.8;
+        hyphens: auto;
+    }
+}

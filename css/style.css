@@ -43,6 +43,22 @@
     opacity: 1;
     transform: translateY(0); } }
 
+@keyframes moveInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-200%); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(200%); }
+  to {
+    opacity: 1;
+    transform: translateX(0); } }
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -94,7 +110,8 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   min-height: 100vh;
   background-attachment: fixed;
-  color: #fff; }
+  color: #fff;
+  position: relative; }
 
 .hero-text {
   font-size: 7rem;
@@ -115,6 +132,55 @@ body::-webkit-scrollbar-thumb {
   top: 110%;
   transform: translate(-50%, -50%); }
 
+#mission {
+  min-height: 100vh;
+  background: #333333; }
+
+.mission-text {
+  position: relative;
+  text-align: center;
+  padding-top: 5rem;
+  font-size: 4rem;
+  color: #dcdde1;
+  margin-bottom: 16rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 300; }
+
+.scroll-container {
+  background: transparent;
+  margin: auto;
+  display: flex;
+  justify-content: center; }
+
+.downwards {
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(355deg) brightness(109%) contrast(101%);
+  height: 3rem;
+  opacity: .5;
+  animation: bounce 3s ease-in-out infinite;
+  transition: all .3s ease-in-out; }
+  .downwards:hover {
+    filter: invert(91%) sepia(16%) saturate(3200%) hue-rotate(332deg) brightness(104%) contrast(97%);
+    opacity: .7; }
+
+.scroll-down {
+  background: transparent;
+  border: none;
+  position: absolute;
+  top: 290%;
+  cursor: pointer; }
+
+#services {
+  min-height: 100vh;
+  background: linear-gradient(rgba(251, 197, 49, 0.7), rgba(251, 197, 49, 0.7)), url(../../img/heroConstruction.jpg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: cover;
+  min-height: 100vh;
+  background-attachment: fixed;
+  color: #fff;
+  position: relative; }
+
 .navigation-bar {
   display: flex;
   padding-top: 1.8rem;
@@ -122,13 +188,20 @@ body::-webkit-scrollbar-thumb {
   .navigation-bar h2 {
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.8); }
+  .navigation-bar .earth {
+    height: 2rem;
+    margin-left: 1rem; }
+  .navigation-bar div {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 .navigation-list {
   display: flex; }
   .navigation-list li a {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.8);
-    margin-left: 2rem;
+    margin-left: 3rem;
     transition: all .3s ease-in-out; }
     .navigation-list li a:hover {
       color: white; }
@@ -152,3 +225,96 @@ body::-webkit-scrollbar-thumb {
   .btn:active {
     box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.5);
     transform: translate(-50%, -49%); }
+  .btn:focus {
+    background-color: #fff; }
+
+.circular-text {
+  position: fixed;
+  top: 77.5%;
+  left: 92%;
+  color: rgba(255, 255, 255, 0);
+  font-size: 1.7rem;
+  font-weight: bolder;
+  transition: 0.5s ease-out;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+  z-index: 10;
+  opacity: 0; }
+
+.arrow {
+  position: fixed;
+  top: 87%;
+  left: 92%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  opacity: 0; }
+
+.arrow-up {
+  filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(265deg) brightness(108%) contrast(101%);
+  height: 3rem;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  animation: bounce 2s ease-in-out infinite; }
+  .arrow-up:hover {
+    filter: invert(91%) sepia(16%) saturate(3200%) hue-rotate(332deg) brightness(104%) contrast(97%); }
+  .arrow-up:hover .circular-text {
+    -webkit-text-stroke: 1px rgba(251, 197, 49, 0.6); }
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-5px); }
+  100% {
+    transform: translateY(0); } }
+
+.mission-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.mission-photo-container {
+  flex: 0 0 43%; }
+  .mission-photo-container::after {
+    display: block;
+    height: 1px;
+    content: "Fort Lauderdale Florida Ferrari Dealership";
+    width: 25rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    color: #dcdde1;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: all .4s ease-in-out;
+    opacity: 0; }
+
+.mission-photo {
+  width: 100%;
+  border-radius: 2rem;
+  position: relative;
+  outline-offset: 5px;
+  transition: all .4s ease-in-out; }
+
+.mission-statement {
+  flex: 0 0 50%; }
+  .mission-statement h3:last-of-type {
+    margin-top: 2rem; }
+  .mission-statement h3 {
+    color: #dcdde1;
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; }
+    .mission-statement h3::after {
+      display: block;
+      height: 2px;
+      background-color: #fbc531;
+      content: "";
+      width: 10rem;
+      margin: 0 auto;
+      margin-top: 1rem; }
+  .mission-statement p {
+    color: #dcdde1;
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    line-height: 1.8;
+    hyphens: auto; }

@@ -22,5 +22,7 @@
         transform: translate(-50%, -49%);
     }
 
-    &:focus {}
+    &:focus {
+        background-color: $colour-white;
+    }
 }
