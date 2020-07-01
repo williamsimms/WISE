@@ -132,14 +132,43 @@ body::-webkit-scrollbar-thumb {
     top: 290%;
     cursor: pointer;
 }
+
 #services {
     min-height: 100vh;
-    background: linear-gradient(rgba($colour-yellow, .7), rgba($colour-yellow, .7)), url(../../img/heroConstruction.jpg);
+    background: linear-gradient(62deg, rgba($colour-red-ocean-1, .94), rgba($colour-red-ocean-2, .9)), url(../../img/heroConstruction.jpg);
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: cover;
     min-height: 100vh;
     background-attachment: fixed;
     color: #fff;
-    position: relative; 
+
+}
+
+.services-header {
+    font-weight: 300;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 5rem;
+    letter-spacing: 2px;
+}
+
+#portfolio {
+    min-height: 100vh;
+    background: $colour-light-gray;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#clientele {
+    min-height: 100vh;
+}
+
+#contact {
+    min-height: 100vh;
 }

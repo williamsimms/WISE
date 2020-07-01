@@ -1,0 +1,45 @@
+.card-container {
+    margin-top: -20rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:1fr ;
+   
+}
+.card{
+   background: rgba($colour-dark-gray,.8);
+   margin-left: 3rem;
+   color: $colour-light-gray;
+   display: flex;
+   flex-direction: column;
+   border-radius: .5rem;
+   align-items: center;
+   padding: 1 3rem;
+   font-family: 'Lato';
+   transition: all .4s ease-out;
+    &-icon {
+        height: 7rem;
+        filter: invert(84%) sepia(45%) saturate(2894%) hue-rotate(0deg) brightness(104%) contrast(106%);
+        margin: 3rem 0rem;
+    }
+    &-header {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+   font-family: 700;
+   color: $colour-white;
+   text-align: center;
+   padding-top: 4rem;
+   letter-spacing: 2px;
+
+    }
+    &-paragraph {
+   font-size: 1.5rem;
+   padding: 3rem 3rem;
+   text-align: center;
+   padding-bottom: 4rem;
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

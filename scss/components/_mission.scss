@@ -7,36 +7,36 @@
 .mission-photo-container {
     flex: 0 0 43%;
 
-    &::after {
-        display: block;
-        height: 1px;
-        content: "Fort Lauderdale Florida Ferrari Dealership";
-        width: 25rem;
-        margin: 0 auto;
-        margin-top: 1rem;
-        color: $colour-light-gray;
-        font-size: 1.5rem;
-        text-align: center;
-        transition: all .4s ease-in-out;
-        opacity: 0;
-    }
 }
 
-
-// animation: moveInFromRight forwards 3s ease-in-out;
 
 .mission-photo {
     width: 100%;
     border-radius: 2rem;
     position: relative;
-    outline-offset: 5px;
-    transition: all .4s ease-in-out;
+  
+   
+
+    &::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: block;
+        left: 0;
+        width: 10rem;
+        height: 10rem;
+        content: "Fort Lauderdale Florida Ferrari Dealership";
+        color: $colour-light-gray;
+        font-size: 1.5rem;
+        z-index: 50;
+    }
 
 }
 
 .mission-statement {
     flex: 0 0 50%;
-    // animation: moveInFromLeft forwards 3s ease-in-out;
+
 
     & h3:last-of-type {
         margin-top: 2rem;

@@ -172,14 +172,36 @@ body::-webkit-scrollbar-thumb {
 
 #services {
   min-height: 100vh;
-  background: linear-gradient(rgba(251, 197, 49, 0.7), rgba(251, 197, 49, 0.7)), url(../../img/heroConstruction.jpg);
+  background: linear-gradient(62deg, rgba(29, 67, 80, 0.94), rgba(164, 57, 49, 0.9)), url(../../img/heroConstruction.jpg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: cover;
   min-height: 100vh;
   background-attachment: fixed;
-  color: #fff;
-  position: relative; }
+  color: #fff; }
+
+.services-header {
+  font-weight: 300;
+  font-size: 5rem;
+  text-align: center;
+  padding-top: 5rem;
+  letter-spacing: 2px; }
+
+#portfolio {
+  min-height: 100vh;
+  background: #dcdde1; }
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+#clientele {
+  min-height: 100vh; }
+
+#contact {
+  min-height: 100vh; }
 
 .navigation-bar {
   display: flex;
@@ -274,25 +296,24 @@ body::-webkit-scrollbar-thumb {
 
 .mission-photo-container {
   flex: 0 0 43%; }
-  .mission-photo-container::after {
-    display: block;
-    height: 1px;
-    content: "Fort Lauderdale Florida Ferrari Dealership";
-    width: 25rem;
-    margin: 0 auto;
-    margin-top: 1rem;
-    color: #dcdde1;
-    font-size: 1.5rem;
-    text-align: center;
-    transition: all .4s ease-in-out;
-    opacity: 0; }
 
 .mission-photo {
   width: 100%;
   border-radius: 2rem;
-  position: relative;
-  outline-offset: 5px;
-  transition: all .4s ease-in-out; }
+  position: relative; }
+  .mission-photo::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: block;
+    left: 0;
+    width: 10rem;
+    height: 10rem;
+    content: "Fort Lauderdale Florida Ferrari Dealership";
+    color: #dcdde1;
+    font-size: 1.5rem;
+    z-index: 50; }
 
 .mission-statement {
   flex: 0 0 50%; }
@@ -318,3 +339,41 @@ body::-webkit-scrollbar-thumb {
     padding: 2rem 0;
     line-height: 1.8;
     hyphens: auto; }
+
+.card-container {
+  margin-top: -20rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr; }
+
+.card {
+  background: rgba(51, 51, 51, 0.8);
+  margin-left: 3rem;
+  color: #dcdde1;
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  align-items: center;
+  padding: 1 3rem;
+  font-family: 'Lato';
+  transition: all .4s ease-out; }
+  .card-icon {
+    height: 7rem;
+    filter: invert(84%) sepia(45%) saturate(2894%) hue-rotate(0deg) brightness(104%) contrast(106%);
+    margin: 3rem 0rem; }
+  .card-header {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    font-family: 700;
+    color: #fff;
+    text-align: center;
+    padding-top: 4rem;
+    letter-spacing: 2px; }
+  .card-paragraph {
+    font-size: 1.5rem;
+    padding: 3rem 3rem;
+    text-align: center;
+    padding-bottom: 4rem; }
+  .card:hover {
+    transform: scale(1.05); }
