@@ -121,6 +121,7 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 1rem;
   animation: fadein forwards 1s ease;
   margin-top: 15rem;
+  margin-bottom: 3rem;
   text-align: center; }
 
 .slogan {
@@ -130,7 +131,8 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   left: 50%;
   top: 110%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  margin-bottom: 6rem; }
 
 #mission {
   min-height: 100vh;
@@ -167,7 +169,7 @@ body::-webkit-scrollbar-thumb {
   background: transparent;
   border: none;
   position: absolute;
-  top: 290%;
+  top: 340%;
   cursor: pointer; }
 
 #services {
@@ -203,13 +205,22 @@ body::-webkit-scrollbar-thumb {
 #contact {
   min-height: 100vh; }
 
+#footer {
+  min-height: 40vh;
+  background-color: #333333; }
+
 .navigation-bar {
   display: flex;
   padding-top: 1.8rem;
-  justify-content: space-between; }
+  justify-content: space-between;
+  z-index: 5000; }
   .navigation-bar h2 {
     font-size: 1.5rem;
-    color: rgba(255, 255, 255, 0.8); }
+    color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 3%;
+    left: 16%;
+    z-index: 5000; }
   .navigation-bar .earth {
     height: 2rem;
     margin-left: 1rem; }
@@ -219,7 +230,11 @@ body::-webkit-scrollbar-thumb {
     justify-content: center; }
 
 .navigation-list {
-  display: flex; }
+  display: flex;
+  position: fixed;
+  right: 16%;
+  top: 3%;
+  z-index: 5000; }
   .navigation-list li a {
     font-size: 1.5rem;
     color: rgba(255, 255, 255, 0.8);
@@ -231,7 +246,7 @@ body::-webkit-scrollbar-thumb {
 .btn {
   position: absolute;
   left: 50%;
-  top: 160%;
+  top: 220%;
   transform: translate(-50%, -50%);
   font-size: 1.6rem;
   background-color: #fbc531;
@@ -241,7 +256,8 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   text-transform: uppercase;
   transition: all .4s ease-in-out;
-  box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
+  display: block; }
   .btn:hover {
     background-color: #fff; }
   .btn:active {

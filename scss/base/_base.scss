@@ -75,6 +75,7 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 1rem;
     animation: fadein forwards 1s ease;
     margin-top: 15rem;
+    margin-bottom: 3rem;
     text-align: center;
 }
 
@@ -86,6 +87,7 @@ body::-webkit-scrollbar-thumb {
     left: 50%;
     top: 110%;
     transform: translate(-50%, -50%);
+    margin-bottom: 6rem;
 }
 
 #mission {
@@ -129,7 +131,7 @@ body::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
     position: absolute;
-    top: 290%;
+    top: 340%;
     cursor: pointer;
 }
 
@@ -171,4 +173,8 @@ body::-webkit-scrollbar-thumb {
 
 #contact {
     min-height: 100vh;
+}
+#footer {
+    min-height: 40vh;
+    background-color: $colour-dark-gray;
 }

@@ -2,25 +2,36 @@
     display: flex;
     padding-top: 1.8rem;
     justify-content: space-between;
+    z-index: 5000;
 
     & h2 {
         font-size: 1.5rem;
         color: rgba($colour-white, .8);
+        position: fixed;
+        top: 3%;
+        left: 16%;
+        z-index: 5000;
     }
+
     & .earth {
         height: 2rem;
         margin-left: 1rem;
     }
+
     & div {
         display: flex;
-        align-items:center ;
+        align-items: center;
         justify-content: center;
     }
 }
 
 .navigation-list {
     display: flex;
-
+    position: fixed;
+    right: 16%;
+    top: 3%;
+    z-index: 5000;
+  
     & li a {
         font-size: 1.5rem;
         color: rgba($colour-white, .8);
@@ -32,3 +43,4 @@
         }
     }
 }
+
