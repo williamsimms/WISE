@@ -130,6 +130,9 @@ body::-webkit-scrollbar-thumb {
   padding-top: 15rem;
   margin-bottom: 3rem;
   text-align: center; }
+  @media (max-width: 75em) {
+    .hero-text {
+      padding-top: 25rem; } }
 
 .slogan {
   font-size: 2rem;
@@ -151,10 +154,13 @@ body::-webkit-scrollbar-thumb {
   padding-top: 5rem;
   font-size: 4rem;
   color: #dcdde1;
-  margin-bottom: 16rem;
+  margin-bottom: 10rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 300; }
+  @media (max-width: 75em) {
+    .mission-text {
+      margin-bottom: 16rem; } }
 
 .scroll-container {
   background: transparent;
@@ -195,7 +201,8 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   padding-top: 5rem;
   letter-spacing: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 15rem; }
 
 #portfolio {
   min-height: 50vh;
@@ -222,6 +229,9 @@ body::-webkit-scrollbar-thumb {
 #contact {
   min-height: 75vh;
   background: linear-gradient(135deg, #1d4350, #fbc531); }
+  @media (max-width: 75em) {
+    #contact {
+      min-height: 50vh; } }
 
 #footer {
   min-height: 30vh;
@@ -314,6 +324,14 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
   z-index: 10;
   opacity: 0; }
+  @media (max-width: 75em) {
+    .circular-text {
+      top: 82%;
+      left: 91%; } }
+  @media (max-width: 56.25em) {
+    .circular-text {
+      top: 82%;
+      left: 89%; } }
 
 .arrow {
   position: fixed;
@@ -322,6 +340,14 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
   z-index: 10;
   opacity: 0; }
+  @media (max-width: 75em) {
+    .arrow {
+      top: 89%;
+      left: 91%; } }
+  @media (max-width: 56.25em) {
+    .arrow {
+      top: 88.8%;
+      left: 89%; } }
 
 .arrow-up {
   filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(265deg) brightness(108%) contrast(101%);
@@ -352,6 +378,9 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 75em) {
+    .mission-container {
+      flex-direction: column; } }
 
 .mission-photo-container {
   flex: 0 0 43%; }
@@ -360,6 +389,14 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   border-radius: 2rem;
   position: relative; }
+  @media (max-width: 75em) {
+    .mission-photo {
+      width: 50%;
+      display: block;
+      margin: 6rem auto; } }
+  @media (max-width: 56.25em) {
+    .mission-photo {
+      width: 60%; } }
   .mission-photo::after {
     position: absolute;
     top: 0;
@@ -397,13 +434,22 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.6rem;
     padding: 2rem 0;
     line-height: 1.8;
-    hyphens: auto; }
+    hyphens: auto;
+    width: 60%;
+    text-align: center;
+    margin: auto; }
 
 .card-container {
   margin-top: -20rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr; }
+  @media (max-width: 75em) {
+    .card-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-row-gap: 3rem; } }
 
 .card {
   background: rgba(51, 51, 51, 0.8);
@@ -413,7 +459,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   border-radius: .5rem;
   align-items: center;
-  padding: 1 3rem;
+  padding: 1rem 3rem;
   font-family: 'Lato';
   transition: all .4s ease-out; }
   .card-icon {
@@ -436,12 +482,21 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 4rem; }
   .card:hover {
     transform: scale(1.05); }
+  @media (max-width: 75em) {
+    .card {
+      padding: 0rem 0rem;
+      margin: 0;
+      width: 50rem; } }
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 400px 400px;
   grid-gap: 0; }
+  @media (max-width: 75em) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 400px); } }
 
 .portfolio-figure {
   width: 100%;
@@ -610,7 +665,14 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   max-width: 114rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
+  @media (max-width: 75em) {
+    .footer-container {
+      max-width: 100rem; } }
+  @media (max-width: 56.25em) {
+    .footer-container {
+      max-width: 75rem; } }
 
 .footer-container ul:first-of-type li a {
   font-size: 1.4rem; }

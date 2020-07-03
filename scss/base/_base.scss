@@ -77,6 +77,10 @@ body::-webkit-scrollbar-thumb {
     padding-top: 15rem;
     margin-bottom: 3rem;
     text-align: center;
+
+    @include respond(tab-land) {
+        padding-top: 25rem;
+    }
 }
 
 .slogan {
@@ -101,11 +105,16 @@ body::-webkit-scrollbar-thumb {
     padding-top: 5rem;
     font-size: 4rem;
     color: $colour-light-gray;
-    margin-bottom: 16rem;
+    margin-bottom: 10rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 300;
+
+    @include respond(tab-land) {
+        margin-bottom: 16rem;
+    }
 }
+
 
 .scroll-container {
     background: transparent;
@@ -154,6 +163,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
+    margin-bottom: 15rem;
 }
 
 #portfolio {
@@ -186,6 +196,10 @@ body::-webkit-scrollbar-thumb {
 #contact {
     min-height: 75vh;
     background: linear-gradient(135deg, rgba($colour-red-ocean-1, 1), rgba($colour-yellow, 1));
+
+    @include respond(tab-land) {
+        min-height: 50vh;
+    }
 }
 
 #footer {

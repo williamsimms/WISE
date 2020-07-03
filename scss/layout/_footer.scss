@@ -1,4 +1,3 @@
-
 .nav-bar-icons {
     color: #fff;
     font-size: 2rem;
@@ -59,37 +58,54 @@
     opacity: 1;
     color: #00b894;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     justify-content: space-between;
     max-width: 114rem;
     margin: 0 auto;
+    text-align: center;
+
+    @include respond(tab-land) {
+        max-width: 100rem;
+    }
+
+    @include respond(tab-port) {
+        max-width: 75rem;
+    }
 }
+
 .footer-container ul:first-of-type li a {
     font-size: 1.4rem;
 }
+
 .footer-container ul {
     list-style: none;
     display: flex;
-    margin-top:3rem ;
+    margin-top: 3rem;
     font-size: 2rem;
 }
+
 .footer-container ul li {
-   margin-left:1rem ;
-   color: $colour-white;
-   font-size: 1rem;
+    margin-left: 1rem;
+    color: $colour-white;
+    font-size: 1rem;
 }
+
 .footer-container ul li a {
-    color:$colour-white;
+    color: $colour-white;
     opacity: 0.5;
     transition: all 0.2s;
- }
- .footer-container ul li a:hover {
+}
+
+.footer-container ul li a:hover {
     opacity: 1;
- }
- .footer-container p {
-     font-size: 1rem;
- }
+}
+
+.footer-container p {
+    font-size: 1rem;
+}
+
 #copyright {
     font-size: 1rem;
     text-align: center;
@@ -98,6 +114,7 @@
     color: $colour-white;
     font-size: 1.6rem;
 }
+
 ion-icon {
-    font-size:2rem ;
+    font-size: 2rem;
 }

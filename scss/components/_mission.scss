@@ -2,6 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(tab-land) {
+        flex-direction: column;
+    }
 }
 
 .mission-photo-container {
@@ -14,8 +18,16 @@
     width: 100%;
     border-radius: 2rem;
     position: relative;
-  
-   
+
+    @include respond(tab-land) {
+        width: 50%;
+        display: block;
+        margin: 6rem auto;
+    }
+
+    @include respond(tab-port) {
+        width: 60%;
+    }
 
     &::after {
         position: absolute;
@@ -66,5 +78,8 @@
         padding: 2rem 0;
         line-height: 1.8;
         hyphens: auto;
+        width: 60%;
+        text-align: center;
+        margin: auto;
     }
 }
