@@ -1,7 +1,71 @@
 .touch {
     text-align: center;
-    padding-top: 5rem;
-    font-size: 4rem;
+    padding-top: 7rem;
+    font-size: 5rem;
     color: $colour-light-gray;
-    font-weight: 300;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+.contact-secondary {
+    text-align: center;
+    font-size: 1.6rem;
+    color: $colour-white;
+}
+
+.field {
+    text-align: center;
+}
+
+.name,
+.email,
+.message {
+    width: 50%;
+    margin-bottom: 4rem;
+    padding: 1.5rem 3rem;
+    border: none;
+    background: none;
+    border-bottom: 2px $colour-white solid;
+
+    &:invalid {
+        border-bottom: 2px $red solid;
+    }
+
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Lato';
+    color: $colour-white;
+}
+
+.form-btn {
+    width: 20%;
+    padding: 1rem 2rem;
+    border: none;
+    font-size: 1.6rem;
+    background-color: $colour-white;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    box-shadow: 1rem 1rem 30rem rgba($colour-black, .5);
+
+    &:hover {
+        background-color: $colour-dark-gray;
+        color: $colour-white;
+    }
+
+    &:active {
+        box-shadow: .3rem .3rem 7rem rgba($colour-black, .5);
+    }
+
+    &:focus {
+        background-color: $colour-dark-gray;
+        color: $colour-white;
+    }
+}
+
+.form {
+    padding-top: 4rem;
 }

@@ -1,4 +1,4 @@
-const date = new Date().getFullYear()
+const date = new Date()
 const rotate = document.getElementById('rotated')
 const circularText = document.querySelector('.circular-text')
 const homeLink = document.querySelector('.arrow')
@@ -16,6 +16,27 @@ const sliders = document.querySelectorAll('.slide-in')
 const portfolio = document.getElementById('portfolio')
 const arrow = document.querySelector('.arrow-up')
 const clientele = document.getElementById('clientele')
+const copyright = document.getElementById('copyright')
+const currentDate = {
+    '0': 'January',
+    '1': 'February',
+    '2': 'March',
+    '3': 'April',
+    '4': 'May',
+    '5': 'June',
+    '6': 'July',
+    '7': 'August',
+    '8': 'September',
+    '9': 'October',
+    '10': 'November',
+    '11': 'December'
+}
+
+function setDate() {
+ copyright.innerText = `${currentDate[date.getMonth()]} ${date.getDate()} , ${date.getFullYear()}`
+ console.log(date.getDate())
+}
+setDate()
 
 $(window).scroll(function () {
     let offset = $(window).scrollTop()
@@ -161,9 +182,9 @@ const portfolioObserver = new IntersectionObserver(function (entries, portfolioO
     })
 }, portfolioOptions)
 
- portfolioObserver.observe(portfolio)
+portfolioObserver.observe(portfolio)
 
- const clienteleOptions = {
+const clienteleOptions = {
     root: null,
     rootMargin: '0px 0px 0px 0px'
 }
@@ -179,6 +200,17 @@ const clienteleObserver = new IntersectionObserver(function (entries, clienteleO
     })
 }, clienteleOptions)
 
- clienteleObserver.observe(clientele)
+clienteleObserver.observe(clientele)
 
 
+$('.footer-container ul:first-of-type li a').on('click', function (e) {
+    if (this.hash !== '') {
+        e.preventDefault()
+
+        const hash = this.hash
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1800)
+    }
+})

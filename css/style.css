@@ -190,11 +190,12 @@ body::-webkit-scrollbar-thumb {
   color: #fff; }
 
 .services-header {
-  font-weight: 300;
+  font-weight: 100;
   font-size: 5rem;
   text-align: center;
   padding-top: 5rem;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 #portfolio {
   min-height: 50vh;
@@ -219,11 +220,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: 300; }
 
 #contact {
-  min-height: 100vh;
-  background: #333333; }
+  min-height: 75vh;
+  background: linear-gradient(135deg, #1d4350, #fbc531); }
 
 #footer {
-  min-height: 40vh;
+  min-height: 30vh;
   background-color: #333333; }
 
 .local-start {
@@ -500,7 +501,149 @@ body::-webkit-scrollbar-thumb {
 
 .touch {
   text-align: center;
-  padding-top: 5rem;
-  font-size: 4rem;
+  padding-top: 7rem;
+  font-size: 5rem;
   color: #dcdde1;
-  font-weight: 300; }
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 5rem; }
+
+.contact-secondary {
+  text-align: center;
+  font-size: 1.6rem;
+  color: #fff; }
+
+.field {
+  text-align: center; }
+
+.name,
+.email,
+.message {
+  width: 50%;
+  margin-bottom: 4rem;
+  padding: 1.5rem 3rem;
+  border: none;
+  background: none;
+  border-bottom: 2px #fff solid; }
+  .name:invalid,
+  .email:invalid,
+  .message:invalid {
+    border-bottom: 2px #c0392b solid; }
+
+::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: 'Lato';
+  color: #fff; }
+
+.form-btn {
+  width: 20%;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1.6rem;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  box-shadow: 1rem 1rem 30rem rgba(0, 0, 0, 0.5); }
+  .form-btn:hover {
+    background-color: #333333;
+    color: #fff; }
+  .form-btn:active {
+    box-shadow: 0.3rem 0.3rem 7rem rgba(0, 0, 0, 0.5); }
+  .form-btn:focus {
+    background-color: #333333;
+    color: #fff; }
+
+.form {
+  padding-top: 4rem; }
+
+.nav-bar-icons {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: .5rem;
+  opacity: .6;
+  transition: all .3s ease; }
+
+.nav-bar-icons:hover {
+  opacity: 1; }
+
+.twitter-icon:hover {
+  opacity: 1;
+  color: #00acee; }
+
+.facebook-icon:hover {
+  opacity: 1;
+  color: #3b5998; }
+
+.instagram-icon:hover {
+  opacity: 1;
+  color: #e1306c; }
+
+.github-icon:hover {
+  opacity: 1; }
+
+.linkedin-icon:hover {
+  opacity: 1;
+  color: #0e76a8; }
+
+.mail-icon:hover {
+  opacity: 1;
+  color: #B23121; }
+
+.nav-list {
+  display: flex; }
+
+.nav-list-item {
+  margin-right: 5rem;
+  font-size: 1.6rem; }
+
+.nav-link {
+  color: #dfe6e9;
+  transition: all .3s ease;
+  opacity: .6; }
+
+.nav-link:hover {
+  opacity: 1;
+  color: #00b894; }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 114rem;
+  margin: 0 auto; }
+
+.footer-container ul:first-of-type li a {
+  font-size: 1.4rem; }
+
+.footer-container ul {
+  list-style: none;
+  display: flex;
+  margin-top: 3rem;
+  font-size: 2rem; }
+
+.footer-container ul li {
+  margin-left: 1rem;
+  color: #fff;
+  font-size: 1rem; }
+
+.footer-container ul li a {
+  color: #fff;
+  opacity: 0.5;
+  transition: all 0.2s; }
+
+.footer-container ul li a:hover {
+  opacity: 1; }
+
+.footer-container p {
+  font-size: 1rem; }
+
+#copyright {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+  opacity: 0.5;
+  color: #fff;
+  font-size: 1.6rem; }
+
+ion-icon {
+  font-size: 2rem; }
