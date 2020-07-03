@@ -74,7 +74,7 @@ body::-webkit-scrollbar-thumb {
     text-transform: uppercase;
     letter-spacing: 1rem;
     animation: fadein forwards 1s ease;
-    margin-top: 15rem;
+    padding-top: 15rem;
     margin-bottom: 3rem;
     text-align: center;
 }
@@ -131,7 +131,7 @@ body::-webkit-scrollbar-thumb {
     background: transparent;
     border: none;
     position: absolute;
-    top: 340%;
+    top: 260%;
     cursor: pointer;
 }
 
@@ -156,7 +156,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #portfolio {
-    min-height: 100vh;
+    min-height: 50vh;
     background: $colour-light-gray;
 }
 
@@ -169,12 +169,38 @@ body::-webkit-scrollbar-thumb {
 
 #clientele {
     min-height: 100vh;
+    background: $colour-light-gray;
+}
+
+.clientele-hero {
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 5rem;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 300;
+
 }
 
 #contact {
     min-height: 100vh;
+    background: $colour-dark-gray;
 }
+
 #footer {
     min-height: 40vh;
     background-color: $colour-dark-gray;
+}
+
+.local-start
+ {
+    width: 70%;
+    margin: auto;
+    border-top: 1px solid $colour-dark-gray;
+    border-left: none;
+
+}
+.local-start:last-of-type {
+    padding-bottom: 2rem;
+    opacity: 0;
 }

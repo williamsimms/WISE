@@ -1,0 +1,47 @@
+.client {
+    justify-content:space-between ;
+    display: block;
+    display: flex;
+    margin: 5rem auto;
+    max-width: 400px;
+    position: relative;
+    align-items: center;
+
+    &:first-of-type {
+        margin-top: 5rem;
+    }
+
+    & p {
+        font-size: 1.8rem;
+    }
+
+    &::after {
+        left: 50%;
+       top: 180%;
+        position: absolute;
+        display: block;
+        height: 2px;
+        background-color: $colour-black;
+        content: "";
+        width: 40rem;
+        transform: translateX(-50%);
+    }
+}
+.international {
+    -webkit-text-stroke:1.3px $colour-black ;
+    color: transparent;
+    font-size: 2.5rem;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 15%;
+    top: 20%;
+}
+.local {
+    -webkit-text-stroke:1.3px $colour-black ;
+    color: transparent;
+    font-size: 2.5rem;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 15%;
+    top: 60%;
+}

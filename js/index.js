@@ -8,8 +8,14 @@ const statementContainer = document.querySelector('.mission-statement')
 const scrollDownButton = document.querySelector('.scroll-down')
 const header = document.querySelector('.navigation-bar')
 const home = document.getElementById('home')
+const wiseHeader = document.querySelector('.wise-construction')
+const navigationListLinks = Array.from(document.querySelectorAll('.navigation-list li a'))
 const circle = new CircleType(rotate).radius(80)
-
+const faders = document.querySelectorAll('.fade-in')
+const sliders = document.querySelectorAll('.slide-in')
+const portfolio = document.getElementById('portfolio')
+const arrow = document.querySelector('.arrow-up')
+const clientele = document.getElementById('clientele')
 
 $(window).scroll(function () {
     let offset = $(window).scrollTop()
@@ -66,25 +72,113 @@ $('.navigation-bar a').on('click', function (e) {
     }
 })
 
-// const sectionOneOptions = {
-    // root: null,
-    // threshhold: 0,
-    // rootMargin: '1px'
-// }
-// const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
-//     entries.forEach((entry) => {
-//         if (!entry.isIntersecting) {
-//            header.classList.add('scrolled-nav')
-//         } else {
-//             header.classList.remove('scrolled-nav')
-//         }
+const sectionOneOptions = {
+    root: null,
+    rootMargin: '-200px 0px 0px 0px'
+}
+const sectionOneObserver = new IntersectionObserver(function (entries, sectionOneObserver) {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            header.classList.add('scrolled-navigation')
+            wiseHeader.classList.add('scrolled-navigation-text')
+            navigationListLinks.forEach((a) => {
+                a.classList.add('scrolled-navigation-text')
+            })
+        } else {
+            header.classList.remove('scrolled-navigation')
+            wiseHeader.classList.remove('scrolled-navigation-text')
+            navigationListLinks.forEach((a) => {
+                a.classList.remove('scrolled-navigation-text')
+            })
+        }
 
 
-//     })
+    })
 
-// }, sectionOneOptions)
+}, sectionOneOptions)
+sectionOneObserver.observe(home)
 
-// sectionOneObserver.observe(home)
+const fadeOptions = {
+    root: null,
+    threshold: 1,
+    rootMargin: '0px 0px -100px 0px'
+}
+const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            return
+        } else {
+            entry.target.classList.add('appear')
+            appearOnScroll.unobserve(entry.target)
+        }
+    })
+
+}, fadeOptions)
 
 
-// IMAGES FADE OR SLIDE IN WITH INTERSECTION OBSERVER
+faders.forEach((fader) => {
+    appearOnScroll.observe(fader)
+})
+
+
+const slideOptions = {
+    root: null,
+    threshold: 0,
+    rootMargin: '0px 0px -100px 0px'
+}
+const appearOnScrollSlide = new IntersectionObserver(function (entries, appearOnScrollSlide) {
+
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            return
+        } else {
+            entry.target.classList.add('translate')
+            appearOnScrollSlide.unobserve(entry.target)
+        }
+    })
+
+}, slideOptions)
+
+
+sliders.forEach((slider) => {
+    appearOnScrollSlide.observe(slider)
+})
+
+const portfolioOptions = {
+    root: null,
+    rootMargin: '0px 0px 0px 0px'
+}
+const portfolioObserver = new IntersectionObserver(function (entries, portfolioObserver) {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            circularText.classList.remove('dark-background-scroll')
+            arrow.classList.remove('dark-arrow')
+        } else {
+            circularText.classList.add('dark-background-scroll')
+            arrow.classList.add('dark-arrow')
+        }
+    })
+}, portfolioOptions)
+
+ portfolioObserver.observe(portfolio)
+
+ const clienteleOptions = {
+    root: null,
+    rootMargin: '0px 0px 0px 0px'
+}
+const clienteleObserver = new IntersectionObserver(function (entries, clienteleObserver) {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            circularText.classList.remove('dark-background-scroll')
+            arrow.classList.remove('dark-arrow')
+        } else {
+            circularText.classList.add('dark-background-scroll')
+            arrow.classList.add('dark-arrow')
+        }
+    })
+}, clienteleOptions)
+
+ clienteleObserver.observe(clientele)
+
+

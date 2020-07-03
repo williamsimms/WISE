@@ -49,3 +49,12 @@
         transform: translateY(0);
     }
 }
+
+.dark-background-scroll {
+    -webkit-text-stroke: 1.2px rgba(0, 0, 0, .6) !important;
+}
+
+.dark-arrow {
+    filter: invert(0%) sepia(26%) saturate(13%) hue-rotate(318deg) brightness(99%) contrast(100%) !important;
+
+}

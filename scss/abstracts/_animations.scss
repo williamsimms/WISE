@@ -9,23 +9,35 @@
         transform: translateY(0);
     }
 }
-@keyframes moveInFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-200%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
 }
-@keyframes moveInFromRight {
-    from {
-        opacity: 0;
-        transform: translateX(200%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+
+.fade-in.appear {
+    opacity: 1;
 }
+
+.from-left {
+    transform: translateX(-50%);
+}
+
+.from-right {
+    transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    opacity: 0;
+}
+
+.from-left.translate,
+.from-right.translate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+// GIVE ALL THE CLASS OF SLIDE IN AND THE SPECIFIED DIRECTION TO SLIDE IN FROM
