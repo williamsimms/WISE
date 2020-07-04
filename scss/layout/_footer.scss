@@ -70,11 +70,22 @@
         max-width: 100rem;
     }
 
+    @include respond(ipad-pro) {
+        max-width: 85rem;
+    }
+
     @include respond(tab-port) {
         max-width: 75rem;
     }
+
     @include respond(tablet) {
-      max-width: 70rem;
+        max-width: 70rem;
+    }
+
+    @include respond(phone) {
+        max-width: 60rem;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

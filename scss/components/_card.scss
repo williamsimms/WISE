@@ -93,6 +93,10 @@
         width: 50rem;
     }
 
+    @include respond(phone) {
+      width: 30rem;
+    }
+
 }
 
 @include respond(laptop-medium) {

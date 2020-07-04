@@ -16,10 +16,14 @@
 
     @include respond(laptop-medium) {
         top: 150%;
-     }
+    }
 
     @include respond(tablet) {
-       top: 130%;
+        top: 130%;
+    }
+
+    @include respond(phone) {
+        top: 150%;
     }
 
     &:hover {

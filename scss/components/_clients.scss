@@ -1,9 +1,9 @@
 .client {
-    justify-content:space-between ;
+    justify-content: space-between;
     display: block;
     display: flex;
     margin: 5rem auto;
-    max-width: 400px;
+    max-width: 40rem;
     position: relative;
     align-items: center;
 
@@ -17,7 +17,7 @@
 
     &::after {
         left: 50%;
-       top: 180%;
+        top: 180%;
         position: absolute;
         display: block;
         height: 2px;
@@ -25,10 +25,19 @@
         content: "";
         width: 40rem;
         transform: translateX(-50%);
+
+        @include respond(phone) {
+            width: 35rem;
+        }
+    }
+
+    @include respond(phone) {
+        max-width: 35rem;
     }
 }
+
 .international {
-    -webkit-text-stroke:1.3px $colour-black ;
+    -webkit-text-stroke: 1.3px $colour-black;
     color: transparent;
     font-size: 2.5rem;
     transform: rotate(90deg);
@@ -39,13 +48,32 @@
     @include respond(tablet) {
         right: 10%;
     }
+
+    @include respond(phone) {
+        position: static;
+        left: 0;
+        top: 0;
+        transform: rotate(0deg);
+        text-align: center;
+        padding: 2rem 0rem 0rem 0rem;
+    }
 }
+
 .local {
-    -webkit-text-stroke:1.3px $colour-black ;
+    -webkit-text-stroke: 1.3px $colour-black;
     color: transparent;
     font-size: 2.5rem;
     transform: rotate(90deg);
     position: absolute;
     right: 18%;
     top: 60%;
+
+    @include respond(phone) {
+        position: static;
+        left: 0;
+        top: 0;
+        transform: rotate(0deg);
+        text-align: center;
+        padding: 2rem 0rem 0rem 0rem;
+    }
 }

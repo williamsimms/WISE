@@ -20,19 +20,29 @@
         left: 91%;
     }
 
-    @include respond(tab-port) {
-        top: 82%;
+    @include respond(tablet-landscape) {
+        top: 76%;
+    }
+
+    @include respond(ipad-pro) {
+        top: 85%;
         left: 89%;
     }
 
-    @include respond(tablet-landscape) {
-        top: 76%;
+    @include respond(tab-port) {
+        top: 82%;
+        left: 89%;
     }
 
     @include respond(tablet) {
         top: 82%;
         left: 87%;
     }
+
+    @include respond(phone) {
+        display: none;
+    }
+
 }
 
 .arrow {
@@ -57,18 +67,28 @@
         left: 91%;
     }
 
-    @include respond(tab-port) {
-        top: 88.8%;
-        left: 89%;
-    }
 
     @include respond(tablet-landscape) {
         top: 88%;
     }
 
+    @include respond(ipad-pro) {
+        top: 92%;
+        left: 89%;
+    }
+
+    @include respond(tab-port) {
+        top: 88.8%;
+        left: 89%;
+    }
+
     @include respond(tablet) {
         top: 91%;
         left: 87.1%;
+    }
+
+    @include respond(phone) {
+        display: none;
     }
 }
 

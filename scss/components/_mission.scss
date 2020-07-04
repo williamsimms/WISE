@@ -4,7 +4,7 @@
     align-items: center;
 
     @include respond(laptop-medium) {
-       padding-bottom: 3rem;
+        padding-bottom: 3rem;
     }
 
     @include respond(laptop) {
@@ -29,12 +29,12 @@
 
     @include respond(laptop-medium) {
         width: 90%;
-     
-     }
+
+    }
 
     @include respond(laptop) {
-       width: 60%;
-       display: block;
+        width: 60%;
+        display: block;
         margin: 6rem auto;
     }
 
@@ -46,6 +46,10 @@
 
     @include respond(tab-port) {
         width: 60%;
+    }
+
+    @include respond(phone) {
+        width: 65%;
     }
 
     &::after {
@@ -107,6 +111,10 @@
 
         @include respond(tab-land) {
             width: 60%;
+        }
+
+        @include respond(phone) {
+            width: 70%;
         }
 
     }

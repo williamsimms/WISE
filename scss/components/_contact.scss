@@ -32,6 +32,9 @@
         border-bottom: 2px $red solid;
     }
 
+    @include respond(phone) {
+       width: 60%;
+    }
 }
 
 ::-webkit-input-placeholder {
@@ -39,7 +42,8 @@
     font-size: 1.6rem;
     font-family: 'Lato';
     color: $colour-white;
-    line-height: 1.5;
+    line-height: 3;
+    padding: 2rem 3rem;
 
     @include respond(tablet) {
         font-size: 1.3rem;
@@ -69,8 +73,17 @@
         background-color: $colour-dark-gray;
         color: $colour-white;
     }
+
+    @include respond(phone) {
+        width: 50%;
+    }
 }
 
 .form {
     padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    @include respond(tablet) {
+        padding-bottom: 5rem;
+    }
 }
