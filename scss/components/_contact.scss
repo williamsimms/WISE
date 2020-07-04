@@ -39,9 +39,10 @@
     font-size: 1.6rem;
     font-family: 'Lato';
     color: $colour-white;
+    line-height: 1.5;
 
     @include respond(tablet) {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
 }
 

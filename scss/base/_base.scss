@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb {
     background: $colour-dark-gray;
 
     @include respond(tablet) {
-        margin-top: -3rem;
+        margin-top: -2rem;
     }
 }
 
@@ -238,7 +238,7 @@ body::-webkit-scrollbar-thumb {
     background: linear-gradient(135deg, rgba($colour-red-ocean-1, 1), rgba($colour-yellow, 1));
 
     @include respond(laptop-medium) {
-        min-height: 85vh;
+        min-height: 90vh;
     }
 
     @include respond(tab-land) {

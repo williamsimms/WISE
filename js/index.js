@@ -12,6 +12,7 @@ const wiseHeader = document.querySelector('.wise-construction')
 const navigationListLinks = Array.from(document.querySelectorAll('.navigation-list li a'))
 const circle = new CircleType(rotate).radius(80)
 const faders = document.querySelectorAll('.fade-in')
+const laptopFaders = document.querySelectorAll('.fade-in-laptop')
 const sliders = document.querySelectorAll('.slide-in')
 const portfolio = document.getElementById('portfolio')
 const arrow = document.querySelector('.arrow-up')
@@ -34,7 +35,6 @@ const currentDate = {
 
 function setDate() {
  copyright.innerText = `${currentDate[date.getMonth()]} ${date.getDate()} , ${date.getFullYear()}`
- console.log(date.getDate())
 }
 setDate()
 
@@ -213,4 +213,41 @@ $('.footer-container ul:first-of-type li a').on('click', function (e) {
             scrollTop: $(hash).offset().top
         }, 1800)
     }
+})
+
+$('.btn').on('click', function (e) {
+    if (this.hash !== '') {
+        e.preventDefault()
+
+        const hash = this.hash
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1800)
+    }
+})
+
+// Laptop Fade
+
+const laptopFadeOptions = {
+    root: null,
+    threshold: 1,
+    rootMargin: '0px 0px -50px 0px'
+}
+const appearOnScrollLaptop = new IntersectionObserver(function (entries, appearOnScrollLaptop) {
+
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            return
+        } else {
+            entry.target.classList.add('appear')
+            appearOnScrollLaptop.unobserve(entry.target)
+        }
+    })
+
+}, laptopFadeOptions)
+
+
+laptopFaders.forEach((fader) => {
+    appearOnScrollLaptop.observe(fader)
 })

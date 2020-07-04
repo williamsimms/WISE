@@ -43,6 +43,13 @@
     opacity: 1;
     transform: translateY(0); } }
 
+.fade-in-laptop {
+  opacity: 0;
+  transition: opacity 250ms ease-in; }
+
+.fade-in-laptop.appear {
+  opacity: 1; }
+
 .fade-in {
   opacity: 0;
   transition: opacity 250ms ease-in; }
@@ -155,7 +162,7 @@ body::-webkit-scrollbar-thumb {
   background: #333333; }
   @media (max-width: 52.125em) {
     #mission {
-      margin-top: -3rem; } }
+      margin-top: -2rem; } }
 
 .mission-text {
   position: relative;
@@ -259,7 +266,7 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(135deg, #1d4350, #fbc531); }
   @media (max-width: 85.375em) {
     #contact {
-      min-height: 85vh; } }
+      min-height: 90vh; } }
   @media (max-width: 75em) {
     #contact {
       min-height: 50vh; } }
@@ -366,7 +373,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 0; }
   @media (max-width: 85.375em) {
     .circular-text {
-      top: 73%;
+      top: 72.7%;
       left: 91%; } }
   @media (max-width: 75em) {
     .circular-text {
@@ -672,10 +679,11 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   font-size: 1.6rem;
   font-family: 'Lato';
-  color: #fff; }
+  color: #fff;
+  line-height: 1.5; }
   @media (max-width: 52.125em) {
     ::-webkit-input-placeholder {
-      font-size: 1.4rem; } }
+      font-size: 1.3rem; } }
 
 .form-btn {
   width: 20%;
