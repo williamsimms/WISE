@@ -10,6 +10,7 @@ const header = document.querySelector('.navigation-bar')
 const home = document.getElementById('home')
 const wiseHeader = document.querySelector('.wise-construction')
 const navigationListLinks = Array.from(document.querySelectorAll('.navigation-list li a'))
+const mobileNavMenu = document.getElementById('menu')
 const circle = new CircleType(rotate).radius(80)
 const faders = document.querySelectorAll('.fade-in')
 const laptopFaders = document.querySelectorAll('.fade-in-laptop')
@@ -231,8 +232,8 @@ $('.btn').on('click', function (e) {
 
 const laptopFadeOptions = {
     root: null,
-    threshold: 0.6,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.4,
+    rootMargin: '0px 0px -30px 0px'
 }
 const appearOnScrollLaptop = new IntersectionObserver(function (entries, appearOnScrollLaptop) {
 

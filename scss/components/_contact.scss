@@ -48,6 +48,11 @@
     @include respond(tablet) {
         font-size: 1.3rem;
     }
+
+    @include respond(phone) {
+      padding: 2rem 3rem;
+      font-size: 1rem;
+    }
 }
 
 .form-btn {

@@ -834,6 +834,10 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 52.125em) {
     ::-webkit-input-placeholder {
       font-size: 1.3rem; } }
+  @media (max-width: 37.5em) {
+    ::-webkit-input-placeholder {
+      padding: 2rem 3rem;
+      font-size: 1rem; } }
 
 .form-btn {
   width: 20%;
