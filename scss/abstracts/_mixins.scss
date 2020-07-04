@@ -24,8 +24,14 @@
         }
     }
 
-    @if $breakpoint == laptop {
+    @if $breakpoint == laptop-small {
         @media (max-width:80em) {
+            @content
+        }
+    }
+
+    @if $breakpoint == laptop-medium {
+        @media (max-width:85.375em) {
             @content
         }
     }

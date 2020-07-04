@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb {
     background: $colour-dark-gray;
 
     @include respond(tablet) {
-        margin-top: -10rem;
+        margin-top: -5rem;
     }
 }
 
@@ -162,6 +162,10 @@ body::-webkit-scrollbar-thumb {
     top: 260%;
     cursor: pointer;
 
+    @include respond(laptop-medium) {
+        top: 180%;
+    }
+
     @include respond(tablet) {
         top: 170%;
     }
@@ -187,6 +191,10 @@ body::-webkit-scrollbar-thumb {
     letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 5rem;
+
+    @include respond(laptop-medium) {
+        margin-bottom: 17rem;
+    }
 
     @include respond(tab-land) {
         margin-bottom: 15rem;
@@ -229,11 +237,16 @@ body::-webkit-scrollbar-thumb {
     min-height: 75vh;
     background: linear-gradient(135deg, rgba($colour-red-ocean-1, 1), rgba($colour-yellow, 1));
 
+    @include respond(laptop-medium) {
+        min-height: 85vh;
+    }
+
     @include respond(tab-land) {
         min-height: 50vh;
     }
+
     @include respond(tablet) {
-       min-height: 60vh;
+        min-height: 60vh;
     }
 }
 

@@ -10,6 +10,11 @@
     z-index: 10;
     opacity: 0;
 
+    @include respond(laptop-medium) {
+        top: 74%;
+        left: 91%;
+    }
+
     @include respond(tab-land) {
         top: 82%;
         left: 91%;
@@ -32,7 +37,11 @@
     transform: translate(-50%, -50%);
     z-index: 10;
     opacity: 0;
-
+    
+    @include respond(laptop-medium) {
+        top: 87%;
+        left: 91%;
+    }
     @include respond(laptop) {
         top: 85%;
     }

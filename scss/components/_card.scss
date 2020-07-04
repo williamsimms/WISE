@@ -4,6 +4,13 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
 
+    @include respond(laptop-medium) {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-column-gap: 2rem;
+        grid-row-gap: 3rem;
+    }
+
     @include respond(laptop) {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr ;
@@ -59,18 +66,25 @@
     &:hover {
         transform: scale(1.05);
     }
-
-    @include respond(tab-land) {
+    @include respond(laptop-medium) {
         padding: 0rem 0rem;
         margin: 0;
         width: 50rem;
+        height: 35rem;
     }
+
     @include respond(laptop) {
         padding: 0rem 0rem;
         margin: 0;
         width: 50rem;
         height: 40rem;
     }
+    @include respond(tab-land) {
+        padding: 0rem 0rem;
+        margin: 0;
+        width: 50rem;
+    }
+    
 }
 
 @include respond(tablet) {

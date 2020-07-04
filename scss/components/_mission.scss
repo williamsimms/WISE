@@ -24,6 +24,11 @@
     border-radius: 2rem;
     position: relative;
 
+    @include respond(laptop-medium) {
+        width: 90%;
+     
+     }
+
     @include respond(laptop) {
        width: 60%;
        display: block;

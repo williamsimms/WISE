@@ -155,7 +155,7 @@ body::-webkit-scrollbar-thumb {
   background: #333333; }
   @media (max-width: 52.125em) {
     #mission {
-      margin-top: -10rem; } }
+      margin-top: -5rem; } }
 
 .mission-text {
   position: relative;
@@ -196,6 +196,9 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   top: 260%;
   cursor: pointer; }
+  @media (max-width: 85.375em) {
+    .scroll-down {
+      top: 180%; } }
   @media (max-width: 52.125em) {
     .scroll-down {
       top: 170%; } }
@@ -218,6 +221,9 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 5rem; }
+  @media (max-width: 85.375em) {
+    .services-header {
+      margin-bottom: 17rem; } }
   @media (max-width: 75em) {
     .services-header {
       margin-bottom: 15rem; } }
@@ -251,6 +257,9 @@ body::-webkit-scrollbar-thumb {
 #contact {
   min-height: 75vh;
   background: linear-gradient(135deg, #1d4350, #fbc531); }
+  @media (max-width: 85.375em) {
+    #contact {
+      min-height: 85vh; } }
   @media (max-width: 75em) {
     #contact {
       min-height: 50vh; } }
@@ -330,6 +339,9 @@ body::-webkit-scrollbar-thumb {
   transition: all .4s ease-in-out;
   box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
   display: block; }
+  @media (max-width: 85.375em) {
+    .btn {
+      top: 150%; } }
   @media (max-width: 52.125em) {
     .btn {
       top: 130%; } }
@@ -352,6 +364,10 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
   z-index: 10;
   opacity: 0; }
+  @media (max-width: 85.375em) {
+    .circular-text {
+      top: 74%;
+      left: 91%; } }
   @media (max-width: 75em) {
     .circular-text {
       top: 82%;
@@ -371,9 +387,10 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
   z-index: 10;
   opacity: 0; }
-  @media (max-width: 80em) {
+  @media (max-width: 85.375em) {
     .arrow {
-      top: 85%; } }
+      top: 87%;
+      left: 91%; } }
   @media (max-width: 75em) {
     .arrow {
       top: 89%;
@@ -416,9 +433,6 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  @media (max-width: 80em) {
-    .mission-container {
-      flex-direction: column; } }
   @media (max-width: 75em) {
     .mission-container {
       flex-direction: column; } }
@@ -430,11 +444,9 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   border-radius: 2rem;
   position: relative; }
-  @media (max-width: 80em) {
+  @media (max-width: 85.375em) {
     .mission-photo {
-      width: 60%;
-      display: block;
-      margin: 6rem auto; } }
+      width: 90%; } }
   @media (max-width: 75em) {
     .mission-photo {
       width: 50%;
@@ -484,9 +496,6 @@ body::-webkit-scrollbar-thumb {
     width: 80%;
     text-align: center;
     margin: auto; }
-    @media (max-width: 80em) {
-      .mission-statement p {
-        width: 65%; } }
     @media (max-width: 75em) {
       .mission-statement p {
         width: 60%; } }
@@ -496,7 +505,7 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr; }
-  @media (max-width: 80em) {
+  @media (max-width: 85.375em) {
     .card-container {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
@@ -540,17 +549,17 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 4rem; }
   .card:hover {
     transform: scale(1.05); }
+  @media (max-width: 85.375em) {
+    .card {
+      padding: 0rem 0rem;
+      margin: 0;
+      width: 50rem;
+      height: 35rem; } }
   @media (max-width: 75em) {
     .card {
       padding: 0rem 0rem;
       margin: 0;
       width: 50rem; } }
-  @media (max-width: 80em) {
-    .card {
-      padding: 0rem 0rem;
-      margin: 0;
-      width: 50rem;
-      height: 40rem; } }
 
 @media (max-width: 52.125em) {
   .card:last-of-type {
@@ -561,10 +570,6 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 400px 400px;
   grid-gap: 0; }
-  @media (max-width: 80em) {
-    .portfolio-grid {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 400px); } }
   @media (max-width: 75em) {
     .portfolio-grid {
       grid-template-columns: repeat(2, 1fr);
