@@ -24,6 +24,11 @@
         grid-row-gap: 3rem;
     }
 
+    @include respond(tablet) {
+        grid-column-gap: 0rem;
+        grid-row-gap: 0rem;
+    }
+
 }
 
 .card {
