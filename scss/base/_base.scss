@@ -152,6 +152,10 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: 260%;
     cursor: pointer;
+
+    @include respond(tablet) {
+        top: 170%;
+    }
 }
 
 #services {
@@ -180,7 +184,8 @@ body::-webkit-scrollbar-thumb {
     }
 
     @include respond(tablet) {
-        margin-bottom: 24rem;
+        padding-bottom: 25rem;
+        margin-bottom: 0;
     }
 }
 
@@ -217,6 +222,9 @@ body::-webkit-scrollbar-thumb {
 
     @include respond(tab-land) {
         min-height: 50vh;
+    }
+    @include respond(tablet) {
+       min-height: 60vh;
     }
 }
 
