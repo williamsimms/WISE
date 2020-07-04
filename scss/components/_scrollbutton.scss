@@ -30,6 +30,7 @@
     }
 
     @include respond(tablet) {
+        top: 82%;
         left: 87%;
     }
 }
@@ -62,7 +63,7 @@
     }
 
     @include respond(tablet-landscape) {
-        top: 87%;
+        top: 88%;
     }
 
     @include respond(tablet) {

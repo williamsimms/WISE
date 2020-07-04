@@ -399,6 +399,7 @@ body::-webkit-scrollbar-thumb {
       top: 76%; } }
   @media (max-width: 52.125em) {
     .circular-text {
+      top: 82%;
       left: 87%; } }
 
 .arrow {
@@ -422,7 +423,7 @@ body::-webkit-scrollbar-thumb {
       left: 89%; } }
   @media (max-width: 70em) {
     .arrow {
-      top: 87%; } }
+      top: 88%; } }
   @media (max-width: 52.125em) {
     .arrow {
       top: 91%;
