@@ -24,6 +24,12 @@
         }
     }
 
+    @if $breakpoint == laptop {
+        @media (max-width:80em) {
+            @content
+        }
+    }
+
     @if $breakpoint == big-desk {
         @media (min-width:112.5em) {
             @content

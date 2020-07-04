@@ -371,6 +371,9 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
   z-index: 10;
   opacity: 0; }
+  @media (max-width: 80em) {
+    .arrow {
+      top: 85%; } }
   @media (max-width: 75em) {
     .arrow {
       top: 89%;
@@ -413,6 +416,9 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 80em) {
+    .mission-container {
+      flex-direction: column; } }
   @media (max-width: 75em) {
     .mission-container {
       flex-direction: column; } }
@@ -424,6 +430,11 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   border-radius: 2rem;
   position: relative; }
+  @media (max-width: 80em) {
+    .mission-photo {
+      width: 60%;
+      display: block;
+      margin: 6rem auto; } }
   @media (max-width: 75em) {
     .mission-photo {
       width: 50%;
@@ -473,6 +484,9 @@ body::-webkit-scrollbar-thumb {
     width: 80%;
     text-align: center;
     margin: auto; }
+    @media (max-width: 80em) {
+      .mission-statement p {
+        width: 65%; } }
     @media (max-width: 75em) {
       .mission-statement p {
         width: 60%; } }
@@ -482,6 +496,12 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr; }
+  @media (max-width: 80em) {
+    .card-container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 2rem;
+      grid-row-gap: 3rem; } }
   @media (max-width: 75em) {
     .card-container {
       grid-template-columns: 1fr;
@@ -525,6 +545,12 @@ body::-webkit-scrollbar-thumb {
       padding: 0rem 0rem;
       margin: 0;
       width: 50rem; } }
+  @media (max-width: 80em) {
+    .card {
+      padding: 0rem 0rem;
+      margin: 0;
+      width: 50rem;
+      height: 40rem; } }
 
 @media (max-width: 52.125em) {
   .card:last-of-type {
@@ -535,6 +561,10 @@ body::-webkit-scrollbar-thumb {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 400px 400px;
   grid-gap: 0; }
+  @media (max-width: 80em) {
+    .portfolio-grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 400px); } }
   @media (max-width: 75em) {
     .portfolio-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -584,7 +614,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 2.5rem;
   transform: rotate(90deg);
   position: absolute;
-  right: 15%;
+  right: 14.5%;
   top: 20%; }
   @media (max-width: 52.125em) {
     .international {
@@ -596,7 +626,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 2.5rem;
   transform: rotate(90deg);
   position: absolute;
-  right: 15%;
+  right: 18%;
   top: 60%; }
 
 .touch {

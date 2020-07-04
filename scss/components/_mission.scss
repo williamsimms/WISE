@@ -3,6 +3,11 @@
     justify-content: space-between;
     align-items: center;
 
+    
+    @include respond(laptop) {
+        flex-direction: column;
+    }
+
     @include respond(tab-land) {
         flex-direction: column;
     }
@@ -18,6 +23,12 @@
     width: 100%;
     border-radius: 2rem;
     position: relative;
+
+    @include respond(laptop) {
+       width: 60%;
+       display: block;
+        margin: 6rem auto;
+    }
 
     @include respond(tab-land) {
         width: 50%;
@@ -82,8 +93,13 @@
         text-align: center;
         margin: auto;
 
+        @include respond(laptop) {
+            width: 65%;
+        }
+
         @include respond(tab-land) {
             width: 60%;
         }
+
     }
 }
