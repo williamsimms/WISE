@@ -109,6 +109,7 @@ body::-webkit-scrollbar-thumb {
     @include respond(phone) {
         padding-top: 15rem;
         font-size: 3rem;
+        font-weight: 300;
     }
 
 
@@ -125,7 +126,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 6rem;
 
     @include respond(phone) {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
 }
 

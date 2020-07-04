@@ -158,7 +158,8 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 37.5em) {
     .hero-text {
       padding-top: 15rem;
-      font-size: 3rem; } }
+      font-size: 3rem;
+      font-weight: 300; } }
 
 .slogan {
   font-size: 2rem;
@@ -171,7 +172,7 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 6rem; }
   @media (max-width: 37.5em) {
     .slogan {
-      font-size: 1.3rem; } }
+      font-size: 1.4rem; } }
 
 #mission {
   min-height: 100vh;
@@ -425,7 +426,8 @@ body::-webkit-scrollbar-thumb {
       top: 150%; } }
   @media (max-width: 37.5em) {
     .btn {
-      padding: 1.7rem 3rem; } }
+      padding: 1.5rem 3rem;
+      font-size: 1.1rem; } }
   .btn:hover {
     background-color: #fff; }
   .btn:active {
