@@ -289,7 +289,3 @@ $('.mobile-navigation-list li a').on('click', function (e) {
         }, 1800)
     }
 })
-
-
-console.log(menuIcon.getAttribute('name'))
-//<ion-icon name="close-outline"></ion-icon>

@@ -103,10 +103,11 @@
 
 .mobile-navigation-list {
     display: flex;
+    text-align: center;
     flex-direction: column;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-54%);
     margin-top: 10rem;
     transition: all 400ms 100ms ease-in-out;
 
@@ -118,8 +119,8 @@
         margin-left: 3rem;
         transition: all .3s ease-in-out;
         letter-spacing: 1.5px;
-
-
+        padding-bottom: .5rem;
+        border-bottom: .1rem solid $colour-light-gray;
 
         &:hover {
             color: rgba($colour-white, 1);
@@ -137,4 +138,10 @@
 .text-appear {
     visibility: visible;
     opacity: 1;
+}
+.divider {
+    margin: 0 auto;
+    text-align: center;
+    display:block;
+    width: 100%;
 }

@@ -135,6 +135,9 @@ body::-webkit-scrollbar-thumb {
     min-height: 100vh;
     background: $colour-dark-gray;
 
+    @include respond(big-desk) {
+      min-height: 70vh;
+    }
     @include respond(tablet) {
         margin-top: -3rem;
         padding-top: 3rem;
@@ -144,6 +147,7 @@ body::-webkit-scrollbar-thumb {
         margin-top: -5rem;
         padding-top: 5rem;
     }
+
 }
 
 .mission-text {
@@ -230,6 +234,9 @@ body::-webkit-scrollbar-thumb {
     background-attachment: fixed;
     color: #fff;
 
+    @include respond(big-desk) {
+       min-height: 50vh;
+    }
 }
 
 .services-header {

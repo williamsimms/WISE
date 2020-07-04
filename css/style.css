@@ -178,6 +178,9 @@ body::-webkit-scrollbar-thumb {
 #mission {
   min-height: 100vh;
   background: #333333; }
+  @media (min-width: 112.5em) {
+    #mission {
+      min-height: 70vh; } }
   @media (max-width: 52.125em) {
     #mission {
       margin-top: -3rem;
@@ -255,6 +258,9 @@ body::-webkit-scrollbar-thumb {
   min-height: 100vh;
   background-attachment: fixed;
   color: #fff; }
+  @media (min-width: 112.5em) {
+    #services {
+      min-height: 50vh; } }
 
 .services-header {
   font-weight: 100;
@@ -420,10 +426,11 @@ body::-webkit-scrollbar-thumb {
 
 .mobile-navigation-list {
   display: flex;
+  text-align: center;
   flex-direction: column;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-54%);
   margin-top: 10rem;
   transition: all 400ms 100ms ease-in-out;
   opacity: 0;
@@ -435,7 +442,9 @@ body::-webkit-scrollbar-thumb {
     color: rgba(255, 255, 255, 0.5);
     margin-left: 3rem;
     transition: all .3s ease-in-out;
-    letter-spacing: 1.5px; }
+    letter-spacing: 1.5px;
+    padding-bottom: .5rem;
+    border-bottom: 0.1rem solid #dcdde1; }
     .mobile-navigation-list li a:hover {
       color: white; }
 
@@ -445,6 +454,12 @@ body::-webkit-scrollbar-thumb {
 .text-appear {
   visibility: visible;
   opacity: 1; }
+
+.divider {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 100%; }
 
 .btn {
   position: absolute;
@@ -493,6 +508,9 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
   z-index: 10;
   opacity: 0; }
+  @media (min-width: 112.5em) {
+    .circular-text {
+      top: 79.5%; } }
   @media (max-width: 85.375em) {
     .circular-text {
       top: 72.7%;
@@ -664,6 +682,9 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr; }
+  @media (min-width: 112.5em) {
+    .card-container {
+      margin-top: -30rem; } }
   @media (max-width: 85.375em) {
     .card-container {
       grid-template-columns: 1fr 1fr;
@@ -883,8 +904,8 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 37.5em) {
     ::-webkit-input-placeholder {
       padding: 2rem 3rem;
-      font-size: 1rem;
-      transform: translateY(-1rem); } }
+      font-size: 1.3rem;
+      transform: translateY(-2rem); } }
 
 .form-btn {
   width: 20%;

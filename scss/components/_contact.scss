@@ -51,8 +51,8 @@
 
     @include respond(phone) {
       padding: 2rem 3rem;
-      font-size: 1rem;
-      transform: translateY(-1rem);
+      font-size: 1.3rem;
+      transform: translateY(-2rem);
     }
 }
 

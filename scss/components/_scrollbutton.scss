@@ -10,6 +10,10 @@
     z-index: 10;
     opacity: 0;
 
+
+    @include respond(big-desk) {
+        top: 79.5%;
+    }
     @include respond(laptop-medium) {
         top: 72.7%;
         left: 91%;
