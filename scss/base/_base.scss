@@ -65,6 +65,14 @@ body::-webkit-scrollbar-thumb {
     background-attachment: fixed;
     color: #fff;
     position: relative;
+
+    @include respond(tab-land) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/tabletHeroImage.jpg);
+    }
+
+    @include respond(tablet) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/portraittabletHeroImage.jpg);
+    }
 }
 
 .hero-text {
@@ -81,6 +89,8 @@ body::-webkit-scrollbar-thumb {
     @include respond(tab-land) {
         padding-top: 25rem;
     }
+
+
 }
 
 .slogan {
@@ -163,7 +173,15 @@ body::-webkit-scrollbar-thumb {
     padding-top: 5rem;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
+
+    @include respond(tab-land) {
+        margin-bottom: 15rem;
+    }
+
+    @include respond(tablet) {
+        margin-bottom: 24rem;
+    }
 }
 
 #portfolio {
@@ -207,14 +225,14 @@ body::-webkit-scrollbar-thumb {
     background-color: $colour-dark-gray;
 }
 
-.local-start
- {
+.local-start {
     width: 70%;
     margin: auto;
     border-top: 1px solid $colour-dark-gray;
     border-left: none;
 
 }
+
 .local-start:last-of-type {
     padding-bottom: 2rem;
     opacity: 0;

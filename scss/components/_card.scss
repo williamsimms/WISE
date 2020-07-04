@@ -21,7 +21,7 @@
     flex-direction: column;
     border-radius: .5rem;
     align-items: center;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     font-family: 'Lato';
     transition: all .4s ease-out;
 
@@ -58,5 +58,11 @@
         padding: 0rem 0rem;
         margin: 0;
         width: 50rem;
+    }
+}
+
+@include respond(tablet) {
+    .card:last-of-type {
+        margin-bottom: 10rem;
     }
 }

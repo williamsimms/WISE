@@ -119,6 +119,12 @@ body::-webkit-scrollbar-thumb {
   background-attachment: fixed;
   color: #fff;
   position: relative; }
+  @media (max-width: 75em) {
+    #home {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/tabletHeroImage.jpg); } }
+  @media (max-width: 48em) {
+    #home {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/portraittabletHeroImage.jpg); } }
 
 .hero-text {
   font-size: 7rem;
@@ -202,7 +208,13 @@ body::-webkit-scrollbar-thumb {
   padding-top: 5rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin-bottom: 15rem; }
+  margin-bottom: 5rem; }
+  @media (max-width: 75em) {
+    .services-header {
+      margin-bottom: 15rem; } }
+  @media (max-width: 48em) {
+    .services-header {
+      margin-bottom: 24rem; } }
 
 #portfolio {
   min-height: 50vh;
@@ -435,9 +447,12 @@ body::-webkit-scrollbar-thumb {
     padding: 2rem 0;
     line-height: 1.8;
     hyphens: auto;
-    width: 60%;
+    width: 80%;
     text-align: center;
     margin: auto; }
+    @media (max-width: 75em) {
+      .mission-statement p {
+        width: 60%; } }
 
 .card-container {
   margin-top: -20rem;
@@ -459,7 +474,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   border-radius: .5rem;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   font-family: 'Lato';
   transition: all .4s ease-out; }
   .card-icon {
@@ -487,6 +502,10 @@ body::-webkit-scrollbar-thumb {
       padding: 0rem 0rem;
       margin: 0;
       width: 50rem; } }
+
+@media (max-width: 48em) {
+  .card:last-of-type {
+    margin-bottom: 10rem; } }
 
 .portfolio-grid {
   display: grid;
@@ -544,6 +563,9 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   right: 15%;
   top: 20%; }
+  @media (max-width: 48em) {
+    .international {
+      right: 10%; } }
 
 .local {
   -webkit-text-stroke: 1.3px #000;

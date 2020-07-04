@@ -78,8 +78,12 @@
         padding: 2rem 0;
         line-height: 1.8;
         hyphens: auto;
-        width: 60%;
+        width: 80%;
         text-align: center;
         margin: auto;
+
+        @include respond(tab-land) {
+            width: 60%;
+        }
     }
 }
