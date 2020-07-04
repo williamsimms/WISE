@@ -273,6 +273,12 @@ $('.mobile-navigation-list li a').on('click', function (e) {
     mobileNavigation.classList.toggle('extended')
     mobileNavigationList.classList.toggle('text-appear')
 
+    if (menuIcon.getAttribute('name') === 'menu-outline') {
+        menuIcon.setAttribute('name','close-outline') 
+    } else {
+        menuIcon.setAttribute('name','menu-outline')
+    }
+
     if (this.hash !== '') {
         e.preventDefault()
 
