@@ -39,6 +39,10 @@
     font-size: 1.6rem;
     font-family: 'Lato';
     color: $colour-white;
+
+    @include respond(tablet) {
+        font-size: 1.4rem;
+    }
 }
 
 .form-btn {

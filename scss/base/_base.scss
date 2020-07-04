@@ -107,6 +107,10 @@ body::-webkit-scrollbar-thumb {
 #mission {
     min-height: 100vh;
     background: $colour-dark-gray;
+
+    @include respond(tablet) {
+        margin-top: -10rem;
+    }
 }
 
 .mission-text {
@@ -123,6 +127,11 @@ body::-webkit-scrollbar-thumb {
     @include respond(tab-land) {
         margin-bottom: 16rem;
     }
+
+    @include respond(tablet) {
+        padding-top: 0rem;
+    }
+
 }
 
 

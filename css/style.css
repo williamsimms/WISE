@@ -153,6 +153,9 @@ body::-webkit-scrollbar-thumb {
 #mission {
   min-height: 100vh;
   background: #333333; }
+  @media (max-width: 52.125em) {
+    #mission {
+      margin-top: -10rem; } }
 
 .mission-text {
   position: relative;
@@ -167,6 +170,9 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 75em) {
     .mission-text {
       margin-bottom: 16rem; } }
+  @media (max-width: 52.125em) {
+    .mission-text {
+      padding-top: 0rem; } }
 
 .scroll-container {
   background: transparent;
@@ -629,6 +635,9 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.6rem;
   font-family: 'Lato';
   color: #fff; }
+  @media (max-width: 52.125em) {
+    ::-webkit-input-placeholder {
+      font-size: 1.4rem; } }
 
 .form-btn {
   width: 20%;
