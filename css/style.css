@@ -162,8 +162,8 @@ body::-webkit-scrollbar-thumb {
   background: #333333; }
   @media (max-width: 52.125em) {
     #mission {
-      margin-top: -2.8rem;
-      padding-top: 2rem; } }
+      margin-top: -3rem;
+      padding-top: 3rem; } }
 
 .mission-text {
   position: relative;
@@ -531,7 +531,7 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 52.125em) {
     .card-container {
       grid-column-gap: 0rem;
-      grid-row-gap: 0rem; } }
+      grid-row-gap: 5rem; } }
 
 .card {
   background: rgba(51, 51, 51, 0.8);
@@ -577,8 +577,8 @@ body::-webkit-scrollbar-thumb {
       width: 50rem; } }
 
 @media (max-width: 52.125em) {
-  .card:last-of-type {
-    margin-bottom: 10rem; } }
+  .card-container {
+    margin-bottom: 5rem; } }
 
 .portfolio-grid {
   display: grid;

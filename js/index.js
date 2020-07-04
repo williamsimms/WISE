@@ -34,7 +34,7 @@ const currentDate = {
 }
 
 function setDate() {
- copyright.innerText = `${currentDate[date.getMonth()]} ${date.getDate()} , ${date.getFullYear()}`
+    copyright.innerText = `${currentDate[date.getMonth()]} ${date.getDate()} , ${date.getFullYear()}`
 }
 setDate()
 
@@ -231,7 +231,7 @@ $('.btn').on('click', function (e) {
 
 const laptopFadeOptions = {
     root: null,
-    threshold: 1,
+    threshold: 0.6,
     rootMargin: '0px 0px -50px 0px'
 }
 const appearOnScrollLaptop = new IntersectionObserver(function (entries, appearOnScrollLaptop) {
