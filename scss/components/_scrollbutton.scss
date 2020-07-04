@@ -25,8 +25,12 @@
         left: 89%;
     }
 
+    @include respond(tablet-landscape) {
+        top: 76%;
+    }
+
     @include respond(tablet) {
-      left: 87%;
+        left: 87%;
     }
 }
 
@@ -37,11 +41,12 @@
     transform: translate(-50%, -50%);
     z-index: 10;
     opacity: 0;
-    
+
     @include respond(laptop-medium) {
-        top: 86%;
+        top: 86.5%;
         left: 91%;
     }
+
     @include respond(laptop) {
         top: 85%;
     }
@@ -54,11 +59,15 @@
     @include respond(tab-port) {
         top: 88.8%;
         left: 89%;
-     }
+    }
 
-     @include respond(tablet) {
-       top: 91%;
-       left: 87.1%;
+    @include respond(tablet-landscape) {
+        top: 87%;
+    }
+
+    @include respond(tablet) {
+        top: 91%;
+        left: 87.1%;
     }
 }
 

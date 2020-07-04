@@ -1,42 +1,48 @@
-// 600px 900px 1200px 1800px
+// 600px 900px 1200px 1800px 834px 1120px 1366px
 @mixin respond($breakpoint) {
-    @if $breakpoint == phone {
-        @media (max-width:37.5em) {  
+    @if $breakpoint==phone {
+        @media (max-width:37.5em) {
             @content
         }
     }
 
-    @if $breakpoint == tab-port {
-        @media (max-width:56.25em) {   
+    @if $breakpoint==tab-port {
+        @media (max-width:56.25em) {
             @content
         }
     }
 
-    @if $breakpoint == tablet {
-        @media (max-width:52.125em) {   
+    @if $breakpoint==tablet {
+        @media (max-width:52.125em) {
             @content
         }
     }
 
-    @if $breakpoint == tab-land {
+    @if $breakpoint==tablet-landscape {
+        @media (max-width:70em) {
+            @content
+        }
+    }
+
+    @if $breakpoint==tab-land {
         @media (max-width:75em) {
             @content
         }
     }
 
-    @if $breakpoint == laptop-small {
+    @if $breakpoint==laptop-small {
         @media (max-width:80em) {
             @content
         }
     }
 
-    @if $breakpoint == laptop-medium {
+    @if $breakpoint==laptop-medium {
         @media (max-width:85.375em) {
             @content
         }
     }
 
-    @if $breakpoint == big-desk {
+    @if $breakpoint==big-desk {
         @media (min-width:112.5em) {
             @content
         }

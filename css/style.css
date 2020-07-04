@@ -129,9 +129,9 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 75em) {
     #home {
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/tabletHeroImage.jpg); } }
-  @media (max-width: 52.125em) {
+  @media (max-width: 70em) {
     #home {
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/portraittabletHeroImage.jpg); } }
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/tabletlandscaleheroImage.jpg); } }
 
 .hero-text {
   font-size: 7rem;
@@ -164,6 +164,10 @@ body::-webkit-scrollbar-thumb {
     #mission {
       margin-top: -3rem;
       padding-top: 3rem; } }
+  @media (max-width: 70em) {
+    #mission {
+      margin-top: -5rem;
+      padding-top: 5rem; } }
 
 .mission-text {
   position: relative;
@@ -235,6 +239,9 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 75em) {
     .services-header {
       margin-bottom: 15rem; } }
+  @media (max-width: 70em) {
+    .services-header {
+      padding-bottom: 10rem; } }
   @media (max-width: 52.125em) {
     .services-header {
       padding-bottom: 25rem;
@@ -271,6 +278,9 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 75em) {
     #contact {
       min-height: 50vh; } }
+  @media (max-width: 70em) {
+    #contact {
+      min-height: 75vh; } }
   @media (max-width: 52.125em) {
     #contact {
       min-height: 60vh; } }
@@ -384,6 +394,9 @@ body::-webkit-scrollbar-thumb {
     .circular-text {
       top: 82%;
       left: 89%; } }
+  @media (max-width: 70em) {
+    .circular-text {
+      top: 76%; } }
   @media (max-width: 52.125em) {
     .circular-text {
       left: 87%; } }
@@ -397,7 +410,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 0; }
   @media (max-width: 85.375em) {
     .arrow {
-      top: 86%;
+      top: 86.5%;
       left: 91%; } }
   @media (max-width: 75em) {
     .arrow {
@@ -407,6 +420,9 @@ body::-webkit-scrollbar-thumb {
     .arrow {
       top: 88.8%;
       left: 89%; } }
+  @media (max-width: 70em) {
+    .arrow {
+      top: 87%; } }
   @media (max-width: 52.125em) {
     .arrow {
       top: 91%;
@@ -576,9 +592,17 @@ body::-webkit-scrollbar-thumb {
       margin: 0;
       width: 50rem; } }
 
-@media (max-width: 52.125em) {
+@media (max-width: 85.375em) {
   .card-container {
     margin-bottom: 5rem; } }
+
+@media (max-width: 70em) {
+  .card-container {
+    margin-bottom: 7rem; } }
+
+@media (max-width: 52.125em) {
+  .card-container {
+    margin-bottom: 8rem; } }
 
 .portfolio-grid {
   display: grid;
@@ -774,7 +798,7 @@ body::-webkit-scrollbar-thumb {
       max-width: 75rem; } }
   @media (max-width: 52.125em) {
     .footer-container {
-      max-width: 65rem; } }
+      max-width: 70rem; } }
 
 .footer-container ul:first-of-type li a {
   font-size: 1.4rem; }

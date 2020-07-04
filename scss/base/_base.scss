@@ -70,8 +70,8 @@ body::-webkit-scrollbar-thumb {
         background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/tabletHeroImage.jpg);
     }
 
-    @include respond(tablet) {
-        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/portraittabletHeroImage.jpg);
+    @include respond(tablet-landscape) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/tabletlandscaleheroImage.jpg);
     }
 }
 
@@ -111,6 +111,11 @@ body::-webkit-scrollbar-thumb {
     @include respond(tablet) {
         margin-top: -3rem;
         padding-top: 3rem;
+    }
+
+    @include respond(tablet-landscape) {
+        margin-top: -5rem;
+        padding-top: 5rem;
     }
 }
 
@@ -201,6 +206,9 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 15rem;
     }
 
+    @include respond(tablet-landscape) {
+       padding-bottom: 10rem;
+    }
     @include respond(tablet) {
         padding-bottom: 25rem;
         margin-bottom: 0;
@@ -246,6 +254,9 @@ body::-webkit-scrollbar-thumb {
         min-height: 50vh;
     }
 
+    @include respond(tablet-landscape) {
+       min-height: 75vh;
+    }
     @include respond(tablet) {
         min-height: 60vh;
     }
