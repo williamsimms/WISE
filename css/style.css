@@ -122,7 +122,7 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 75em) {
     #home {
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/tabletHeroImage.jpg); } }
-  @media (max-width: 48em) {
+  @media (max-width: 52.125em) {
     #home {
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/portraittabletHeroImage.jpg); } }
 
@@ -190,7 +190,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   top: 260%;
   cursor: pointer; }
-  @media (max-width: 48em) {
+  @media (max-width: 52.125em) {
     .scroll-down {
       top: 170%; } }
 
@@ -215,7 +215,7 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 75em) {
     .services-header {
       margin-bottom: 15rem; } }
-  @media (max-width: 48em) {
+  @media (max-width: 52.125em) {
     .services-header {
       padding-bottom: 25rem;
       margin-bottom: 0; } }
@@ -248,7 +248,7 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 75em) {
     #contact {
       min-height: 50vh; } }
-  @media (max-width: 48em) {
+  @media (max-width: 52.125em) {
     #contact {
       min-height: 60vh; } }
 
@@ -324,7 +324,7 @@ body::-webkit-scrollbar-thumb {
   transition: all .4s ease-in-out;
   box-shadow: 1rem 1rem 5rem rgba(0, 0, 0, 0.5);
   display: block; }
-  @media (max-width: 48em) {
+  @media (max-width: 52.125em) {
     .btn {
       top: 130%; } }
   .btn:hover {
@@ -354,7 +354,7 @@ body::-webkit-scrollbar-thumb {
     .circular-text {
       top: 82%;
       left: 89%; } }
-  @media (max-width: 48em) {
+  @media (max-width: 52.125em) {
     .circular-text {
       left: 87%; } }
 
@@ -373,7 +373,7 @@ body::-webkit-scrollbar-thumb {
     .arrow {
       top: 88.8%;
       left: 89%; } }
-  @media (max-width: 48em) {
+  @media (max-width: 52.125em) {
     .arrow {
       top: 91%;
       left: 87.1%; } }
@@ -520,7 +520,7 @@ body::-webkit-scrollbar-thumb {
       margin: 0;
       width: 50rem; } }
 
-@media (max-width: 48em) {
+@media (max-width: 52.125em) {
   .card:last-of-type {
     margin-bottom: 10rem; } }
 
@@ -580,7 +580,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   right: 15%;
   top: 20%; }
-  @media (max-width: 48em) {
+  @media (max-width: 52.125em) {
     .international {
       right: 10%; } }
 
@@ -712,7 +712,7 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 56.25em) {
     .footer-container {
       max-width: 75rem; } }
-  @media (max-width: 48em) {
+  @media (max-width: 52.125em) {
     .footer-container {
       max-width: 65rem; } }
 
