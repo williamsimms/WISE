@@ -29,7 +29,7 @@
     }
 
     @include respond(phone) {
-       display: none;
+        display: none;
     }
 }
 
@@ -62,9 +62,9 @@
 .menu {
     position: fixed;
     right: 3%;
-    top: 5%;
+    top: 2%;
     cursor: pointer;
-    z-index: 5000;
+    z-index: 180;
     display: none;
 
     @include respond(phone) {
@@ -72,10 +72,69 @@
     }
 }
 
-.menu-icon {
+.menu-icon,
+.close-icon {
     font-size: 3.5rem;
     cursor: pointer;
 }
+
 .mobile-nav {
-    
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: $colour-dark-gray;
+    height: 6rem;
+    width: 100%;
+    z-index: 150;
+    transition: all .4s ease-in-out;
+
+    @include respond(phone) {
+        display: block;
+
+    }
+
+    .mobile-nav-item {
+        margin-bottom: 5rem;
+    }
+
+
+}
+
+.mobile-navigation-list {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10rem;
+    transition: all 400ms 100ms ease-in-out;
+
+    & li a {
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba($colour-white, .5);
+        margin-left: 3rem;
+        transition: all .3s ease-in-out;
+        letter-spacing: 1.5px;
+
+
+
+        &:hover {
+            color: rgba($colour-white, 1);
+        }
+    }
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.extended {
+    height: 45rem;
+}
+
+.text-appear {
+    visibility: visible;
+    opacity: 1;
 }

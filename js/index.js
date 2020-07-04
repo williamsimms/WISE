@@ -19,6 +19,10 @@ const portfolio = document.getElementById('portfolio')
 const arrow = document.querySelector('.arrow-up')
 const clientele = document.getElementById('clientele')
 const copyright = document.getElementById('copyright')
+const mobileNavigation = document.querySelector('.mobile-nav')
+const mobileNavigationList = document.querySelector('.mobile-navigation-list')
+const menu = document.getElementById('menu')
+const menuIcon = document.querySelector('.menu-icon')
 const currentDate = {
     '0': 'January',
     '1': 'February',
@@ -252,3 +256,34 @@ const appearOnScrollLaptop = new IntersectionObserver(function (entries, appearO
 laptopFaders.forEach((fader) => {
     appearOnScrollLaptop.observe(fader)
 })
+
+mobileNavMenu.addEventListener('click', (e) => {
+    mobileNavigation.classList.toggle('extended')
+    mobileNavigationList.classList.toggle('text-appear')
+
+    if (menuIcon.getAttribute('name') === 'menu-outline') {
+        menuIcon.setAttribute('name','close-outline') 
+    } else {
+        menuIcon.setAttribute('name','menu-outline')
+    }
+
+})
+
+$('.mobile-navigation-list li a').on('click', function (e) {
+    mobileNavigation.classList.toggle('extended')
+    mobileNavigationList.classList.toggle('text-appear')
+
+    if (this.hash !== '') {
+        e.preventDefault()
+
+        const hash = this.hash
+
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1800)
+    }
+})
+
+
+console.log(menuIcon.getAttribute('name'))
+//<ion-icon name="close-outline"></ion-icon>
