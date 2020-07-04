@@ -162,7 +162,8 @@ body::-webkit-scrollbar-thumb {
   background: #333333; }
   @media (max-width: 52.125em) {
     #mission {
-      margin-top: -2rem; } }
+      margin-top: -2.5rem;
+      padding-top: 2rem; } }
 
 .mission-text {
   position: relative;
