@@ -155,7 +155,7 @@ body::-webkit-scrollbar-thumb {
   background: #333333; }
   @media (max-width: 52.125em) {
     #mission {
-      margin-top: -5rem; } }
+      margin-top: -3rem; } }
 
 .mission-text {
   position: relative;
@@ -366,7 +366,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 0; }
   @media (max-width: 85.375em) {
     .circular-text {
-      top: 74%;
+      top: 73%;
       left: 91%; } }
   @media (max-width: 75em) {
     .circular-text {
@@ -389,7 +389,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 0; }
   @media (max-width: 85.375em) {
     .arrow {
-      top: 87%;
+      top: 86%;
       left: 91%; } }
   @media (max-width: 75em) {
     .arrow {
@@ -433,6 +433,9 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media (max-width: 85.375em) {
+    .mission-container {
+      padding-bottom: 3rem; } }
   @media (max-width: 75em) {
     .mission-container {
       flex-direction: column; } }

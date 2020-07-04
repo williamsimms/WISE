@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb {
     background: $colour-dark-gray;
 
     @include respond(tablet) {
-        margin-top: -5rem;
+        margin-top: -3rem;
     }
 }
 

@@ -11,7 +11,7 @@
     opacity: 0;
 
     @include respond(laptop-medium) {
-        top: 74%;
+        top: 73%;
         left: 91%;
     }
 
@@ -39,7 +39,7 @@
     opacity: 0;
     
     @include respond(laptop-medium) {
-        top: 87%;
+        top: 86%;
         left: 91%;
     }
     @include respond(laptop) {
