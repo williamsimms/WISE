@@ -65,9 +65,17 @@
     top: 5%;
     cursor: pointer;
     z-index: 5000;
+    display: none;
+
+    @include respond(phone) {
+        display: block;
+    }
 }
 
 .menu-icon {
     font-size: 3.5rem;
     cursor: pointer;
+}
+.mobile-nav {
+    
 }

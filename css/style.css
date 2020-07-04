@@ -158,7 +158,7 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 37.5em) {
     .hero-text {
       padding-top: 15rem;
-      font-size: 2.8rem; } }
+      font-size: 3rem; } }
 
 .slogan {
   font-size: 2rem;
@@ -205,6 +205,9 @@ body::-webkit-scrollbar-thumb {
     .mission-text {
       padding-top: 3rem;
       margin-bottom: 6rem; } }
+  @media (max-width: 37.5em) {
+    .mission-text {
+      font-size: 2.5rem; } }
 
 .scroll-container {
   background: transparent;
@@ -221,6 +224,9 @@ body::-webkit-scrollbar-thumb {
   .downwards:hover {
     filter: invert(91%) sepia(16%) saturate(3200%) hue-rotate(332deg) brightness(104%) contrast(97%);
     opacity: .7; }
+  @media (max-width: 37.5em) {
+    .downwards {
+      height: 2.5rem; } }
 
 .scroll-down {
   background: transparent;
@@ -269,6 +275,9 @@ body::-webkit-scrollbar-thumb {
     .services-header {
       padding-bottom: 25rem;
       margin-bottom: 0; } }
+  @media (max-width: 37.5em) {
+    .services-header {
+      font-size: 4rem; } }
 
 #portfolio {
   min-height: 50vh;
@@ -380,7 +389,11 @@ body::-webkit-scrollbar-thumb {
   right: 3%;
   top: 5%;
   cursor: pointer;
-  z-index: 5000; }
+  z-index: 5000;
+  display: none; }
+  @media (max-width: 37.5em) {
+    .menu {
+      display: block; } }
 
 .menu-icon {
   font-size: 3.5rem;
@@ -410,6 +423,9 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 37.5em) {
     .btn {
       top: 150%; } }
+  @media (max-width: 37.5em) {
+    .btn {
+      padding: 1.7rem 3rem; } }
   .btn:hover {
     background-color: #fff; }
   .btn:active {

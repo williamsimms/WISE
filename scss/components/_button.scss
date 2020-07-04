@@ -25,7 +25,9 @@
     @include respond(phone) {
         top: 150%;
     }
-
+    @include respond(phone) {
+     padding: 1.7rem 3rem;
+    }
     &:hover {
         background-color: $colour-white;
     }

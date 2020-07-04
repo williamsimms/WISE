@@ -34,7 +34,7 @@ const currentDate = {
 }
 
 function setDate() {
-    copyright.innerText = `${currentDate[date.getMonth()]} ${date.getDate()} , ${date.getFullYear()}`
+    copyright.innerText = `${currentDate[date.getMonth()]} ${date.getFullYear()}`
 }
 setDate()
 
