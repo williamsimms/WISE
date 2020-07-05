@@ -334,6 +334,10 @@ body::-webkit-scrollbar-thumb {
     @include respond(ipad-pro) {
         min-height: 47vh;
     }
+    @include respond(tablet-medium-landscape) {
+        min-height: 80vh;
+    }
+    
 }
 
 #footer {

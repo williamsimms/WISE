@@ -337,6 +337,9 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 64em) {
     #contact {
       min-height: 47vh; } }
+  @media (max-width: 64em) and (max-height: 48em) {
+    #contact {
+      min-height: 80vh; } }
 
 #footer {
   min-height: 30vh;
@@ -461,12 +464,6 @@ body::-webkit-scrollbar-thumb {
   visibility: visible;
   opacity: 1; }
 
-.divider {
-  margin: 0 auto;
-  text-align: center;
-  display: block;
-  width: 100%; }
-
 .btn {
   position: absolute;
   left: 50%;
@@ -532,6 +529,9 @@ body::-webkit-scrollbar-thumb {
     .circular-text {
       top: 85%;
       left: 89%; } }
+  @media (max-width: 64em) and (max-height: 48em) {
+    .circular-text {
+      top: 75%; } }
   @media (max-width: 56.25em) {
     .circular-text {
       top: 82%;
@@ -566,6 +566,9 @@ body::-webkit-scrollbar-thumb {
     .arrow {
       top: 92%;
       left: 89%; } }
+  @media (max-width: 64em) and (max-height: 48em) {
+    .arrow {
+      top: 87.4%; } }
   @media (max-width: 56.25em) {
     .arrow {
       top: 88.8%;
@@ -908,6 +911,11 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 52.125em) {
     ::-webkit-input-placeholder {
       font-size: 1.3rem; } }
+  @media (max-width: 64em) and (max-height: 48em) {
+    ::-webkit-input-placeholder {
+      padding: 2rem 3rem;
+      font-size: 1rem;
+      transform: translateY(-1.8rem); } }
   @media (max-width: 37.5em) {
     ::-webkit-input-placeholder {
       padding: 2rem 3rem;
