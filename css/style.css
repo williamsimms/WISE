@@ -889,7 +889,7 @@ body::-webkit-scrollbar-thumb {
     .name,
     .email,
     .message {
-      width: 50%;
+      width: 60%;
       padding: 3rem 3rem; } }
 
 ::-webkit-input-placeholder {
@@ -906,7 +906,7 @@ body::-webkit-scrollbar-thumb {
     ::-webkit-input-placeholder {
       padding: 2rem 3rem;
       font-size: 1rem;
-      transform: translateY(-2rem); } }
+      transform: translateY(-1.8rem); } }
 
 .form-btn {
   width: 20%;

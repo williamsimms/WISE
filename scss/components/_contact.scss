@@ -33,7 +33,7 @@
     }
 
     @include respond(phone) {
-       width: 50%;
+       width: 60%;
        padding: 3rem 3rem;
     }
 }
@@ -53,12 +53,12 @@
     @include respond(phone) {
       padding: 2rem 3rem;
       font-size: 1rem;
-      transform: translateY(-2rem);
+      transform: translateY(-1.8rem);
     }
 }
 
 .form-btn {
-    width: 20%;
+    width: 20%; 
     padding: 1rem 2rem;
     border: none;
     font-size: 1.6rem;
