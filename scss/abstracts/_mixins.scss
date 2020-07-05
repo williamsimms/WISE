@@ -24,6 +24,18 @@
         }
     }
 
+    @if $breakpoint==iphoneXSMax {
+        @media (max-width:25.875em) and (max-height:56em) {
+            @content
+        }
+    }
+
+    @if $breakpoint==iphoneXS {
+        @media (max-width:23.4375em) and (max-height:50.75em) {
+            @content
+        }
+    }
+
     @if $breakpoint==iphone-7plus {
         @media (max-width:25.875em) {
             @content
@@ -55,7 +67,7 @@
     }
 
     @if $breakpoint==big-desk {
-        @media (min-width:112.5em) {
+        @media (min-width:125em) {
             @content
         }
     }

@@ -141,6 +141,12 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 25.875em) {
     #home {
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/7plusheroImage.jpg); } }
+  @media (max-width: 25.875em) and (max-height: 56em) {
+    #home {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/iphoneXSMAXheroImage.jpg); } }
+  @media (max-width: 23.4375em) and (max-height: 50.75em) {
+    #home {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/iphoneXheroImage.jpg); } }
 
 .hero-text {
   font-size: 7rem;
@@ -178,7 +184,7 @@ body::-webkit-scrollbar-thumb {
 #mission {
   min-height: 100vh;
   background: #333333; }
-  @media (min-width: 112.5em) {
+  @media (min-width: 125em) {
     #mission {
       min-height: 70vh; } }
   @media (max-width: 52.125em) {
@@ -258,7 +264,7 @@ body::-webkit-scrollbar-thumb {
   min-height: 100vh;
   background-attachment: fixed;
   color: #fff; }
-  @media (min-width: 112.5em) {
+  @media (min-width: 125em) {
     #services {
       min-height: 50vh; } }
 
@@ -508,7 +514,7 @@ body::-webkit-scrollbar-thumb {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
   z-index: 10;
   opacity: 0; }
-  @media (min-width: 112.5em) {
+  @media (min-width: 125em) {
     .circular-text {
       top: 79.5%; } }
   @media (max-width: 85.375em) {
@@ -682,7 +688,7 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr; }
-  @media (min-width: 112.5em) {
+  @media (min-width: 125em) {
     .card-container {
       margin-top: -30rem; } }
   @media (max-width: 85.375em) {
