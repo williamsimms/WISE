@@ -23,6 +23,7 @@ const mobileNavigation = document.querySelector('.mobile-nav')
 const mobileNavigationList = document.querySelector('.mobile-navigation-list')
 const menu = document.getElementById('menu')
 const menuIcon = document.querySelector('.menu-icon')
+const missionSection = document.getElementById('mission')
 const currentDate = {
     '0': 'January',
     '1': 'February',
@@ -74,16 +75,13 @@ function scrollFn() {
     }
 }
 
-function missionAnimate() {
-    if (document.body.scrollTop > 35 || document.documentElement.scrollTop > 35) {
-
-    }
-}
-
+// Scroll Down Button Event Listener 
+let missionSectionTop = missionSection.getBoundingClientRect().top
+console.log(missionSectionTop);
 scrollDownButton.addEventListener('click', function () {
     $('html, body').animate({
-        scrollTop: 969
-    }, 1800)
+        scrollTop: missionSectionTop
+    }, 1300)
 })
 
 $('.navigation-bar a').on('click', function (e) {
@@ -262,9 +260,9 @@ mobileNavMenu.addEventListener('click', (e) => {
     mobileNavigationList.classList.toggle('text-appear')
 
     if (menuIcon.getAttribute('name') === 'menu-outline') {
-        menuIcon.setAttribute('name','close-outline') 
+        menuIcon.setAttribute('name', 'close-outline')
     } else {
-        menuIcon.setAttribute('name','menu-outline')
+        menuIcon.setAttribute('name', 'menu-outline')
     }
 
 })
@@ -274,9 +272,9 @@ $('.mobile-navigation-list li a').on('click', function (e) {
     mobileNavigationList.classList.toggle('text-appear')
 
     if (menuIcon.getAttribute('name') === 'menu-outline') {
-        menuIcon.setAttribute('name','close-outline') 
+        menuIcon.setAttribute('name', 'close-outline')
     } else {
-        menuIcon.setAttribute('name','menu-outline')
+        menuIcon.setAttribute('name', 'menu-outline')
     }
 
     if (this.hash !== '') {
