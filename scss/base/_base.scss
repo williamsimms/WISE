@@ -84,6 +84,10 @@ body::-webkit-scrollbar-thumb {
         background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/ipadproheroImage.jpg);
     }
 
+    @include respond(iphone-7plus-landscape) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/heroImageIphone7landscape.jpg);
+    }
+
     @include respond(iphone-7plus) {
         background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/7plusheroImage.jpg);
     }
@@ -95,9 +99,6 @@ body::-webkit-scrollbar-thumb {
     @include respond(iphoneXS) {
         background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/iphoneXheroImage.jpg);
     }
-
-
-
 
 
 }
@@ -115,6 +116,11 @@ body::-webkit-scrollbar-thumb {
 
     @include respond(tab-land) {
         padding-top: 25rem;
+    }
+
+    @include respond(iphone-7plus-landscape) {
+      padding-top: 8rem;
+      font-size: 4rem;
     }
 
     @include respond(phone) {
@@ -231,7 +237,9 @@ body::-webkit-scrollbar-thumb {
     @include respond(tablet) {
         top: 170%;
     }
-
+    @include respond(iphone-7plus-landscape) {
+        top: 190%;
+    }
     @include respond(phone) {
         top: 190%;
     }
@@ -378,6 +386,7 @@ body::-webkit-scrollbar-thumb {
         width: 85%;
 
     }
+
     @include respond(tablet) {
         width: 80%;
 

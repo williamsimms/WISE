@@ -108,4 +108,92 @@
 
 #about {
     min-height: 100vh;
+    background-color: $colour-dark-gray;
+}
+
+.timeline {
+    width: 80rem;
+    margin: auto;
+    padding-top: 6rem;
+}
+
+.timeline li {
+    position: relative;
+    list-style: none;
+}
+
+.timeline li .item {
+    position: relative;
+    min-height: 6rem;
+    padding: 0 2rem 3rem;
+    margin-left: 2rem;
+    border-left: .2rem solid $colour-white;
+
+    &::after {
+        display: block;
+        height: 2px;
+        background-color: rgba($colour-white,.2);
+        content: "";
+        width: 20rem;
+        margin: 0 auto;
+        margin-top: 3.5rem;
+    }
+}
+
+.timeline li:last-child .item {
+    border-left: .1rem solid transparent;
+}
+
+.timeline li .item span {
+    position: absolute;
+    top: -.8rem;
+    left: -2rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    color: #000;
+    line-height: 4rem;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 2.2rem;
+}
+
+.timeline li .item h3,
+.timeline li .item p {
+    color: $colour-white;
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-left: 1rem;
+
+}
+
+.timeline li .item h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.about-header {
+    font-weight: 100;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    color: $colour-white;
+}
+
+.smart-home-link {
+    color: $colour-white;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+       border-bottom: $colour-white .2rem solid;
+       padding-bottom: .2rem;
+    }
 }

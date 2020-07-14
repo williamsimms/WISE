@@ -21,7 +21,9 @@
     @include respond(tablet) {
         top: 130%;
     }
-
+    @include respond(iphone-7plus-landscape) {
+       top: 150%;
+    }
     @include respond(phone) {
         top: 150%;
     }

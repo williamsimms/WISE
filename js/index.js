@@ -25,7 +25,6 @@ const menu = document.getElementById('menu')
 const menuIcon = document.querySelector('.menu-icon')
 const missionSection = document.getElementById('mission')
 const smartHomeSection = document.getElementById('smart')
-const aboutUsScrollDownButton = document.querySelector('.scroll-down-button')
 const currentDate = {
     '0': 'January',
     '1': 'February',
@@ -79,14 +78,12 @@ function scrollFn() {
 }
 
 // Scroll Down Button Event Listeners
-let aboutUsSectionTop = missionSection.getBoundingClientRect().top
+let missionSectionTop = missionSection.getBoundingClientRect().top
 scrollDownButton.addEventListener('click', function () {
     $('html, body').animate({
         scrollTop: missionSectionTop
     }, 1200)
 })
-// About Page Scroll Down Button
-
 
 
 $('.navigation-bar a').on('click', function (e) {

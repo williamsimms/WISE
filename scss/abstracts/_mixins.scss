@@ -25,7 +25,7 @@
     }
 
     @if $breakpoint==tablet-medium-landscape {
-        @media (max-width:64em) and (max-height:48em){
+        @media (max-width:64em) and (max-height:48em) {
             @content
         }
     }
@@ -38,6 +38,12 @@
 
     @if $breakpoint==iphoneXS {
         @media (max-width:23.4375em) and (max-height:50.75em) {
+            @content
+        }
+    }
+
+    @if $breakpoint==iphone-7plus-landscape {
+        @media (max-width:46em) and (max-height:26em) {
             @content
         }
     }

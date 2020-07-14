@@ -48,6 +48,10 @@
         left: 87%;
     }
 
+    @include respond(iphone-7plus-landscape) {
+        display: none;
+    }
+
     @include respond(phone) {
         display: none;
     }
@@ -98,6 +102,10 @@
     @include respond(tablet) {
         top: 91%;
         left: 87.1%;
+    }
+
+    @include respond(iphone-7plus-landscape) {
+        display: none;
     }
 
     @include respond(phone) {
