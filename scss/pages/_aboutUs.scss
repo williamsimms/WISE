@@ -1,0 +1,111 @@
+.about-us-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.wise-logo-nav {
+    width: 40%;
+}
+
+.about-us-navigation-item {
+    font-size: 1.6rem;
+    color: $colour-black;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        border-bottom: .3rem solid $colour-black;
+    }
+}
+
+.about-hero-text {
+    font-weight: 300;
+    text-shadow: none;
+    font-size: 5.5rem;
+    padding-top: 13rem;
+    letter-spacing: 2px;
+    margin-bottom: 10rem;
+}
+
+#about-us {
+    min-height: 100vh;
+    background: #ddd;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+}
+
+.about-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-info {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        width: 60ch;
+        text-align: center;
+
+    }
+
+    &-image {
+        width: 40%;
+    }
+}
+
+.header-info-container {
+    display: flex;
+    justify-content: center;
+}
+
+.header-info {
+    text-align: center;
+    width: 60%;
+    font-size: 1.7rem;
+    line-height: 1.7;
+
+
+    &::after {
+
+        display: block;
+        height: 2px;
+        background-color: $colour-black;
+        content: "";
+        width: 30rem;
+        margin: 0 auto;
+        margin-top: 3.5rem;
+
+    }
+}
+
+.scroll-down-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-down-image {
+    filter: invert(0%) sepia(13%) saturate(7492%) hue-rotate(122deg) brightness(89%) contrast(97%);
+    height: 3rem;
+    opacity: .9;
+    animation: bounce 3s ease-in-out infinite;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        opacity: 1;
+    }
+
+}
+
+.scroll-down-button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    top: 140%;
+}
+
+#about {
+    min-height: 100vh;
+}
