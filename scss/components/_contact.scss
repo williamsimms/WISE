@@ -48,6 +48,7 @@
 
     @include respond(tablet) {
         font-size: 1.3rem;
+        transform: translateY(-1.8rem);
     }
 
     @include respond(tablet-medium-landscape) {
