@@ -107,7 +107,7 @@ a {
   background-color: #dcdde1; }
 
 body::-webkit-scrollbar {
-  width: 1rem; }
+  width: 1.1rem; }
 
 body::-webkit-scrollbar-track {
   background-color: #2d3436; }
