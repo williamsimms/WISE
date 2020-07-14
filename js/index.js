@@ -24,6 +24,7 @@ const mobileNavigationList = document.querySelector('.mobile-navigation-list')
 const menu = document.getElementById('menu')
 const menuIcon = document.querySelector('.menu-icon')
 const missionSection = document.getElementById('mission')
+const smartHomeSection = document.getElementById('smart')
 const currentDate = {
     '0': 'January',
     '1': 'February',
@@ -38,6 +39,7 @@ const currentDate = {
     '10': 'November',
     '11': 'December'
 }
+
 
 function setDate() {
     copyright.innerText = `${currentDate[date.getMonth()]} ${date.getFullYear()}`
@@ -81,7 +83,7 @@ console.log(missionSectionTop);
 scrollDownButton.addEventListener('click', function () {
     $('html, body').animate({
         scrollTop: missionSectionTop
-    }, 1300)
+    }, 1200)
 })
 
 $('.navigation-bar a').on('click', function (e) {
@@ -164,10 +166,29 @@ const appearOnScrollSlide = new IntersectionObserver(function (entries, appearOn
 
 }, slideOptions)
 
+// Change Slier Black On Scroll
 
 sliders.forEach((slider) => {
     appearOnScrollSlide.observe(slider)
 })
+
+const smartOptions = {
+    root: null,
+    rootMargin: '0px 0px 0px 0px'
+}
+const smartObserver = new IntersectionObserver(function (entries, smartObserver) {
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+            circularText.classList.remove('dark-background-scroll')
+            arrow.classList.remove('dark-arrow')
+        } else {
+            circularText.classList.add('dark-background-scroll')
+            arrow.classList.add('dark-arrow')
+        }
+    })
+}, smartOptions)
+
+smartObserver.observe(smart)
 
 const portfolioOptions = {
     root: null,
@@ -204,6 +225,9 @@ const clienteleObserver = new IntersectionObserver(function (entries, clienteleO
 }, clienteleOptions)
 
 clienteleObserver.observe(clientele)
+
+
+
 
 
 $('.footer-container ul:first-of-type li a').on('click', function (e) {

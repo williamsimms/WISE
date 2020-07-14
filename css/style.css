@@ -355,6 +355,68 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 2rem;
   opacity: 0; }
 
+#smart {
+  min-height: 60vh; }
+
+.smart-picture {
+  width: 90%;
+  border-radius: 2rem;
+  text-align: center;
+  display: block;
+  margin: auto; }
+  @media (max-width: 85.375em) {
+    .smart-picture {
+      width: 85%; } }
+  @media (max-width: 52.125em) {
+    .smart-picture {
+      width: 80%; } }
+
+.smart-container {
+  margin-top: 13rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media (max-width: 85.375em) {
+    .smart-container {
+      padding-bottom: 7rem; } }
+  @media (max-width: 75em) {
+    .smart-container {
+      flex-direction: column; } }
+
+.smart-text {
+  margin-right: 30rem; }
+  @media (max-width: 85.375em) {
+    .smart-text {
+      margin-bottom: 8rem;
+      text-align: center; } }
+  @media (max-width: 64em) {
+    .smart-text {
+      margin-right: 0; } }
+
+.smart-header {
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 300; }
+
+.smart-header-bold {
+  font-weight: 400; }
+
+.smart-btn {
+  text-align: center;
+  display: inline-block;
+  color: #000;
+  font-size: 1.4rem;
+  padding: .3rem .5rem .5rem .5rem;
+  border-bottom: 0.2rem solid #000;
+  transition: all .3s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 3rem; }
+  .smart-btn:hover {
+    background-color: #000;
+    color: #fff; }
+
 .navigation-bar {
   display: flex;
   padding-top: 1.8rem;
@@ -653,7 +715,8 @@ body::-webkit-scrollbar-thumb {
     z-index: 50; }
 
 .mission-statement {
-  flex: 0 0 50%; }
+  flex: 0 0 50%;
+  position: relative; }
   .mission-statement h3:last-of-type {
     margin-top: 2rem; }
   .mission-statement h3 {
@@ -685,6 +748,28 @@ body::-webkit-scrollbar-thumb {
     @media (max-width: 37.5em) {
       .mission-statement p {
         width: 70%; } }
+
+.about-us-link {
+  text-align: center;
+  display: inline-block;
+  color: #fff;
+  font-size: 1.6rem;
+  padding: .3rem .5rem .5rem .5rem;
+  border-bottom: .2rem solid #fff;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  transition: all .3s ease;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+  .about-us-link:hover {
+    background-color: #fff;
+    color: #000; }
+
+.arrow-right {
+  font-size: 1.5rem;
+  margin-left: .3rem; }
 
 .card-container {
   margin-top: -20rem;
@@ -1054,7 +1139,15 @@ body::-webkit-scrollbar-thumb {
   margin-top: 2rem;
   opacity: 0.5;
   color: #fff;
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  margin-bottom: 1rem; }
 
 ion-icon {
   font-size: 2rem; }
+
+.footer-info {
+  text-align: center;
+  margin-top: .8rem;
+  font-size: 1.2rem;
+  color: #fff;
+  opacity: .5; }
