@@ -36,8 +36,8 @@
 
 
     @include respond(laptop-medium) {
-        padding-top: 3rem;
-        margin-bottom: 3rem;
+        padding-top: 0rem;
+        margin-bottom: 0rem;
     }
 
 }
@@ -120,7 +120,7 @@
 
 
     @include respond(laptop-medium) {
-        top: 80%;
+        top: 30%;
     }
 
     @include respond(tablet) {
@@ -455,12 +455,12 @@
 
     @include respond(tablet-landcape) {
         font-size: 1.3rem;
-        transform: translateY(-3.5rem);
+        transform: translateY(-6rem);
     }
 
     @include respond(tablet) {
         font-size: 1.3rem;
-        transform: translateY(-3.5rem);
+        transform: translateY(-6rem);
     }
 
     @include respond(tablet-medium-landscape) {
