@@ -33,23 +33,27 @@
     }
 
     @include respond(phone) {
-       width: 60%;
-       padding: 3rem 3rem;
+        width: 60%;
+        padding: 3rem 3rem;
     }
 }
 
-::-webkit-input-placeholder {
+.name::-webkit-input-placeholder,
+.email::-webkit-input-placeholder,
+.message::-webkit-input-placeholder {
     text-align: center;
     font-size: 1.6rem;
     font-family: 'Lato';
     color: $colour-white;
     line-height: 3;
     padding: 2rem 3rem;
+    overflow: visible;
 
     @include respond(tablet-landcape) {
         font-size: 1.3rem;
         transform: translateY(-6rem);
     }
+
     @include respond(tablet) {
         font-size: 1.3rem;
         transform: translateY(-5rem);
@@ -59,17 +63,17 @@
         padding: 2rem 3rem;
         font-size: 1rem;
         transform: translateY(-1.8rem);
-      }
+    }
 
     @include respond(phone) {
-      padding: 2rem 3rem;
-      font-size: 1rem;
-      transform: translateY(-1.8rem);
+        padding: 2rem 3rem;
+        font-size: 1rem;
+        transform: translateY(-1.8rem);
     }
 }
 
 .form-btn {
-    width: 20%; 
+    width: 20%;
     padding: 1rem 2rem;
     border: none;
     font-size: 1.6rem;

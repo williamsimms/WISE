@@ -78,6 +78,12 @@
         }
     }
 
+    @if $breakpoint==small-ipad {
+        @media (max-width:48em) {
+            @content
+        }
+    }
+
     @if $breakpoint==big-desk {
         @media (min-width:125em) {
             @content

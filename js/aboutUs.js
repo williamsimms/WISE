@@ -84,13 +84,12 @@ new Glider(glider, {
             }
         }, {
             // screens greater than >= 775px
-            breakpoint: 775,
+            breakpoint: 750,
             settings: {
                 // Set to `auto` and provide item width to adjust to viewport
-                slidesToShow: 'auto',
+                slidesToShow: 2,
                 slidesToScroll: 'auto',
                 itemWidth: 150,
-                duration: 0.25
             }
         }, {
             // screens greater than >= 1024px
@@ -98,8 +97,6 @@ new Glider(glider, {
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                itemWidth: 150,
-                duration: 0.25
             }
         },
         {
@@ -108,8 +105,6 @@ new Glider(glider, {
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 8,
-                itemWidth: 150,
-                duration: 0.25
             }
         }
     ]

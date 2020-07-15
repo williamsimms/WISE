@@ -3,6 +3,12 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 2rem;
+
+    @include respond(tablet-landscape) {
+        justify-content: space-around;
+    }
+
+
 }
 
 .wise-logo-nav {
@@ -116,6 +122,10 @@
     margin: auto;
     padding-top: 6rem;
     padding-bottom: 5rem;
+
+    @include respond(small-ipad) {
+        width: 70rem;
+    }
 }
 
 .timeline li {
@@ -203,6 +213,10 @@
     min-height: 70vh;
     background-color: $colour-light-gray;
 
+    @include respond(ipad-pro) {
+        min-height: 50vh;
+    }
+
     @include respond(phone) {
         min-height: 50vh;
     }
@@ -264,6 +278,10 @@
         filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(204deg) brightness(106%) contrast(101%);
     }
 
+    @include respond(ipad-pro) {
+        margin-left:.3rem ;
+        margin-right: .3rem;
+    }
 
     @include respond(phone) {
         margin-right: .2rem;
@@ -308,20 +326,41 @@
     font-size: 1.2rem;
     letter-spacing: 1px;
     margin-bottom: 5rem;
+
+    @include respond(ipad-pro) {
+        margin-bottom: 10rem;
+      }
 }
 
 .partner-logos {
     height: 12rem;
+
+    @include respond(ipad-pro) {
+        margin-bottom: 3rem;
+      }
 }
 
+.remax {
+    @include respond(ipad-pro) {
+        transform: translateX(2rem);
+      }
+}
 .partner-logo-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
+    @include respond(ipad-pro) {
+      flex-direction: column;
+    }
 }
 
 .landmark {
     transform: translateX(-2rem);
+
+    @include respond(ipad-pro) {
+      transform: translateX(0);
+      }
 }
 
 #contact-us {
@@ -394,26 +433,27 @@
     color: $colour-dark-gray;
     line-height: 3;
     padding: 2rem 3rem;
+    overflow: visible;
 
-    @include respond(tablet-landcape) {
-        font-size: 1.3rem;
-        transform: translateY(-3.5rem);
-    }
+    // @include respond(tablet-landcape) {
+    //     font-size: 1.3rem;
+    //     transform: translateY(-3.5rem);
+    // }
 
-    @include respond(tablet) {
-        font-size: 1.3rem;
-        transform: translateY(-3.5rem);
-    }
+    // @include respond(tablet) {
+    //     font-size: 1.3rem;
+    //     transform: translateY(-3.5rem);
+    // }
 
-    @include respond(tablet-medium-landscape) {
-        padding: 2rem 3rem;
-        font-size: 1rem;
-        transform: translateY(-1.8rem);
-    }
+    // @include respond(tablet-medium-landscape) {
+    //     padding: 2rem 3rem;
+    //     font-size: 1rem;
+    //     transform: translateY(-1.8rem);
+    // }
 
-    @include respond(phone) {
-        padding: 2rem 3rem;
-        font-size: 1rem;
-        transform: translateY(-1.8rem);
-    }
+    // @include respond(phone) {
+    //     padding: 2rem 3rem;
+    //     font-size: 1rem;
+    //     transform: translateY(-1.8rem);
+    // }
 }

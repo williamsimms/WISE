@@ -1006,24 +1006,33 @@ body::-webkit-scrollbar-thumb {
       width: 60%;
       padding: 3rem 3rem; } }
 
-::-webkit-input-placeholder {
+.name::-webkit-input-placeholder,
+.email::-webkit-input-placeholder,
+.message::-webkit-input-placeholder {
   text-align: center;
   font-size: 1.6rem;
   font-family: 'Lato';
   color: #fff;
   line-height: 3;
-  padding: 2rem 3rem; }
+  padding: 2rem 3rem;
+  overflow: visible; }
   @media (max-width: 52.125em) {
-    ::-webkit-input-placeholder {
+    .name::-webkit-input-placeholder,
+    .email::-webkit-input-placeholder,
+    .message::-webkit-input-placeholder {
       font-size: 1.3rem;
       transform: translateY(-5rem); } }
   @media (max-width: 64em) and (max-height: 48em) {
-    ::-webkit-input-placeholder {
+    .name::-webkit-input-placeholder,
+    .email::-webkit-input-placeholder,
+    .message::-webkit-input-placeholder {
       padding: 2rem 3rem;
       font-size: 1rem;
       transform: translateY(-1.8rem); } }
   @media (max-width: 37.5em) {
-    ::-webkit-input-placeholder {
+    .name::-webkit-input-placeholder,
+    .email::-webkit-input-placeholder,
+    .message::-webkit-input-placeholder {
       padding: 2rem 3rem;
       font-size: 1rem;
       transform: translateY(-1.8rem); } }
@@ -1178,6 +1187,9 @@ ion-icon {
   align-items: center;
   justify-content: space-between;
   padding-top: 2rem; }
+  @media (max-width: 70em) {
+    .about-us-navigation {
+      justify-content: space-around; } }
 
 .wise-logo-nav {
   width: 40%; }
@@ -1264,6 +1276,9 @@ ion-icon {
   margin: auto;
   padding-top: 6rem;
   padding-bottom: 5rem; }
+  @media (max-width: 48em) {
+    .timeline {
+      width: 70rem; } }
 
 .timeline li {
   position: relative;
@@ -1336,6 +1351,9 @@ ion-icon {
 #team {
   min-height: 70vh;
   background-color: #dcdde1; }
+  @media (max-width: 64em) {
+    #team {
+      min-height: 50vh; } }
   @media (max-width: 37.5em) {
     #team {
       min-height: 50vh; } }
@@ -1383,6 +1401,10 @@ ion-icon {
     width: 25%;
     text-align: center;
     filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(204deg) brightness(106%) contrast(101%); }
+  @media (max-width: 64em) {
+    .about-card {
+      margin-left: .3rem;
+      margin-right: .3rem; } }
   @media (max-width: 37.5em) {
     .about-card {
       margin-right: .2rem; } }
@@ -1418,17 +1440,33 @@ ion-icon {
   font-size: 1.2rem;
   letter-spacing: 1px;
   margin-bottom: 5rem; }
+  @media (max-width: 64em) {
+    .partner-wise-info {
+      margin-bottom: 10rem; } }
 
 .partner-logos {
   height: 12rem; }
+  @media (max-width: 64em) {
+    .partner-logos {
+      margin-bottom: 3rem; } }
+
+@media (max-width: 64em) {
+  .remax {
+    transform: translateX(2rem); } }
 
 .partner-logo-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly; }
+  @media (max-width: 64em) {
+    .partner-logo-container {
+      flex-direction: column; } }
 
 .landmark {
   transform: translateX(-2rem); }
+  @media (max-width: 64em) {
+    .landmark {
+      transform: translateX(0); } }
 
 #contact-us {
   min-height: 75vh;
@@ -1488,24 +1526,5 @@ ion-icon {
   font-family: 'Lato';
   color: #333333;
   line-height: 3;
-  padding: 2rem 3rem; }
-  @media (max-width: 52.125em) {
-    .about-us-name::-webkit-input-placeholder,
-    .about-us-email::-webkit-input-placeholder,
-    .about-us-message::-webkit-input-placeholder {
-      font-size: 1.3rem;
-      transform: translateY(-3.5rem); } }
-  @media (max-width: 64em) and (max-height: 48em) {
-    .about-us-name::-webkit-input-placeholder,
-    .about-us-email::-webkit-input-placeholder,
-    .about-us-message::-webkit-input-placeholder {
-      padding: 2rem 3rem;
-      font-size: 1rem;
-      transform: translateY(-1.8rem); } }
-  @media (max-width: 37.5em) {
-    .about-us-name::-webkit-input-placeholder,
-    .about-us-email::-webkit-input-placeholder,
-    .about-us-message::-webkit-input-placeholder {
-      padding: 2rem 3rem;
-      font-size: 1rem;
-      transform: translateY(-1.8rem); } }
+  padding: 2rem 3rem;
+  overflow: visible; }
