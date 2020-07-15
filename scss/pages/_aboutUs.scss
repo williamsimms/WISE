@@ -33,7 +33,7 @@
     padding-top: 13rem;
     letter-spacing: 2px;
     margin-bottom: 10rem;
-    font-size: 7rem;
+    font-size: 6rem;
     text-transform: uppercase;
     animation: fadein forwards 1s ease;
     text-align: center;
@@ -41,7 +41,8 @@
     @include respond(laptop-medium) {
         padding-top: 8rem;
         margin-bottom: 4rem;
-       
+        font-size: 5rem;
+
     }
 
 }
@@ -127,7 +128,7 @@
         top: 120%;
     }
 
-    
+
 }
 
 #about {
@@ -313,17 +314,31 @@
 .glider-prev {
     transform: translateX(-2rem);
     cursor: pointer;
+
+
+    @include respond(laptop-medium) {
+        transform: translateX(-1rem) scale(0.7);
+    }
 }
 
 .glider-next {
     transform: translateX(2rem);
     cursor: pointer;
+
+    @include respond(laptop-medium) {
+        transform: translateX(1rem) scale(0.7);
+    }
 }
 
 
 #partners {
     min-height: 65vh;
     background: $colour-dark-gray;
+
+    @include respond(laptop-medium) {
+       min-height: 70vh;
+    }
+    
 }
 
 .partner-wise-logo,
@@ -338,6 +353,11 @@
     font-weight: 400;
     padding-top: 5rem;
     letter-spacing: 2px;
+
+    @include respond(laptop-medium) {
+       font-size: 9rem;
+     }
+
 }
 
 .partner-wise-info {
@@ -356,6 +376,10 @@
     @include respond(ipad-pro) {
         margin-bottom: 3rem;
     }
+
+    @include respond(laptop-medium) {
+        height: 10rem;
+      }
 }
 
 .remax {
