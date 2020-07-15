@@ -434,6 +434,11 @@ body::-webkit-scrollbar-thumb {
         padding-left: 5rem;
     }
 
+
+    @include respond(laptop) {
+        margin-right: 0;
+    }
+
     @include respond(ipad-pro) {
         margin-right: 0;
     }
