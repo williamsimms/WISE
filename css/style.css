@@ -1214,12 +1214,15 @@ ion-icon {
   font-size: 5.5rem;
   padding-top: 13rem;
   letter-spacing: 2px;
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  font-size: 7rem;
+  text-transform: uppercase;
+  animation: fadein forwards 1s ease;
+  text-align: center; }
   @media (max-width: 85.375em) {
     .about-hero-text {
-      padding-top: 0rem;
-      margin-bottom: 0rem;
-      color: #A43931 !important; } }
+      padding-top: 8rem;
+      margin-bottom: 4rem; } }
 
 #about-us {
   min-height: 100vh;
@@ -1279,7 +1282,7 @@ ion-icon {
   top: 140%; }
   @media (max-width: 85.375em) {
     .scroll-down-button {
-      top: 80%; } }
+      top: 120%; } }
 
 #about {
   min-height: 100vh;
