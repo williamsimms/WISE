@@ -1217,8 +1217,9 @@ ion-icon {
   margin-bottom: 10rem; }
   @media (max-width: 85.375em) {
     .about-hero-text {
-      padding-top: 2rem;
-      margin-bottom: 2rem; } }
+      padding-top: 0rem;
+      margin-bottom: 0rem;
+      color: #A43931 !important; } }
 
 #about-us {
   min-height: 100vh;
