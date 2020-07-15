@@ -53,9 +53,20 @@
         padding-top: 15rem;
     }
 
+    @include respond(iphone-7plus-landscape) {
+        padding-top: 2rem;
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+    }
+
     @include respond(phone) {
         padding-top: 4rem;
         font-size: 3.2rem;
+    }
+
+    @include respond(small-phone) {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
     }
 
 }
@@ -97,8 +108,18 @@
     font-size: 1.7rem;
     line-height: 1.7;
 
+    @include respond(iphone-7plus-landscape) {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
     @include respond(phone) {
         width: 80%;
+        font-size: 1.5rem;
+    }
+
+    @include respond(small-phone) {
+        width: 90%;
         font-size: 1.5rem;
     }
 
@@ -115,6 +136,10 @@
 
         @include respond(phone) {
             width: 15rem;
+        }
+
+        @include respond(small-phone) {
+            width: 10rem;
         }
     }
 }
@@ -149,6 +174,10 @@
         top: 120%;
     }
 
+    @include respond(iphone-7plus-landscape) {
+        top: 105%;
+    }
+
     @include respond(phone) {
         top: 105%;
     }
@@ -173,6 +202,10 @@
 
     @include respond(phone) {
         width: 40rem;
+    }
+
+    @include respond(small-phone) {
+        width: 35rem;
     }
 }
 
@@ -252,6 +285,7 @@
 
     @include respond(phone) {
         font-size: 3rem;
+        font-weight: 300;
     }
 }
 
@@ -377,6 +411,10 @@
     min-height: 65vh;
     background: $colour-dark-gray;
 
+    @include respond(big-desk) {
+        min-height: 55vh;
+    }
+
     @include respond(laptop-medium) {
         min-height: 70vh;
     }
@@ -401,8 +439,8 @@
     }
 
     @include respond(phone) {
-       font-size: 7rem;
-     }
+        font-size: 7rem;
+    }
 
 }
 
@@ -428,8 +466,8 @@
     }
 
     @include respond(phone) {
-       height: 8rem;
-     }
+        height: 8rem;
+    }
 }
 
 .remax {

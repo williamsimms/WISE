@@ -51,7 +51,7 @@
 
     @include respond(tablet-landcape) {
         font-size: 1.3rem;
-        transform: translateY(-10rem);
+        transform: translateY(-20rem);
     }
 
     @include respond(tablet) {

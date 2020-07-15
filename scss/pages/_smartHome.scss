@@ -1,0 +1,150 @@
+#home-smart {
+    background: $colour-light-gray;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    position: relative;
+}
+
+.smart-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+
+    @include respond(tablet-landscape) {
+        justify-content: space-around;
+    }
+
+    @include respond(phone) {
+        padding-top: 2.5rem;
+    }
+
+
+}
+
+.smart-logo-nav {
+    width: 40%;
+}
+
+.smart-navigation-item {
+
+    font-size: 1.6rem;
+    color: rgba($colour-black, .8);
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        border-bottom: .3rem solid rgba($colour-black, .8);
+    }
+}
+
+.smart-text-header {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.signature-header {
+    color: $colour-dark-gray;
+    text-align: center;
+    font-size: 7rem;
+    padding-top: 10rem;
+    font-weight: 300;
+    color: $colour-black;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+    animation: fadein forwards 1s ease;
+}
+
+.signature-info {
+    text-align: center;
+    animation: fadein forwards 1s ease;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: $colour-black;
+}
+
+#video {
+    min-height: 100vh;
+    background-color: $colour-dark-gray;
+}
+
+#features {
+    min-height: 100vh;
+    background-color: $colour-dark-gray;
+}
+
+.signature-scroll-container {
+    display: flex;
+    justify-content: center;
+}
+
+.signature-scroll-down-image {
+    filter: invert(0%) sepia(13%) saturate(7492%) hue-rotate(122deg) brightness(89%) contrast(97%);
+    opacity: .9;
+    animation: bounce 3s ease-in-out infinite;
+    transition: all .3s ease-in-out;
+    height: 3rem;
+
+    &:hover {
+        opacity: 1;
+    }
+
+}
+
+.signature-scroll-button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    top: 240%;
+}
+
+.feature {
+    margin:0rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba($colour-light-gray, .9);
+    border-radius: .5rem;
+    align-items: center;
+    font-family: 'Lato';
+    transition: all .4s ease-out;
+    width: 35rem;
+    height: 40rem;
+
+    &-header {
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-family: 700;
+        color: $colour-dark-gray;
+        text-align: center;
+        padding-top: 3rem;
+        letter-spacing: 2px;
+
+    }
+
+    &-paragraph {
+        font-size: 1.6rem;
+        padding: 3rem 3rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        color: $colour-dark-gray;
+    }
+
+    &-logo {
+        text-align: center;
+    }
+
+    &-icon {
+        width: 25%;
+        text-align: center;
+        filter: invert(13%) sepia(17%) saturate(18%) hue-rotate(318deg) brightness(96%) contrast(80%);
+    }
+
+
+}
