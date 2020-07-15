@@ -204,8 +204,8 @@
     background-color: $colour-light-gray;
 
     @include respond(phone) {
-      min-height: 50vh;
-      }
+        min-height: 50vh;
+    }
 }
 
 .team-header {
@@ -215,9 +215,9 @@
     padding-top: 5rem;
 
     @include respond(phone) {
-        font-size:4rem ;
-      }
-  
+        font-size: 4rem;
+    }
+
 }
 
 .about-card {
@@ -286,5 +286,134 @@
 
 
 #partners {
-    min-height: 100vh;
+    min-height: 65vh;
+    background: $colour-dark-gray;
+}
+
+.partner-wise-logo,
+.partner-wise-info {
+    text-align: center;
+    color: $colour-white;
+}
+
+.partner-wise-logo {
+    margin-bottom: .5rem;
+    font-size: 12rem;
+    font-weight: 400;
+    padding-top: 5rem;
+    letter-spacing: 2px;
+}
+
+.partner-wise-info {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 5rem;
+}
+
+.partner-logos {
+    height: 12rem;
+}
+
+.partner-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.landmark {
+    transform: translateX(-2rem);
+}
+
+#contact-us {
+    min-height: 75vh;
+    background-color: $colour-light-gray;
+
+    @include respond(laptop-medium) {
+        min-height: 90vh;
+    }
+
+    @include respond(tab-land) {
+        min-height: 50vh;
+    }
+
+    @include respond(tablet-landscape) {
+        min-height: 75vh;
+    }
+
+    @include respond(tablet) {
+        min-height: 60vh;
+    }
+
+    @include respond(ipad-pro) {
+        min-height: 47vh;
+    }
+
+    @include respond(tablet-medium-landscape) {
+        min-height: 80vh;
+    }
+}
+
+.contact-us-header {
+    text-align: center;
+    padding-top: 7rem;
+    font-size: 5rem;
+    color: $colour-dark-gray;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+}
+
+
+.about-us-field {
+    text-align: center;
+}
+
+.about-us-name,
+.about-us-email,
+.about-us-message {
+    width: 50%;
+    margin-bottom: 4rem;
+    padding: 2rem 3rem;
+    border: none;
+    background: none;
+    border-bottom: 2px $colour-dark-gray solid;
+
+
+    @include respond(phone) {
+        width: 60%;
+        padding: 3rem 3rem;
+    }
+}
+
+.about-us-name::-webkit-input-placeholder,
+.about-us-email::-webkit-input-placeholder,
+.about-us-message::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 1.6rem;
+    font-family: 'Lato';
+    color: $colour-dark-gray;
+    line-height: 3;
+    padding: 2rem 3rem;
+
+    @include respond(tablet-landcape) {
+        font-size: 1.3rem;
+        transform: translateY(-3.5rem);
+    }
+
+    @include respond(tablet) {
+        font-size: 1.3rem;
+        transform: translateY(-3.5rem);
+    }
+
+    @include respond(tablet-medium-landscape) {
+        padding: 2rem 3rem;
+        font-size: 1rem;
+        transform: translateY(-1.8rem);
+    }
+
+    @include respond(phone) {
+        padding: 2rem 3rem;
+        font-size: 1rem;
+        transform: translateY(-1.8rem);
+    }
 }
