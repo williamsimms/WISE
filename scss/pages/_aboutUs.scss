@@ -34,10 +34,10 @@
     letter-spacing: 2px;
     margin-bottom: 10rem;
 
-    
+
     @include respond(laptop-medium) {
-        padding-top: 8rem;
-        margin-bottom: 6rem;
+        padding-top: 3rem;
+        margin-bottom: 3rem;
     }
 
 }
@@ -120,7 +120,7 @@
 
 
     @include respond(laptop-medium) {
-        top: 110%;
+        top: 80%;
     }
 
     @include respond(tablet) {
@@ -296,7 +296,7 @@
     }
 
     @include respond(ipad-pro) {
-        margin-left:.3rem ;
+        margin-left: .3rem;
         margin-right: .3rem;
     }
 
@@ -346,7 +346,7 @@
 
     @include respond(ipad-pro) {
         margin-bottom: 10rem;
-      }
+    }
 }
 
 .partner-logos {
@@ -354,21 +354,22 @@
 
     @include respond(ipad-pro) {
         margin-bottom: 3rem;
-      }
+    }
 }
 
 .remax {
     @include respond(ipad-pro) {
         transform: translateX(2rem);
-      }
+    }
 }
+
 .partner-logo-container {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 
     @include respond(ipad-pro) {
-      flex-direction: column;
+        flex-direction: column;
     }
 }
 
@@ -376,8 +377,8 @@
     transform: translateX(-2rem);
 
     @include respond(ipad-pro) {
-      transform: translateX(0);
-      }
+        transform: translateX(0);
+    }
 }
 
 #contact-us {
