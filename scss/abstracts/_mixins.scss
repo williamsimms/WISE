@@ -1,5 +1,6 @@
 // 600px 900px 1200px 2000px 834px 1120px 1366px
 @mixin respond($breakpoint) {
+    
     @if $breakpoint==phone {
         @media (max-width:37.5em) {
             @content

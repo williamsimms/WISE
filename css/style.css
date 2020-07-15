@@ -197,17 +197,17 @@ body::-webkit-scrollbar-thumb {
       min-height: 70vh; } }
   @media (max-width: 85.375em) {
     #mission {
-      min-height: 105vh; } }
-  @media (max-width: 52.125em) {
-    #mission {
-      min-height: 100vh;
-      margin-top: -3rem;
-      padding-top: 3rem; } }
+      min-height: 115vh; } }
   @media (max-width: 70em) {
     #mission {
       min-height: 100vh;
       margin-top: -5rem;
       padding-top: 5rem; } }
+  @media (max-width: 52.125em) {
+    #mission {
+      min-height: 100vh;
+      margin-top: -3rem;
+      padding-top: 3rem; } }
 
 .mission-text {
   position: relative;
@@ -1027,7 +1027,7 @@ body::-webkit-scrollbar-thumb {
     .email::-webkit-input-placeholder,
     .message::-webkit-input-placeholder {
       font-size: 1.3rem;
-      transform: translateY(-5rem); } }
+      transform: translateY(-3rem); } }
   @media (max-width: 64em) and (max-height: 48em) {
     .name::-webkit-input-placeholder,
     .email::-webkit-input-placeholder,
@@ -1217,8 +1217,8 @@ ion-icon {
   margin-bottom: 10rem; }
   @media (max-width: 85.375em) {
     .about-hero-text {
-      padding-top: 8rem;
-      margin-bottom: 6rem; } }
+      padding-top: 2rem;
+      margin-bottom: 2rem; } }
 
 #about-us {
   min-height: 100vh;
@@ -1278,10 +1278,7 @@ ion-icon {
   top: 140%; }
   @media (max-width: 85.375em) {
     .scroll-down-button {
-      top: 110%; } }
-  @media (max-width: 52.125em) {
-    .scroll-down-button {
-      top: 140%; } }
+      top: 80%; } }
 
 #about {
   min-height: 100vh;
@@ -1549,7 +1546,7 @@ ion-icon {
     .about-us-email::-webkit-input-placeholder,
     .about-us-message::-webkit-input-placeholder {
       font-size: 1.3rem;
-      transform: translateY(-3.5rem); } }
+      transform: translateY(-6rem); } }
   @media (max-width: 64em) and (max-height: 48em) {
     .about-us-name::-webkit-input-placeholder,
     .about-us-email::-webkit-input-placeholder,
