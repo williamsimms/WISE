@@ -6,6 +6,12 @@
         }
     }
 
+    @if $breakpoint==small-ipad {
+        @media (max-width:48em) {
+            @content
+        }
+    }
+
     @if $breakpoint==tab-port {
         @media (max-width:56.25em) {
             @content
@@ -74,12 +80,6 @@
 
     @if $breakpoint==laptop-medium {
         @media (max-width:85.375em) {
-            @content
-        }
-    }
-
-    @if $breakpoint==small-ipad {
-        @media (max-width:48em) {
             @content
         }
     }
