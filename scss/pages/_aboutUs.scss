@@ -8,6 +8,10 @@
         justify-content: space-around;
     }
 
+    @include respond(phone) {
+        padding-top: 2.5rem;
+    }
+
 
 }
 
@@ -43,6 +47,15 @@
         margin-bottom: 4rem;
         font-size: 5rem;
 
+    }
+
+    @include respond(ipad-pro) {
+        padding-top: 15rem;
+    }
+
+    @include respond(phone) {
+        padding-top: 4rem;
+        font-size: 3.2rem;
     }
 
 }
@@ -84,6 +97,11 @@
     font-size: 1.7rem;
     line-height: 1.7;
 
+    @include respond(phone) {
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
 
     &::after {
 
@@ -95,6 +113,9 @@
         margin: 0 auto;
         margin-top: 3.5rem;
 
+        @include respond(phone) {
+            width: 15rem;
+        }
     }
 }
 
@@ -128,6 +149,10 @@
         top: 120%;
     }
 
+    @include respond(phone) {
+        top: 105%;
+    }
+
 
 }
 
@@ -144,6 +169,10 @@
 
     @include respond(small-ipad) {
         width: 70rem;
+    }
+
+    @include respond(phone) {
+        width: 40rem;
     }
 }
 
@@ -186,6 +215,10 @@
     border-radius: 50%;
     background-color: #fff;
     font-size: 2.2rem;
+
+    @include respond(phone) {
+        font-size: 2rem;
+    }
 }
 
 .timeline li .item h3,
@@ -216,6 +249,10 @@
     text-transform: uppercase;
     margin-bottom: 5rem;
     color: $colour-white;
+
+    @include respond(phone) {
+        font-size: 3rem;
+    }
 }
 
 .smart-home-link {
@@ -236,8 +273,13 @@
         min-height: 50vh;
     }
 
+    @include respond(tablet) {
+        min-height: 60vh;
+    }
+
+
     @include respond(phone) {
-        min-height: 50vh;
+        min-height: 60vh;
     }
 }
 
@@ -317,7 +359,7 @@
 
 
     @include respond(laptop-medium) {
-        transform: translateX(-1rem) scale(0.7);
+        transform: translateX(-.8rem) scale(0.7);
     }
 }
 
@@ -326,7 +368,7 @@
     cursor: pointer;
 
     @include respond(laptop-medium) {
-        transform: translateX(1rem) scale(0.7);
+        transform: translateX(.8rem) scale(0.7);
     }
 }
 
@@ -336,9 +378,9 @@
     background: $colour-dark-gray;
 
     @include respond(laptop-medium) {
-       min-height: 70vh;
+        min-height: 70vh;
     }
-    
+
 }
 
 .partner-wise-logo,
@@ -355,7 +397,11 @@
     letter-spacing: 2px;
 
     @include respond(laptop-medium) {
-       font-size: 9rem;
+        font-size: 9rem;
+    }
+
+    @include respond(phone) {
+       font-size: 7rem;
      }
 
 }
@@ -379,7 +425,11 @@
 
     @include respond(laptop-medium) {
         height: 10rem;
-      }
+    }
+
+    @include respond(phone) {
+       height: 8rem;
+     }
 }
 
 .remax {
@@ -480,12 +530,12 @@
 
     @include respond(tablet-landcape) {
         font-size: 1.3rem;
-        transform: translateY(-6rem);
+        transform: translateY(-10rem);
     }
 
     @include respond(tablet) {
         font-size: 1.3rem;
-        transform: translateY(-6rem);
+        transform: translateY(-4rem);
     }
 
     @include respond(tablet-medium-landscape) {

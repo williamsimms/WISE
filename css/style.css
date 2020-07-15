@@ -409,6 +409,9 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 64em) {
     .smart-text {
       margin-right: 0; } }
+  @media (max-width: 37.5em) {
+    .smart-text {
+      padding-left: 0; } }
 
 .smart-header {
   font-size: 6rem;
@@ -1196,6 +1199,9 @@ ion-icon {
   @media (max-width: 70em) {
     .about-us-navigation {
       justify-content: space-around; } }
+  @media (max-width: 37.5em) {
+    .about-us-navigation {
+      padding-top: 2.5rem; } }
 
 .wise-logo-nav {
   width: 40%; }
@@ -1224,6 +1230,13 @@ ion-icon {
       padding-top: 8rem;
       margin-bottom: 4rem;
       font-size: 5rem; } }
+  @media (max-width: 64em) {
+    .about-hero-text {
+      padding-top: 15rem; } }
+  @media (max-width: 37.5em) {
+    .about-hero-text {
+      padding-top: 4rem;
+      font-size: 3.2rem; } }
 
 #about-us {
   min-height: 100vh;
@@ -1253,6 +1266,10 @@ ion-icon {
   width: 60%;
   font-size: 1.7rem;
   line-height: 1.7; }
+  @media (max-width: 37.5em) {
+    .header-info {
+      width: 80%;
+      font-size: 1.5rem; } }
   .header-info::after {
     display: block;
     height: 2px;
@@ -1261,6 +1278,9 @@ ion-icon {
     width: 30rem;
     margin: 0 auto;
     margin-top: 3.5rem; }
+    @media (max-width: 37.5em) {
+      .header-info::after {
+        width: 15rem; } }
 
 .scroll-down-button-container {
   display: flex;
@@ -1284,6 +1304,9 @@ ion-icon {
   @media (max-width: 85.375em) {
     .scroll-down-button {
       top: 120%; } }
+  @media (max-width: 37.5em) {
+    .scroll-down-button {
+      top: 105%; } }
 
 #about {
   min-height: 100vh;
@@ -1297,6 +1320,9 @@ ion-icon {
   @media (max-width: 48em) {
     .timeline {
       width: 70rem; } }
+  @media (max-width: 37.5em) {
+    .timeline {
+      width: 40rem; } }
 
 .timeline li {
   position: relative;
@@ -1332,6 +1358,9 @@ ion-icon {
   border-radius: 50%;
   background-color: #fff;
   font-size: 2.2rem; }
+  @media (max-width: 37.5em) {
+    .timeline li .item span {
+      font-size: 2rem; } }
 
 .timeline li .item h3,
 .timeline li .item p {
@@ -1358,6 +1387,9 @@ ion-icon {
   text-transform: uppercase;
   margin-bottom: 5rem;
   color: #fff; }
+  @media (max-width: 37.5em) {
+    .about-header {
+      font-size: 3rem; } }
 
 .smart-home-link {
   color: #fff;
@@ -1372,9 +1404,12 @@ ion-icon {
   @media (max-width: 64em) {
     #team {
       min-height: 50vh; } }
+  @media (max-width: 52.125em) {
+    #team {
+      min-height: 60vh; } }
   @media (max-width: 37.5em) {
     #team {
-      min-height: 50vh; } }
+      min-height: 60vh; } }
 
 .team-header {
   color: #000;
@@ -1435,14 +1470,14 @@ ion-icon {
   cursor: pointer; }
   @media (max-width: 85.375em) {
     .glider-prev {
-      transform: translateX(-1rem) scale(0.7); } }
+      transform: translateX(-0.8rem) scale(0.7); } }
 
 .glider-next {
   transform: translateX(2rem);
   cursor: pointer; }
   @media (max-width: 85.375em) {
     .glider-next {
-      transform: translateX(1rem) scale(0.7); } }
+      transform: translateX(0.8rem) scale(0.7); } }
 
 #partners {
   min-height: 65vh;
@@ -1465,6 +1500,9 @@ ion-icon {
   @media (max-width: 85.375em) {
     .partner-wise-logo {
       font-size: 9rem; } }
+  @media (max-width: 37.5em) {
+    .partner-wise-logo {
+      font-size: 7rem; } }
 
 .partner-wise-info {
   font-size: 1.2rem;
@@ -1482,6 +1520,9 @@ ion-icon {
   @media (max-width: 85.375em) {
     .partner-logos {
       height: 10rem; } }
+  @media (max-width: 37.5em) {
+    .partner-logos {
+      height: 8rem; } }
 
 @media (max-width: 64em) {
   .remax {
@@ -1566,7 +1607,7 @@ ion-icon {
     .about-us-email::-webkit-input-placeholder,
     .about-us-message::-webkit-input-placeholder {
       font-size: 1.3rem;
-      transform: translateY(-6rem); } }
+      transform: translateY(-4rem); } }
   @media (max-width: 64em) and (max-height: 48em) {
     .about-us-name::-webkit-input-placeholder,
     .about-us-email::-webkit-input-placeholder,

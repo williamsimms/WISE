@@ -442,6 +442,9 @@ body::-webkit-scrollbar-thumb {
     @include respond(ipad-pro) {
         margin-right: 0;
     }
+    @include respond(phone) {
+        padding-left: 0;
+    }
 }
 
 .smart-header {
