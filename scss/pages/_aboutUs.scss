@@ -33,6 +33,13 @@
     padding-top: 13rem;
     letter-spacing: 2px;
     margin-bottom: 10rem;
+
+    
+    @include respond(laptop-medium) {
+        padding-top: 8rem;
+        margin-bottom: 6rem;
+    }
+
 }
 
 #about-us {
@@ -110,6 +117,16 @@
     position: absolute;
     cursor: pointer;
     top: 140%;
+
+
+    @include respond(laptop-medium) {
+        top: 110%;
+    }
+
+    @include respond(tablet) {
+        top: 140%;
+    }
+
 }
 
 #about {
@@ -435,25 +452,25 @@
     padding: 2rem 3rem;
     overflow: visible;
 
-    // @include respond(tablet-landcape) {
-    //     font-size: 1.3rem;
-    //     transform: translateY(-3.5rem);
-    // }
+    @include respond(tablet-landcape) {
+        font-size: 1.3rem;
+        transform: translateY(-3.5rem);
+    }
 
-    // @include respond(tablet) {
-    //     font-size: 1.3rem;
-    //     transform: translateY(-3.5rem);
-    // }
+    @include respond(tablet) {
+        font-size: 1.3rem;
+        transform: translateY(-3.5rem);
+    }
 
-    // @include respond(tablet-medium-landscape) {
-    //     padding: 2rem 3rem;
-    //     font-size: 1rem;
-    //     transform: translateY(-1.8rem);
-    // }
+    @include respond(tablet-medium-landscape) {
+        padding: 2rem 3rem;
+        font-size: 1rem;
+        transform: translateY(-1.8rem);
+    }
 
-    // @include respond(phone) {
-    //     padding: 2rem 3rem;
-    //     font-size: 1rem;
-    //     transform: translateY(-1.8rem);
-    // }
+    @include respond(phone) {
+        padding: 2rem 3rem;
+        font-size: 1rem;
+        transform: translateY(-1.8rem);
+    }
 }

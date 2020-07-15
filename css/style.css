@@ -195,12 +195,17 @@ body::-webkit-scrollbar-thumb {
   @media (min-width: 125em) {
     #mission {
       min-height: 70vh; } }
+  @media (max-width: 85.375em) {
+    #mission {
+      min-height: 105vh; } }
   @media (max-width: 52.125em) {
     #mission {
+      min-height: 100vh;
       margin-top: -3rem;
       padding-top: 3rem; } }
   @media (max-width: 70em) {
     #mission {
+      min-height: 100vh;
       margin-top: -5rem;
       padding-top: 5rem; } }
 
@@ -399,7 +404,8 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 85.375em) {
     .smart-text {
       margin-bottom: 8rem;
-      text-align: center; } }
+      text-align: center;
+      padding-left: 5rem; } }
   @media (max-width: 64em) {
     .smart-text {
       margin-right: 0; } }
@@ -1209,6 +1215,10 @@ ion-icon {
   padding-top: 13rem;
   letter-spacing: 2px;
   margin-bottom: 10rem; }
+  @media (max-width: 85.375em) {
+    .about-hero-text {
+      padding-top: 8rem;
+      margin-bottom: 6rem; } }
 
 #about-us {
   min-height: 100vh;
@@ -1266,6 +1276,12 @@ ion-icon {
   position: absolute;
   cursor: pointer;
   top: 140%; }
+  @media (max-width: 85.375em) {
+    .scroll-down-button {
+      top: 110%; } }
+  @media (max-width: 52.125em) {
+    .scroll-down-button {
+      top: 140%; } }
 
 #about {
   min-height: 100vh;
@@ -1528,3 +1544,23 @@ ion-icon {
   line-height: 3;
   padding: 2rem 3rem;
   overflow: visible; }
+  @media (max-width: 52.125em) {
+    .about-us-name::-webkit-input-placeholder,
+    .about-us-email::-webkit-input-placeholder,
+    .about-us-message::-webkit-input-placeholder {
+      font-size: 1.3rem;
+      transform: translateY(-3.5rem); } }
+  @media (max-width: 64em) and (max-height: 48em) {
+    .about-us-name::-webkit-input-placeholder,
+    .about-us-email::-webkit-input-placeholder,
+    .about-us-message::-webkit-input-placeholder {
+      padding: 2rem 3rem;
+      font-size: 1rem;
+      transform: translateY(-1.8rem); } }
+  @media (max-width: 37.5em) {
+    .about-us-name::-webkit-input-placeholder,
+    .about-us-email::-webkit-input-placeholder,
+    .about-us-message::-webkit-input-placeholder {
+      padding: 2rem 3rem;
+      font-size: 1rem;
+      transform: translateY(-1.8rem); } }

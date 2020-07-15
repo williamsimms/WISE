@@ -157,12 +157,18 @@ body::-webkit-scrollbar-thumb {
         min-height: 70vh;
     }
 
+    @include respond(laptop-medium) {
+        min-height: 105vh;
+    }
+
     @include respond(tablet) {
+        min-height: 100vh;
         margin-top: -3rem;
         padding-top: 3rem;
     }
 
     @include respond(tablet-landscape) {
+        min-height: 100vh;
         margin-top: -5rem;
         padding-top: 5rem;
     }
@@ -424,6 +430,7 @@ body::-webkit-scrollbar-thumb {
     @include respond(laptop-medium) {
         margin-bottom: 8rem;
         text-align: center;
+        padding-left: 5rem;
     }
 
     @include respond(ipad-pro) {
