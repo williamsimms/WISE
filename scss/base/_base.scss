@@ -119,8 +119,9 @@ body::-webkit-scrollbar-thumb {
     }
 
     @include respond(iphone-7plus-landscape) {
-      padding-top: 8rem;
-      font-size: 4rem;
+        padding-top: 8rem;
+        font-weight: 300;
+        font-size: 4rem;
     }
 
     @include respond(phone) {
@@ -237,9 +238,11 @@ body::-webkit-scrollbar-thumb {
     @include respond(tablet) {
         top: 170%;
     }
+
     @include respond(iphone-7plus-landscape) {
         top: 190%;
     }
+
     @include respond(phone) {
         top: 190%;
     }

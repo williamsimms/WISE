@@ -115,6 +115,7 @@
     width: 80rem;
     margin: auto;
     padding-top: 6rem;
+    padding-bottom: 5rem;
 }
 
 .timeline li {
@@ -132,7 +133,7 @@
     &::after {
         display: block;
         height: 2px;
-        background-color: rgba($colour-white,.2);
+        background-color: rgba($colour-white, .2);
         content: "";
         width: 20rem;
         margin: 0 auto;
@@ -193,7 +194,97 @@
     transition: all .3s ease-in-out;
 
     &:hover {
-       border-bottom: $colour-white .2rem solid;
-       padding-bottom: .2rem;
+        border-bottom: $colour-white .2rem solid;
+        padding-bottom: .2rem;
     }
+}
+
+#team {
+    min-height: 70vh;
+    background-color: $colour-light-gray;
+
+    @include respond(phone) {
+      min-height: 50vh;
+      }
+}
+
+.team-header {
+    color: $colour-black;
+    font-weight: 300;
+    margin-bottom: 7rem;
+    padding-top: 5rem;
+
+    @include respond(phone) {
+        font-size:4rem ;
+      }
+  
+}
+
+.about-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba($colour-dark-gray, .9);
+    border-radius: .5rem;
+    align-items: center;
+    font-family: 'Lato';
+    transition: all .4s ease-out;
+    width: 35rem;
+    height: 40rem;
+    margin-right: 2rem;
+
+    &-header {
+        font-size: 1.9rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-family: 700;
+        color: $colour-white;
+        text-align: center;
+        padding-top: 4rem;
+        letter-spacing: 2px;
+
+    }
+
+    &-paragraph {
+        font-size: 1.6rem;
+        padding: 3rem 3rem;
+        text-align: center;
+        padding-bottom: 4rem;
+        color: $colour-white;
+    }
+
+    &-logo {
+        text-align: center;
+    }
+
+    &-icon {
+        width: 25%;
+        text-align: center;
+        filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(204deg) brightness(106%) contrast(101%);
+    }
+
+
+    @include respond(phone) {
+        margin-right: .2rem;
+    }
+}
+
+.glider {
+    margin-bottom: 2rem;
+}
+
+.glider-prev {
+    transform: translateX(-2rem);
+    cursor: pointer;
+}
+
+.glider-next {
+    transform: translateX(2rem);
+    cursor: pointer;
+}
+
+
+#partners {
+    min-height: 100vh;
 }
