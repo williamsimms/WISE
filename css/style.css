@@ -1016,7 +1016,7 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 52.125em) {
     ::-webkit-input-placeholder {
       font-size: 1.3rem;
-      transform: translateY(-3.5rem); } }
+      transform: translateY(-5rem); } }
   @media (max-width: 64em) and (max-height: 48em) {
     ::-webkit-input-placeholder {
       padding: 2rem 3rem;

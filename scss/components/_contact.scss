@@ -48,11 +48,11 @@
 
     @include respond(tablet-landcape) {
         font-size: 1.3rem;
-        transform: translateY(-3.5rem);
+        transform: translateY(-6rem);
     }
     @include respond(tablet) {
         font-size: 1.3rem;
-        transform: translateY(-3.5rem);
+        transform: translateY(-5rem);
     }
 
     @include respond(tablet-medium-landscape) {
