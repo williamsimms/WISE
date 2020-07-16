@@ -1761,6 +1761,9 @@ ion-icon {
   position: absolute;
   cursor: pointer;
   top: 240%; }
+  @media (max-width: 37.5em) {
+    .signature-scroll-button {
+      top: 170%; } }
 
 .feature {
   margin: 0rem auto;
@@ -1978,8 +1981,7 @@ ion-icon {
   color: #dcdde1;
   text-align: center;
   font-weight: 300;
-  padding-top: 10rem;
-  margin-bottom: 7rem; }
+  padding-top: 10rem; }
   @media (max-width: 37.5em) {
     .freq-hero-text {
       font-size: 3rem; } }
