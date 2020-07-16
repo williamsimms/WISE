@@ -131,7 +131,7 @@
 
     
     @include respond(phone) {
-      top: 170%;
+      top: 150%;
     }
 
 }
@@ -212,7 +212,7 @@
 .house-features {
     width: 70%;
 
-    @include respond(phone) {
+    @include respond(tablet) {
         width: 85%;
     }
 }

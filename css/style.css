@@ -337,7 +337,7 @@ body::-webkit-scrollbar-thumb {
 
 #contact {
   min-height: 75vh;
-  background: linear-gradient(135deg, #1d4350, #fbc531); }
+  background: #A43931; }
   @media (max-width: 85.375em) {
     #contact {
       min-height: 90vh; } }
@@ -442,6 +442,25 @@ body::-webkit-scrollbar-thumb {
   .smart-btn:hover {
     background-color: #000;
     color: #fff; }
+
+.loading-screen {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  background-color: #A43931;
+  width: 0%;
+  height: 100%; }
+
+.load-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  pointer-events: none; }
 
 .navigation-bar {
   display: flex;
@@ -1763,7 +1782,7 @@ ion-icon {
   top: 240%; }
   @media (max-width: 37.5em) {
     .signature-scroll-button {
-      top: 170%; } }
+      top: 150%; } }
 
 .feature {
   margin: 0rem auto;
@@ -1823,7 +1842,7 @@ ion-icon {
 
 .house-features {
   width: 70%; }
-  @media (max-width: 37.5em) {
+  @media (max-width: 52.125em) {
     .house-features {
       width: 85%; } }
 
