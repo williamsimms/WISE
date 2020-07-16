@@ -1668,6 +1668,30 @@ ion-icon {
   color: #fff;
   background-attachment: fixed;
   position: relative; }
+  @media (max-width: 85.375em) {
+    #home-smart {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signaturelaptopHeroImage.jpg); } }
+  @media (max-width: 75em) {
+    #home-smart {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signaturetabletHeroImage.jpg); } }
+  @media (max-width: 70em) {
+    #home-smart {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signaturetabletLandscapeHeroImage.jpg); } }
+  @media (max-width: 64em) {
+    #home-smart {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signatureIPadProHeroImage.jpg); } }
+  @media (max-width: 46em) and (max-height: 26em) {
+    #home-smart {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signatureIPhone7PlusLandscapeHeroImage.jpg); } }
+  @media (max-width: 25.875em) {
+    #home-smart {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signature7PlusHeroImage.jpg); } }
+  @media (max-width: 25.875em) and (max-height: 56em) {
+    #home-smart {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signatureIPhoneXSMAXHeroImage.jpg); } }
+  @media (max-width: 23.4375em) and (max-height: 50.75em) {
+    #home-smart {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signatureIPhoneXHeroImage.jpg); } }
 
 .smart-navigation {
   display: flex;
@@ -1945,6 +1969,77 @@ ion-icon {
       font-size: 1rem;
       transform: translateY(-1.8rem); } }
 
+#freq-home {
+  min-height: 100vh;
+  background-color: #333333; }
+
+.freq-hero-text {
+  font-size: 4rem;
+  color: #dcdde1;
+  text-align: center;
+  font-weight: 300;
+  padding-top: 10rem;
+  margin-bottom: 7rem; }
+  @media (max-width: 37.5em) {
+    .freq-hero-text {
+      font-size: 3rem; } }
+
+.freq-scroll-button-container {
+  text-align: center; }
+
+.freq-scroll-container {
+  display: flex;
+  justify-content: center; }
+
+.freq-scroll-down-image {
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(310deg) brightness(104%) contrast(102%);
+  animation: bounce 3s ease-in-out infinite;
+  transition: all .3s ease-in-out;
+  height: 3rem; }
+
+.freq-scroll-button {
+  background: transparent;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 85%; }
+
+#freq {
+  min-height: 100vh;
+  background-color: #dcdde1; }
+
+.freq-header {
+  text-align: center;
+  color: #333333;
+  font-size: 2.5rem;
+  font-weight: 300;
+  padding-top: 5rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem; }
+  @media (max-width: 37.5em) {
+    .freq-header {
+      font-size: 1.7rem; } }
+
+.freq-paragraph {
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: .3rem;
+  text-align: center; }
+  @media (max-width: 85.375em) {
+    .freq-paragraph {
+      width: 80%;
+      margin: auto; } }
+  @media (max-width: 37.5em) {
+    .freq-paragraph {
+      font-size: 1.3rem; } }
+  .freq-paragraph a {
+    color: #000;
+    text-decoration: underline; }
+
+.freq-paragraph:last-of-type {
+  padding-bottom: 5rem; }
+
 #faq-home {
   min-height: 100vh;
   background-color: #333333; }
@@ -2015,7 +2110,8 @@ ion-icon {
       margin: auto; } }
   @media (max-width: 37.5em) {
     .faq-paragraph {
-      font-size: 1.2rem; } }
+      font-size: 1.3rem;
+      width: 85%; } }
 
 .faq-paragraph:last-of-type {
   padding-bottom: 5rem; }

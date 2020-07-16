@@ -7,6 +7,39 @@
     color: #fff;
     background-attachment: fixed;
     position: relative;
+
+    @include respond(laptop-medium) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/signaturelaptopHeroImage.jpg);
+    }
+
+
+    @include respond(tab-land) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/signaturetabletHeroImage.jpg);
+    }
+
+    @include respond(tablet-landscape) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/signaturetabletLandscapeHeroImage.jpg);
+    }
+
+    @include respond(ipad-pro) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/signatureIPadProHeroImage.jpg);
+    }
+
+    @include respond(iphone-7plus-landscape) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/signatureIPhone7PlusLandscapeHeroImage.jpg);
+    }
+
+    @include respond(iphone-7plus) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/signature7PlusHeroImage.jpg);
+    }
+
+    @include respond(iphoneXSMax) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/signatureIPhoneXSMAXHeroImage.jpg);
+    }
+
+    @include respond(iphoneXS) {
+        background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/signatureIPhoneXHeroImage.jpg);
+    }
 }
 
 .smart-navigation {
