@@ -1,5 +1,5 @@
 #home-smart {
-    background: $colour-light-gray;
+    background: $colour-dark-gray;
     background-repeat: no-repeat;
     background-position: 100% 100%;
     background-size: cover;
@@ -32,12 +32,12 @@
 .smart-navigation-item {
 
     font-size: 1.6rem;
-    color: rgba($colour-black, .8);
+    color: rgba($colour-white, .8);
     text-transform: uppercase;
     transition: all .3s ease-in-out;
 
     &:hover {
-        border-bottom: .3rem solid rgba($colour-black, .8);
+        border-bottom: .3rem solid rgba($colour-white, .8);
     }
 }
 
@@ -47,12 +47,11 @@
 }
 
 .signature-header {
-    color: $colour-dark-gray;
+    color: $colour-light-gray;
     text-align: center;
-    font-size: 7rem;
+    font-size: 6rem;
     padding-top: 10rem;
     font-weight: 300;
-    color: $colour-black;
     text-transform: uppercase;
     margin-bottom: 5rem;
     animation: fadein forwards 1s ease;
@@ -63,7 +62,7 @@
     animation: fadein forwards 1s ease;
     font-size: 2.4rem;
     font-weight: 400;
-    color: $colour-black;
+    color: $colour-light-gray;
 }
 
 #video {
@@ -82,7 +81,7 @@
 }
 
 .signature-scroll-down-image {
-    filter: invert(0%) sepia(13%) saturate(7492%) hue-rotate(122deg) brightness(89%) contrast(97%);
+    filter: invert(100%) sepia(80%) saturate(248%) hue-rotate(178deg) brightness(92%) contrast(91%);
     opacity: .9;
     animation: bounce 3s ease-in-out infinite;
     transition: all .3s ease-in-out;
@@ -103,7 +102,7 @@
 }
 
 .feature {
-    margin:0rem auto;
+    margin: 0rem auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -115,15 +114,16 @@
     transition: all .4s ease-out;
     width: 35rem;
     height: 40rem;
+    margin-bottom: 5rem;
+
 
     &-header {
-        font-size: 1.9rem;
+        font-size: 2.3rem;
         text-transform: uppercase;
         margin-bottom: 2rem;
         font-family: 700;
         color: $colour-dark-gray;
         text-align: center;
-        padding-top: 3rem;
         letter-spacing: 2px;
 
     }
@@ -134,6 +134,7 @@
         text-align: center;
         padding-bottom: 2rem;
         color: $colour-dark-gray;
+        letter-spacing: .7px;
     }
 
     &-logo {
@@ -146,5 +147,19 @@
         filter: invert(13%) sepia(17%) saturate(18%) hue-rotate(318deg) brightness(96%) contrast(80%);
     }
 
+}
 
+.feature:last-of-type {
+    margin-bottom: 0rem;
+}
+
+
+.feature-hero-text {
+    text-align: center;
+    color: $colour-light-gray;
+    font-size: 5rem;
+    font-weight: 300;
+    padding-top: 5rem;
+    margin-bottom: 10rem;
+    text-transform: uppercase;
 }

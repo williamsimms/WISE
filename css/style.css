@@ -1654,7 +1654,7 @@ ion-icon {
       transform: translateY(-1.8rem); } }
 
 #home-smart {
-  background: #dcdde1;
+  background: #333333;
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: cover;
@@ -1679,23 +1679,22 @@ ion-icon {
 
 .smart-navigation-item {
   font-size: 1.6rem;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   transition: all .3s ease-in-out; }
   .smart-navigation-item:hover {
-    border-bottom: 0.3rem solid rgba(0, 0, 0, 0.8); }
+    border-bottom: 0.3rem solid rgba(255, 255, 255, 0.8); }
 
 .smart-text-header {
   font-size: 6rem;
   text-align: center; }
 
 .signature-header {
-  color: #333333;
+  color: #dcdde1;
   text-align: center;
-  font-size: 7rem;
+  font-size: 6rem;
   padding-top: 10rem;
   font-weight: 300;
-  color: #000;
   text-transform: uppercase;
   margin-bottom: 5rem;
   animation: fadein forwards 1s ease; }
@@ -1705,7 +1704,7 @@ ion-icon {
   animation: fadein forwards 1s ease;
   font-size: 2.4rem;
   font-weight: 400;
-  color: #000; }
+  color: #dcdde1; }
 
 #video {
   min-height: 100vh;
@@ -1720,7 +1719,7 @@ ion-icon {
   justify-content: center; }
 
 .signature-scroll-down-image {
-  filter: invert(0%) sepia(13%) saturate(7492%) hue-rotate(122deg) brightness(89%) contrast(97%);
+  filter: invert(100%) sepia(80%) saturate(248%) hue-rotate(178deg) brightness(92%) contrast(91%);
   opacity: .9;
   animation: bounce 3s ease-in-out infinite;
   transition: all .3s ease-in-out;
@@ -1747,25 +1746,38 @@ ion-icon {
   font-family: 'Lato';
   transition: all .4s ease-out;
   width: 35rem;
-  height: 40rem; }
+  height: 40rem;
+  margin-bottom: 5rem; }
   .feature-header {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-family: 700;
     color: #333333;
     text-align: center;
-    padding-top: 3rem;
     letter-spacing: 2px; }
   .feature-paragraph {
     font-size: 1.6rem;
     padding: 3rem 3rem;
     text-align: center;
     padding-bottom: 2rem;
-    color: #333333; }
+    color: #333333;
+    letter-spacing: .7px; }
   .feature-logo {
     text-align: center; }
   .feature-icon {
     width: 25%;
     text-align: center;
     filter: invert(13%) sepia(17%) saturate(18%) hue-rotate(318deg) brightness(96%) contrast(80%); }
+
+.feature:last-of-type {
+  margin-bottom: 0rem; }
+
+.feature-hero-text {
+  text-align: center;
+  color: #dcdde1;
+  font-size: 5rem;
+  font-weight: 300;
+  padding-top: 5rem;
+  margin-bottom: 10rem;
+  text-transform: uppercase; }
