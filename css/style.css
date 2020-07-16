@@ -1823,6 +1823,9 @@ ion-icon {
 
 .house-features {
   width: 70%; }
+  @media (max-width: 37.5em) {
+    .house-features {
+      width: 85%; } }
 
 .house-image-container {
   margin: auto;

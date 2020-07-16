@@ -211,6 +211,10 @@
 
 .house-features {
     width: 70%;
+
+    @include respond(phone) {
+        width: 85%;
+    }
 }
 
 .house-image-container {
