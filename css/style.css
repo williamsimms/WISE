@@ -1660,12 +1660,13 @@ ion-icon {
       transform: translateY(-1.8rem); } }
 
 #home-smart {
-  background: #333333;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../../img/signatureDesktopHeroImage.jpg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: cover;
   min-height: 100vh;
   color: #fff;
+  background-attachment: fixed;
   position: relative; }
 
 .smart-navigation {
@@ -1698,7 +1699,7 @@ ion-icon {
 .signature-header {
   color: #dcdde1;
   text-align: center;
-  font-size: 6rem;
+  font-size: 5.5rem;
   padding-top: 10rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -1708,7 +1709,7 @@ ion-icon {
 .signature-info {
   text-align: center;
   animation: fadein forwards 1s ease;
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 400;
   color: #dcdde1; }
 
@@ -1746,7 +1747,7 @@ ion-icon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: rgba(220, 221, 225, 0.9);
+  background: rgba(115, 186, 76, 0.9);
   border-radius: .5rem;
   align-items: center;
   font-family: 'Lato';
@@ -1759,26 +1760,29 @@ ion-icon {
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-family: 700;
-    color: #333333;
+    color: #000;
     text-align: center;
-    letter-spacing: 2px; }
+    letter-spacing: 1.2px; }
   .feature-paragraph {
     font-size: 1.6rem;
     padding: 3rem 3rem;
     text-align: center;
     padding-bottom: 2rem;
-    color: #333333;
+    color: #000;
     letter-spacing: .7px; }
   .feature-logo {
     text-align: center; }
   .feature-icon {
     width: 25%;
     text-align: center;
-    filter: invert(0%) sepia(93%) saturate(0%) hue-rotate(191deg) brightness(93%) contrast(100%);
-    opacity: .7; }
+    filter: invert(0%) sepia(6%) saturate(7476%) hue-rotate(257deg) brightness(93%) contrast(107%);
+    opacity: .9; }
 
 .feature:last-of-type {
   margin-bottom: 0rem; }
+
+.feature-container {
+  padding-bottom: 7rem; }
 
 .feature-hero-text {
   text-align: center;
@@ -1788,3 +1792,158 @@ ion-icon {
   padding-top: 5rem;
   margin-bottom: 10rem;
   text-transform: uppercase; }
+
+#smart-home-feature {
+  min-height: 100vh;
+  background: #fdfdfc; }
+
+.house-features {
+  width: 70%; }
+
+.house-image-container {
+  margin: auto;
+  text-align: center; }
+
+.smart-home-features-header {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 4.5rem;
+  padding-top: 5rem;
+  font-weight: 300;
+  color: #333333;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+.feature-list-item {
+  justify-content: center;
+  display: block;
+  display: flex;
+  margin: 5rem auto;
+  max-width: 30rem;
+  position: relative;
+  align-items: center; }
+  .feature-list-item:first-of-type {
+    margin-top: 5rem; }
+  .feature-list-item p {
+    font-size: 1.8rem; }
+  .feature-list-item::after {
+    left: 50%;
+    top: 180%;
+    position: absolute;
+    display: block;
+    height: 2px;
+    background-color: #73ba4c;
+    content: "";
+    width: 25rem;
+    transform: translateX(-50%); }
+    @media (max-width: 37.5em) {
+      .feature-list-item::after {
+        width: 35rem; } }
+  @media (max-width: 37.5em) {
+    .feature-list-item {
+      max-width: 30rem; } }
+
+.feature-hr {
+  border: #73ba4c solid 0.2rem;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 5rem;
+  width: 50%;
+  margin: auto; }
+
+.feature-btn-container {
+  text-align: center;
+  padding: 5rem 0 7rem 0rem; }
+
+.feature-btn {
+  font-size: 1.6rem;
+  border-radius: 5rem;
+  color: #000;
+  background-color: #73ba4c;
+  padding: 2rem 4rem;
+  transition: all .3s ease-in-out; }
+  .feature-btn:hover {
+    background-color: #333333;
+    color: #dcdde1; }
+
+#feature-contact-us {
+  min-height: 75vh;
+  background-color: #dcdde1; }
+  @media (max-width: 85.375em) {
+    #feature-contact-us {
+      min-height: 90vh; } }
+  @media (max-width: 75em) {
+    #feature-contact-us {
+      min-height: 50vh; } }
+  @media (max-width: 70em) {
+    #feature-contact-us {
+      min-height: 75vh; } }
+  @media (max-width: 52.125em) {
+    #feature-contact-us {
+      min-height: 60vh; } }
+  @media (max-width: 64em) {
+    #feature-contact-us {
+      min-height: 47vh; } }
+  @media (max-width: 64em) and (max-height: 48em) {
+    #feature-contact-us {
+      min-height: 80vh; } }
+
+.feature-form-header {
+  text-align: center;
+  padding-top: 7rem;
+  font-size: 5rem;
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5rem; }
+
+.feature-field {
+  text-align: center; }
+
+.feature-name,
+.feature-email,
+.feature-message {
+  width: 50%;
+  margin-bottom: 4rem;
+  padding: 2rem 3rem;
+  border: none;
+  background: none;
+  border-bottom: 2px #000 solid; }
+  @media (max-width: 37.5em) {
+    .feature-name,
+    .feature-email,
+    .feature-message {
+      width: 60%;
+      padding: 3rem 3rem; } }
+
+.feature-name::-webkit-input-placeholder,
+.feature-email::-webkit-input-placeholder,
+.feature-message::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: 'Lato';
+  color: #333333;
+  line-height: 3;
+  padding: 2rem 3rem;
+  overflow: visible; }
+  @media (max-width: 52.125em) {
+    .feature-name::-webkit-input-placeholder,
+    .feature-email::-webkit-input-placeholder,
+    .feature-message::-webkit-input-placeholder {
+      font-size: 1.3rem;
+      transform: translateY(-4rem); } }
+  @media (max-width: 64em) and (max-height: 48em) {
+    .feature-name::-webkit-input-placeholder,
+    .feature-email::-webkit-input-placeholder,
+    .feature-message::-webkit-input-placeholder {
+      padding: 2rem 3rem;
+      font-size: 1rem;
+      transform: translateY(-1.8rem); } }
+  @media (max-width: 37.5em) {
+    .feature-name::-webkit-input-placeholder,
+    .feature-email::-webkit-input-placeholder,
+    .feature-message::-webkit-input-placeholder {
+      padding: 2rem 3rem;
+      font-size: 1rem;
+      transform: translateY(-1.8rem); } }
