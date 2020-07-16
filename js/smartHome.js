@@ -23,6 +23,7 @@ function setDate() {
 }
 setDate()
 
+
 let featureSectionTop = featureSection.getBoundingClientRect().top
 scrollDownButton.addEventListener('click', function () {
     $('html, body').animate({

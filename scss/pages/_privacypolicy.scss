@@ -1,0 +1,88 @@
+#faq-home {
+    min-height: 100vh;
+    background-color: $colour-dark-gray;
+}
+
+#faq {
+    min-height: 100vh;
+    background-color: $colour-light-gray;
+}
+.faq-hero-text{
+    text-align: center;
+    color: $colour-light-gray;
+    font-size: 5rem;
+    padding-top: 10rem;
+    font-weight: 300;
+    margin-bottom: 7rem;
+}
+.faq-hero-paragraph {
+    text-align: center;
+    color: $colour-light-gray;
+    font-size: 1.7em;
+    width: 75ch;
+    margin: auto;
+    line-height: 1.5;
+
+    @include respond(tablet) {
+        width: 65ch;
+      }
+    @include respond(phone) {
+       width: 35ch;
+     }
+}
+
+
+.faq-scroll-container {
+    display: flex;
+    justify-content: center;
+}
+
+.faq-scroll-down-image {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(310deg) brightness(104%) contrast(102%);
+    animation: bounce 3s ease-in-out infinite;
+    transition: all .3s ease-in-out;
+    height: 3rem;
+
+}
+
+.faq-scroll-button {
+    background: transparent;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    top: 85%;
+}
+.faq-header {
+    text-align: center;
+    color: $colour-dark-gray;
+    font-size: 3.5rem;
+    font-weight: 300;
+    padding-top: 5rem;
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+     }
+}
+.faq-paragraph {
+    color: $colour-black;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: .3rem;
+
+    @include respond(laptop-medium) {
+        width: 80%;
+        margin: auto;
+    }
+
+    @include respond(phone) {
+       font-size: 1.2rem;
+    }
+    
+
+
+}
+.faq-paragraph:last-of-type {
+    padding-bottom: 5rem;
+}
