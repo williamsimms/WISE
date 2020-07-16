@@ -395,6 +395,9 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 85.375em) {
     .smart-container {
       padding-bottom: 7rem; } }
+  @media (max-width: 80em) {
+    .smart-container {
+      flex-direction: column; } }
   @media (max-width: 75em) {
     .smart-container {
       flex-direction: column; } }
@@ -406,6 +409,9 @@ body::-webkit-scrollbar-thumb {
       margin-bottom: 8rem;
       text-align: center;
       padding-left: 5rem; } }
+  @media (max-width: 80em) {
+    .smart-text {
+      margin-right: 0; } }
   @media (max-width: 64em) {
     .smart-text {
       margin-right: 0; } }
@@ -1768,7 +1774,8 @@ ion-icon {
   .feature-icon {
     width: 25%;
     text-align: center;
-    filter: invert(13%) sepia(17%) saturate(18%) hue-rotate(318deg) brightness(96%) contrast(80%); }
+    filter: invert(0%) sepia(93%) saturate(0%) hue-rotate(191deg) brightness(93%) contrast(100%);
+    opacity: .7; }
 
 .feature:last-of-type {
   margin-bottom: 0rem; }

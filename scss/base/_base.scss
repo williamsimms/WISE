@@ -416,7 +416,7 @@ body::-webkit-scrollbar-thumb {
         padding-bottom: 7rem;
     }
 
-    @include respond(laptop) {
+    @include respond(laptop-small) {
         flex-direction: column;
     }
 
@@ -435,13 +435,14 @@ body::-webkit-scrollbar-thumb {
     }
 
 
-    @include respond(laptop) {
+    @include respond(laptop-small) {
         margin-right: 0;
     }
 
     @include respond(ipad-pro) {
         margin-right: 0;
     }
+
     @include respond(phone) {
         padding-left: 0;
     }
