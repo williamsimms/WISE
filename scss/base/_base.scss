@@ -298,6 +298,7 @@ body::-webkit-scrollbar-thumb {
 
     @include respond(phone) {
         font-size: 4rem;
+        font-weight: 300;
     }
 }
 

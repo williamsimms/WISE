@@ -307,7 +307,8 @@ body::-webkit-scrollbar-thumb {
       margin-bottom: 0; } }
   @media (max-width: 37.5em) {
     .services-header {
-      font-size: 4rem; } }
+      font-size: 4rem;
+      font-weight: 300; } }
 
 #portfolio {
   min-height: 50vh;
@@ -1011,6 +1012,9 @@ body::-webkit-scrollbar-thumb {
   font-weight: 100;
   text-transform: uppercase;
   margin-bottom: 5rem; }
+  @media (max-width: 37.5em) {
+    .touch {
+      font-weight: 300; } }
 
 .contact-secondary {
   text-align: center;
