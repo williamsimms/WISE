@@ -1752,6 +1752,10 @@ ion-icon {
   text-transform: uppercase;
   margin-bottom: 5rem;
   animation: fadein forwards 1s ease; }
+  @media (max-width: 46em) and (max-height: 26em) {
+    .signature-header {
+      font-size: 4.5rem;
+      padding-top: 5rem; } }
 
 .signature-info {
   text-align: center;
@@ -1783,6 +1787,9 @@ ion-icon {
   position: absolute;
   cursor: pointer;
   top: 240%; }
+  @media (max-width: 46em) and (max-height: 26em) {
+    .signature-scroll-button {
+      top: 130%; } }
   @media (max-width: 37.5em) {
     .signature-scroll-button {
       top: 150%; } }
@@ -2082,6 +2089,10 @@ ion-icon {
   padding-top: 10rem;
   font-weight: 300;
   margin-bottom: 7rem; }
+  @media (max-width: 46em) and (max-height: 26em) {
+    .faq-hero-text {
+      padding-top: 5rem;
+      margin-bottom: 4rem; } }
 
 .faq-hero-paragraph {
   text-align: center;

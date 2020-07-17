@@ -89,6 +89,11 @@
     text-transform: uppercase;
     margin-bottom: 5rem;
     animation: fadein forwards 1s ease;
+
+    @include respond(iphone-7plus-landscape) {
+        font-size: 4.5rem;
+        padding-top: 5rem;
+    }
 }
 
 .signature-info {
@@ -127,9 +132,12 @@
     cursor: pointer;
     top: 240%;
 
-    
+    @include respond(iphone-7plus-landscape) {
+        top: 130%;
+    }
+
     @include respond(phone) {
-      top: 150%;
+        top: 150%;
     }
 
 }

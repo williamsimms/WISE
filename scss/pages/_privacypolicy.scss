@@ -7,14 +7,21 @@
     min-height: 100vh;
     background-color: $colour-light-gray;
 }
-.faq-hero-text{
+
+.faq-hero-text {
     text-align: center;
     color: $colour-light-gray;
     font-size: 5rem;
     padding-top: 10rem;
     font-weight: 300;
     margin-bottom: 7rem;
+
+    @include respond(iphone-7plus-landscape) {
+        padding-top: 5rem;
+        margin-bottom: 4rem;
+    }
 }
+
 .faq-hero-paragraph {
     text-align: center;
     color: $colour-light-gray;
@@ -25,10 +32,11 @@
 
     @include respond(tablet) {
         width: 65ch;
-      }
+    }
+
     @include respond(phone) {
-       width: 35ch;
-     }
+        width: 35ch;
+    }
 }
 
 
@@ -52,6 +60,7 @@
     cursor: pointer;
     top: 85%;
 }
+
 .faq-header {
     text-align: center;
     color: $colour-dark-gray;
@@ -61,10 +70,13 @@
     text-transform: uppercase;
     margin-bottom: 5rem;
 
+    
+
     @include respond(phone) {
         font-size: 2.5rem;
-     }
+    }
 }
+
 .faq-paragraph {
     color: $colour-black;
     font-size: 1.4rem;
@@ -77,13 +89,14 @@
     }
 
     @include respond(phone) {
-       font-size: 1.3rem;
-       width: 85%;
+        font-size: 1.3rem;
+        width: 85%;
     }
-    
+
 
 
 }
+
 .faq-paragraph:last-of-type {
     padding-bottom: 5rem;
 }
