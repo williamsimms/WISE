@@ -1769,9 +1769,8 @@ ion-icon {
   justify-content: center; }
 
 .signature-scroll-down-image {
-  filter: invert(100%) sepia(80%) saturate(248%) hue-rotate(178deg) brightness(92%) contrast(91%);
+  filter: invert(100%) sepia(0%) saturate(6259%) hue-rotate(7deg) brightness(117%) contrast(73%);
   animation: bounce 3s ease-in-out infinite;
-  transition: all .3s ease-in-out;
   height: 3rem; }
 
 .signature-scroll-button {

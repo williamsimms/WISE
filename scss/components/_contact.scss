@@ -6,6 +6,10 @@
     font-weight: 100;
     text-transform: uppercase;
     margin-bottom: 5rem;
+
+    @include respond(phone) {
+        font-weight: 300;
+    }
 }
 
 .contact-secondary {
