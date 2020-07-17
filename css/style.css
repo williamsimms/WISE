@@ -660,7 +660,7 @@ body::-webkit-scrollbar-thumb {
 
 .arrow {
   position: fixed;
-  top: 88%;
+  top: 87.8%;
   left: 92%;
   transform: translate(-50%, -50%);
   z-index: 10;

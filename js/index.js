@@ -311,7 +311,3 @@ $('.mobile-navigation-list li a').on('click', function (e) {
         }, 1800)
     }
 })
-
-
-
-console.log(barba)
