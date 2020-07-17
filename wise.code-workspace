@@ -8,7 +8,7 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "wise",
+		"liveServer.settings.multiRootWorkspaceName": "mealFinder",
 		"discord.enabled": true
 	}
 }
