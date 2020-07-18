@@ -2094,6 +2094,9 @@ ion-icon {
   padding-top: 5rem;
   text-transform: uppercase;
   margin-bottom: 2rem; }
+  @media (min-width: 125em) {
+    .freq-header {
+      font-size: 3rem; } }
   @media (max-width: 37.5em) {
     .freq-header {
       font-size: 1.7rem; } }
@@ -2104,6 +2107,9 @@ ion-icon {
   line-height: 1.5;
   margin-bottom: .3rem;
   text-align: center; }
+  @media (min-width: 125em) {
+    .freq-paragraph {
+      font-size: 2rem; } }
   @media (max-width: 85.375em) {
     .freq-paragraph {
       width: 80%;
