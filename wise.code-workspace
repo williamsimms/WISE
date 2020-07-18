@@ -4,11 +4,11 @@
 			"path": "."
 		},
 		{
-			"path": "..\\mealFinder"
+			"path": "..\\expenseTracker"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "mealFinder",
+		"liveServer.settings.multiRootWorkspaceName": "wise",
 		"discord.enabled": true
 	}
 }

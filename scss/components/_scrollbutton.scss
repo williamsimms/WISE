@@ -48,6 +48,10 @@
         left: 87%;
     }
 
+    @include respond(iphoneXSMaxLandscape) {
+        display: none;
+    }
+
     @include respond(iphone-7plus-landscape) {
         display: none;
     }

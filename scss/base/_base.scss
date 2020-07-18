@@ -114,9 +114,18 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 3rem;
     text-align: center;
 
+
     @include respond(tab-land) {
         padding-top: 25rem;
     }
+
+    @include respond(iphoneXSMaxLandscape) {
+        padding-top: 13rem;
+        font-weight: 100;
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+
 
     @include respond(iphone-7plus-landscape) {
         padding-top: 8rem;
@@ -132,6 +141,7 @@ body::-webkit-scrollbar-thumb {
     }
 
 
+
 }
 
 .slogan {
@@ -143,6 +153,10 @@ body::-webkit-scrollbar-thumb {
     top: 110%;
     transform: translate(-50%, -50%);
     margin-bottom: 6rem;
+
+    @include respond(iphoneXSMaxLandscape) {
+        font-size: 1.5rem;
+    }
 
     @include respond(phone) {
         font-size: 1.4rem;
@@ -474,15 +488,17 @@ body::-webkit-scrollbar-thumb {
         color: $colour-white;
     }
 }
+
 .loading-screen {
     position: relative;
     padding-left: 0;
-    padding-right:0 ;
+    padding-right: 0;
     padding-top: 0;
     background-color: $colour-red-ocean-2;
     width: 0%;
     height: 100%;
 }
+
 .load-container {
     position: fixed;
     top: 0;

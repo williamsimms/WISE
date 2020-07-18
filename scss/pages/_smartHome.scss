@@ -90,6 +90,11 @@
     margin-bottom: 5rem;
     animation: fadein forwards 1s ease;
 
+    @include respond(iphoneXSMaxLandscape) {
+        font-size: 5rem;
+        padding-top: 5rem;
+    }
+
     @include respond(iphone-7plus-landscape) {
         font-size: 4.5rem;
         padding-top: 5rem;
@@ -131,6 +136,10 @@
     position: absolute;
     cursor: pointer;
     top: 240%;
+
+    @include respond(iphoneXSMaxLandscape) {
+        top: 130%;
+    }
 
     @include respond(iphone-7plus-landscape) {
         top: 130%;

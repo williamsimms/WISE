@@ -49,8 +49,20 @@
         }
     }
 
+    @if $breakpoint==iphoneXSMaxLandscape {
+        @media (max-width:56em) and (max-height:25.875em) {
+            @content
+        }
+    }
+
     @if $breakpoint==iphoneXS {
         @media (max-width:23.4375em) and (max-height:50.75em) {
+            @content
+        }
+    }
+
+    @if $breakpoint==iphoneXSLandscape {
+        @media (max-width:50.75em) and (max-height:23.4375em) {
             @content
         }
     }

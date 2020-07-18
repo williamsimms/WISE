@@ -164,6 +164,12 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 75em) {
     .hero-text {
       padding-top: 25rem; } }
+  @media (max-width: 56em) and (max-height: 25.875em) {
+    .hero-text {
+      padding-top: 13rem;
+      font-weight: 100;
+      font-size: 4rem;
+      margin-bottom: 1rem; } }
   @media (max-width: 46em) and (max-height: 26em) {
     .hero-text {
       padding-top: 8rem;
@@ -185,6 +191,9 @@ body::-webkit-scrollbar-thumb {
   top: 110%;
   transform: translate(-50%, -50%);
   margin-bottom: 6rem; }
+  @media (max-width: 56em) and (max-height: 25.875em) {
+    .slogan {
+      font-size: 1.5rem; } }
   @media (max-width: 37.5em) {
     .slogan {
       font-size: 1.4rem; } }
@@ -593,6 +602,9 @@ body::-webkit-scrollbar-thumb {
   @media (max-width: 52.125em) {
     .btn {
       top: 130%; } }
+  @media (max-width: 56em) and (max-height: 25.875em) {
+    .btn {
+      padding: 1.5rem 3rem; } }
   @media (max-width: 46em) and (max-height: 26em) {
     .btn {
       top: 150%; } }
@@ -651,6 +663,9 @@ body::-webkit-scrollbar-thumb {
     .circular-text {
       top: 82%;
       left: 87%; } }
+  @media (max-width: 56em) and (max-height: 25.875em) {
+    .circular-text {
+      display: none; } }
   @media (max-width: 46em) and (max-height: 26em) {
     .circular-text {
       display: none; } }
@@ -1262,6 +1277,11 @@ ion-icon {
   @media (max-width: 64em) {
     .about-hero-text {
       padding-top: 15rem; } }
+  @media (max-width: 56em) and (max-height: 25.875em) {
+    .about-hero-text {
+      padding-top: 2rem;
+      font-size: 3rem;
+      margin-bottom: 1.5rem; } }
   @media (max-width: 46em) and (max-height: 26em) {
     .about-hero-text {
       padding-top: 2rem;
@@ -1304,6 +1324,10 @@ ion-icon {
   width: 60%;
   font-size: 1.7rem;
   line-height: 1.7; }
+  @media (max-width: 56em) and (max-height: 25.875em) {
+    .header-info {
+      width: 90%;
+      font-size: 1.5rem; } }
   @media (max-width: 46em) and (max-height: 26em) {
     .header-info {
       width: 90%;
@@ -1752,6 +1776,10 @@ ion-icon {
   text-transform: uppercase;
   margin-bottom: 5rem;
   animation: fadein forwards 1s ease; }
+  @media (max-width: 56em) and (max-height: 25.875em) {
+    .signature-header {
+      font-size: 5rem;
+      padding-top: 5rem; } }
   @media (max-width: 46em) and (max-height: 26em) {
     .signature-header {
       font-size: 4.5rem;
@@ -1787,6 +1815,9 @@ ion-icon {
   position: absolute;
   cursor: pointer;
   top: 240%; }
+  @media (max-width: 56em) and (max-height: 25.875em) {
+    .signature-scroll-button {
+      top: 130%; } }
   @media (max-width: 46em) and (max-height: 26em) {
     .signature-scroll-button {
       top: 130%; } }

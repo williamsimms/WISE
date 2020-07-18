@@ -21,16 +21,24 @@
     @include respond(tablet) {
         top: 130%;
     }
-    @include respond(iphone-7plus-landscape) {
-       top: 150%;
+
+    @include respond(iphoneXSMaxLandscape) {
+        padding: 1.5rem 3rem;
     }
+
+    @include respond(iphone-7plus-landscape) {
+        top: 150%;
+    }
+
     @include respond(phone) {
         top: 150%;
     }
+
     @include respond(phone) {
-     padding: 1.5rem 3rem;
-     font-size: 1.1rem;
+        padding: 1.5rem 3rem;
+        font-size: 1.1rem;
     }
+
     &:hover {
         background-color: $colour-white;
     }
