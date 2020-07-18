@@ -43,7 +43,7 @@ a {
 }
 
 body::-webkit-scrollbar {
-    width: 1.1rem;
+    width: 1.15rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -351,6 +351,9 @@ body::-webkit-scrollbar-thumb {
     min-height: 75vh;
     background: $colour-red-ocean-2;
 
+    @include respond(big-desk) {
+        min-height: 55vh;
+    }
     @include respond(laptop-medium) {
         min-height: 90vh;
     }

@@ -510,6 +510,10 @@
     min-height: 75vh;
     background-color: $colour-light-gray;
 
+    @include respond(big-desk) {
+        min-height: 55vh;
+    }
+
     @include respond(laptop-medium) {
         min-height: 90vh;
     }
