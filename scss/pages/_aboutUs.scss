@@ -75,6 +75,9 @@
         margin-bottom: 2rem;
     }
 
+    @include respond(galaxy-fold) {
+        font-size: 2rem;
+    }
 }
 
 #about-us {
@@ -133,6 +136,10 @@
     @include respond(small-phone) {
         width: 90%;
         font-size: 1.5rem;
+    }
+
+    @include respond(galaxy-fold) {
+        font-size: 1.4rem;
     }
 
 
@@ -218,6 +225,10 @@
 
     @include respond(small-phone) {
         width: 35rem;
+    }
+
+    @include respond(galaxy-fold) {
+        width: 29rem;
     }
 }
 

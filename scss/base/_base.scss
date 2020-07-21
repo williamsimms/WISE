@@ -140,6 +140,12 @@ body::-webkit-scrollbar-thumb {
         text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
     }
 
+    @include respond(galaxy-fold) {
+        padding-top: 15rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+    }
+
 
 
 }
@@ -160,6 +166,10 @@ body::-webkit-scrollbar-thumb {
 
     @include respond(phone) {
         font-size: 1.4rem;
+    }
+
+    @include respond(galaxy-fold) {
+        font-size: 1rem;
     }
 }
 
@@ -217,6 +227,11 @@ body::-webkit-scrollbar-thumb {
     @include respond(phone) {
         font-size: 2.5rem;
     }
+
+    @include respond(galaxy-fold) {
+        font-size: 2rem;
+    }
+
 
 }
 
@@ -354,6 +369,7 @@ body::-webkit-scrollbar-thumb {
     @include respond(big-desk) {
         min-height: 55vh;
     }
+
     @include respond(laptop-medium) {
         min-height: 90vh;
     }
@@ -467,6 +483,10 @@ body::-webkit-scrollbar-thumb {
     font-size: 6rem;
     text-transform: uppercase;
     font-weight: 300;
+
+    @include respond(galaxy-fold) {
+        font-size: 4rem;
+    }
 }
 
 .smart-header-bold {

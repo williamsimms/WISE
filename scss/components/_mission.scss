@@ -67,6 +67,10 @@
         z-index: 50;
     }
 
+    @include respond(galaxy-fold) {
+        width: 75%;
+    }
+
 }
 
 .mission-statement {
@@ -117,6 +121,11 @@
             width: 70%;
         }
 
+        @include respond(galaxy-fold) {
+            font-size: 1.4rem;
+            width: 80%;
+        }
+
     }
 }
 
@@ -138,6 +147,11 @@
     &:hover {
         background-color: $colour-white;
         color: $colour-black;
+    }
+
+    @include respond(galaxy-fold) {
+        font-size: 1.2rem;
+        width: 45%;
     }
 }
 

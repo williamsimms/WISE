@@ -75,6 +75,14 @@ new Glider(glider, {
         next: '.glider-next'
     },
     responsive: [{
+        // screens greater than >= 1024px
+        breakpoint: 200,
+        settings: {
+            scrollLock: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
+    },{
             // screens greater than >= 1024px
             breakpoint: 300,
             settings: {

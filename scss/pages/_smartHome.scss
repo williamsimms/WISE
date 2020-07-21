@@ -94,6 +94,7 @@
         font-size: 7rem;
         padding-top: 10rem;
     }
+
     @include respond(iphoneXSMaxLandscape) {
         font-size: 5rem;
         padding-top: 5rem;
@@ -103,6 +104,10 @@
         font-size: 4.5rem;
         padding-top: 5rem;
     }
+
+    @include respond(galaxy-fold) {
+        font-size: 3rem;
+    }
 }
 
 .signature-info {
@@ -111,12 +116,12 @@
     font-size: 2rem;
     font-weight: 400;
     color: $colour-light-gray;
+
+    @include respond(galaxy-fold) {
+        font-size: 1.5rem;
+    }
 }
 
-#video {
-    min-height: 100vh;
-    background-color: $colour-dark-gray;
-}
 
 #features {
     min-height: 100vh;
@@ -200,6 +205,10 @@
         text-align: center;
         filter: invert(0%) sepia(6%) saturate(7476%) hue-rotate(257deg) brightness(93%) contrast(107%);
         opacity: .9;
+    }
+
+    @include respond(galaxy-fold) {
+        width: 25rem;
     }
 
 }
@@ -330,6 +339,7 @@
     @include respond(big-desk) {
         min-height: 55vh;
     }
+
     @include respond(laptop-medium) {
         min-height: 90vh;
     }

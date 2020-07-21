@@ -5,8 +5,9 @@
     grid-template-rows: 1fr;
 
     @include respond(big-desk) {
-      margin-top: -30rem;
+        margin-top: -30rem;
     }
+
     @include respond(laptop-medium) {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -97,7 +98,12 @@
     }
 
     @include respond(phone) {
-      width: 30rem;
+        width: 30rem;
+    }
+
+    @include respond(galaxy-fold) {
+        width: 24rem;
+        height: 40rem;
     }
 
 }

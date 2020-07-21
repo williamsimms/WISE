@@ -91,6 +91,10 @@
 
 .footer-container ul:first-of-type li a {
     font-size: 1.4rem;
+
+    @include respond(galaxy-fold) {
+        font-size: 1.2rem;
+    }
 }
 
 .footer-container ul {
@@ -98,6 +102,10 @@
     display: flex;
     margin-top: 3rem;
     font-size: 2rem;
+
+    @include respond(galaxy-fold) {
+        font-size: 1rem;
+    }
 }
 
 .footer-container ul li {
@@ -128,6 +136,10 @@
     color: $colour-white;
     font-size: 1.6rem;
     margin-bottom: 1rem;
+
+    @include respond(galaxy-fold) {
+        font-size: 1.4rem;
+    }
 }
 
 ion-icon {
@@ -138,6 +150,10 @@ ion-icon {
     text-align: center;
     margin-top: .8rem;
     font-size: 1.2rem;
-    color:$colour-white;
+    color: $colour-white;
     opacity: .5;
+
+    @include respond(galaxy-fold) {
+        font-size: 1rem;
+    }
 }

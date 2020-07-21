@@ -13,6 +13,10 @@
 
     & p {
         font-size: 1.8rem;
+
+        @include respond(galaxy-fold) {
+            font-size: 1.4rem;
+        }
     }
 
     &::after {
@@ -29,10 +33,18 @@
         @include respond(phone) {
             width: 35rem;
         }
+
+        @include respond(galaxy-fold) {
+            width: 27rem;
+        }
     }
 
     @include respond(phone) {
         max-width: 35rem;
+    }
+
+    @include respond(galaxy-fold) {
+        width: 27.5rem;
     }
 }
 

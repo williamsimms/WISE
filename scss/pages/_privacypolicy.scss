@@ -20,6 +20,10 @@
         padding-top: 5rem;
         margin-bottom: 4rem;
     }
+
+    @include respond(galaxy-fold) {
+        font-size: 3.5rem;
+    }
 }
 
 .faq-hero-paragraph {
@@ -36,6 +40,11 @@
 
     @include respond(phone) {
         width: 35ch;
+    }
+
+    @include respond(galaxy-fold) {
+        width: 25ch;
+        font-size: 1.4rem;
     }
 }
 
@@ -70,10 +79,14 @@
     text-transform: uppercase;
     margin-bottom: 5rem;
 
-    
+
 
     @include respond(phone) {
         font-size: 2.5rem;
+    }
+
+    @include respond(galaxy-fold) {
+        font-size: 2.2rem;
     }
 }
 
@@ -92,6 +105,8 @@
         font-size: 1.3rem;
         width: 85%;
     }
+
+
 
 
 
