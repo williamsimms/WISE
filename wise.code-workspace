@@ -1,14 +1,24 @@
 {
-	"folders": [
-		{
-			"path": "."
-		},
-		{
-			"path": "..\\breakoutGame"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "wise",
-		"discord.enabled": true
-	}
+  "folders": [
+    {
+      "name": "googleclone",
+      "path": "..\\googleclone"
+    },
+    {
+      "path": "..\\airbnbclone"
+    },
+    {
+      "path": "..\\daysWebsite"
+    },
+    {
+      "path": "..\\huluclonereact"
+    },
+    {
+      "path": "..\\twitterclonereact"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "artShowcaseWebsite",
+    "discord.enabled": true
+  }
 }

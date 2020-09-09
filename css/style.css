@@ -90,7 +90,7 @@ body::-webkit-scrollbar-thumb {
   background-attachment: fixed;
   color: #fff;
   position: relative; }
-  @media (max-width: 90) and (max-height: 56.25) {
+  @media (max-width: 90em) and (max-height: 56.25em) {
     #home {
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/macbook15HeroImage.jpg); } }
   @media (max-width: 85.375em) {
@@ -1750,9 +1750,6 @@ ion-icon {
   color: #fff;
   background-attachment: fixed;
   position: relative; }
-  @media (max-width: 90) and (max-height: 56.25) {
-    #home-smart {
-      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signaturemacbook15HeroImage.jpg); } }
   @media (max-width: 85.375em) {
     #home-smart {
       background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../../img/signaturelaptopHeroImage.jpg); } }

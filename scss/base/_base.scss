@@ -66,7 +66,7 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     position: relative;
 
-    @include respond(macbook) {
+    @include respond(macbook-fifteen) {
         background: linear-gradient(rgba($colour-black, .4), rgba($colour-black, .4)), url(../../img/macbook15HeroImage.jpg);
     }
 

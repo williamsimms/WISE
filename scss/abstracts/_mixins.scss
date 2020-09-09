@@ -109,8 +109,8 @@
         }
     }
 
-    @if $breakpoint==macbook {
-        @media (max-width:90) and (max-height:56.25) {
+    @if $breakpoint==macbook-fifteen {
+        @media (max-width:90em) and (max-height:56.25em) {
             @content
         }
     }

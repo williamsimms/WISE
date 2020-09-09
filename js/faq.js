@@ -54,4 +54,3 @@ const appearOnScroll = new IntersectionObserver(function (entries, appearOnScrol
 faders.forEach((fader) => {
     appearOnScroll.observe(fader)
 })
-
