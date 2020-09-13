@@ -15,10 +15,16 @@
     },
     {
       "path": "..\\twitterclonereact"
+    },
+    {
+      "path": "..\\facebookclonereact"
+    },
+    {
+      "path": "."
     }
   ],
   "settings": {
-    "liveServer.settings.multiRootWorkspaceName": "artShowcaseWebsite",
+    "liveServer.settings.multiRootWorkspaceName": "wise",
     "discord.enabled": true
   }
 }

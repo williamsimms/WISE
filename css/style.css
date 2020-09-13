@@ -948,9 +948,11 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   object-fit: cover;
   filter: saturate(0.4);
-  transition: all .2s ease-in-out; }
+  transition: all 0.5s ease-in-out;
+  transform: scale(1.1); }
   .portfolio-image:hover {
-    filter: saturate(1); }
+    filter: saturate(1);
+    transform: scale(1); }
 
 .client {
   justify-content: space-between;
